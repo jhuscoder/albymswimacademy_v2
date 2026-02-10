@@ -27,6 +27,7 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <style>
             .swiper {
                 width: 100%;
@@ -120,32 +121,36 @@
         
         <!-- NAVBAR -->
         <header id="top" 
-            class="fixed top-0 left-0 right-0 text-primarey z-40 transition-all duration-500 bg-light"
-            data-theme="cupcake">
-
-            <nav id="navbar" class="mx-auto py-3 lg:px-32 flex items-center justify-between gap-10">
-                <a href="/" class="inline-flex items-center bg-light gap-2">
-                    <span class="w-24 h-12">
-                        <img class="w-100" src="assets/img/logo.png" alt="logo" srcset="assets/img/logo.png">
-                    </span>
-                    <span class="font-display text-xl tracking-tight" hidden>Albyn Swim Academy</span>
-                </a>
-
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="/" class="hover:text-brand-300 transition active">Home</a>
-                    <a href="/programs/" class="hover:text-brand-300 transition">Programs</a>
-                    <a href="/about-us/" class="hover:text-brand-300 transition">About</a>
-                    <a href="/gallery/" class="hover:text-brand-300 transition">Gallery</a>
-                    <a href="/contact-us/" class="hover:text-brand-300 transition">Contact</a>
-                </div>
-
-                <div class="hidden md:flex">
-                    <a href="#enroll"
-                        class="btn btn-danger normal-case bg-brand-400 border-none text-brand-900 hover:brightness-110">
-                        Enroll Now
+            class="fixed top-0 right-0 left-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200" data-theme="light">
+            <nav id="navbar" class="w-100 animate__animated animate__bounceIn">
+                
+                <div class="container mx-auto flex flex-row justify-between items-center py-3">
+                    <a href="/" class="w-40">
+                        <span class="w-12 h-12">
+                            <img class="w-100" src="assets/img/logo.png" alt="logo" srcset="assets/img/logo.png">
+                        </span>
+                        <span class="font-display text-xl tracking-tight" hidden>Albyn Swim Academy</span>
                     </a>
-                </div>
+    
+                    <div class="hidden md:flex flex-row items-center justify-center gap-12">
+                        <a href="/" class="hover:text-brand-300 transition active">Home</a>
+                        <a href="/programs/" class="hover:text-brand-300 transition">Programs</a>
+                        <a href="/campaigns/" class="hover:text-brand-300 transition">Campaigns</a>
+                        <a href="/level-charts/" class="hover:text-brand-300 transition">Level Charts</a>
+                        <a href="/rates-abuja/" class="hover:text-brand-300 transition">Rates</a>
+                        <a href="/about-us-abuja/" class="hover:text-brand-300 transition">About</a>
+                        <a href="/gallery-abuja/" class="hover:text-brand-300 transition">Gallery</a>
+                        <a href="/contact-us-abuja/" class="hover:text-brand-300 transition">Contact Us</a>
+                    </div>
 
+                    <div class="hidden md:flex">
+                        <a href="#enroll"
+                            class="btn normal-case bg-brand-300 border-none text-brand-900 hover:brightness-110">
+                            Speak to a Coach
+                        </a>
+                    </div>
+
+                </div>
                 <div class="md:hidden">
                     <details class="dropdown dropdown-end">
                         <summary class="btn btn-ghost btn-circle text-blue-800">
@@ -167,86 +172,91 @@
                 </div>
             </nav>
         </header>
-
-
         <!-- MAIN CONTENT -->
         <!-- HERO: Combination of Liquid Wave Shader (A) + Caustics Refraction FX (C) -->
         <!-- ABOUT -->
-        <section id="about" class="container mx-auto py-40 px-6" data-aos="fade-up" data-aos-anchor-placement="center">
-            <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
-                <div class="md:px-8">
-                    <h2 class="font-display text-blue-950 text-3xl md:text-6xl font-bold">
-                        Albyn Swim Academy
-                    </h2>
-                    <p class="mt-2 text-black hover:text-black/85 md:text-lg">
-                        We are a private Swim academy with an indoor heated pool that teaches water safety and survival
-                        skills and learning to swim from babies 6 months old to adults of all ages.
-                        Our mission is to elevate every swimmer with precision coaching,
-                        data‑driven progress, and a supportive team culture.
-                    </p>
-                    <ul class="glass p-3 mt-6 space-y-3 text-black/60">
-                        <li class="flex gap-3">
-                            <span class="mt-1">🏊‍♀️</span>
-                            Certified by international swim bodies
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="mt-1">📊</span>
-                            Progress tracking & personalized plans
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="mt-1">🛟</span>
-                            Safety‑first philosophy
-                        </li>
-                    </ul>
-                </div>
-                <div class="glass mt-10 lg:mt-0">
-                    <figure class="max-w-full flex mx-auto p-4 transition-all duration-300 cursor-pointer">
-                        <div class="swiper mySwiper rounded">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img class="h-auto rounded size-auto w-100" src="/assets/img/TOLA7532.jpg" alt="TOLA7532">
+        <section id="hero"
+            class="py-40 px-6"
+            data-aos="zoom-out-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200" data-aos-delay="200"
+            data-aos-easing="ease-in-out">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+                    <div class="md:px-8">
+                        <h2 class="font-display uppercase text-blue-950 text-3xl md:text-5xl font-bold">
+                            Albyn Swim Academy
+                        </h2>
+                        <p class="mt-2 text-black hover:text-black/85 md:text-lg min-w-full text-justify">
+                            We are a private Swim academy with an indoor heated pool that teaches water safety and survival
+                            skills and learning to swim from babies 6 months old to adults of all ages.
+                            Our mission is to elevate every swimmer with precision coaching,
+                            data‑driven progress, and a supportive team culture.
+                        </p>
+                        <ul class="glass p-3 mt-6 space-y-3 text-black/60">
+                            <li class="flex gap-3">
+                                <span class="mt-1">🏊‍♀️</span>
+                                Certified by international swim bodies
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="mt-1">📊</span>
+                                Progress tracking & personalized plans
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="mt-1">🛟</span>
+                                Safety‑first philosophy
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container mx-auto mt-10 lg:mt-0">
+                        <figure class="min-w-full flex mx-auto p-9 transition-all duration-300 cursor-pointer">
+                            <div class="swiper mySwiper rounded">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="h-auto rounded size-auto w-100" src="/assets/img/TOLA7532.jpg" alt="TOLA7532">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="h-auto rounded size-auto w-100" src="/assets/img/New/Website 10.jpg" alt="slide 2">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="h-auto rounded size-auto w-100" src="/assets/img/Ebube and Nanya .jpg" alt="Ebube and Nanya">
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <img class="h-auto rounded size-auto w-100" src="/assets/img/New/Website 10.jpg" alt="slide 2">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="h-auto rounded size-auto w-100" src="/assets/img/Ebube and Nanya .jpg" alt="Ebube and Nanya">
-                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </figure>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- PROGRAMS -->
-        <section id="programs" class="relative py-20 border-t border-gray-200 bg-albyn-secondary">
+        <section id="programs" 
+            class="relative py-20 border-t border-gray-200 bg-albyn-secondary">
             <div class="container max-w mx-auto px-6">
                 <div class="flex items-end justify-between gap-6 flex-wrap">
                     <div class="text-white">
                         <h2 class="font-display text-2xl sm:text-3xl font-bold">
-                            Programs
+                           Swimming Packages
                         </h2>
                         <p class=" mt-2">
                             Structured pathways for all ages and goals.
                         </p>
                     </div>
-                    <a href="/programs/" class="btn btn-md bg-brand-900 text-brand-400 border-none hover:cursor-pointer hover:text-white hover:brightness-110">
+                    <a href="/programs/" class="btn btn-md btn-light text-blue-900 hover:cursor-pointer hover:text-blue-800 hover:brightness-100">
                         View More
                     </a>
                 </div>
 
                 <!-- BABIES & TODDLERS -->
-                <div class="my-10 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-2">
-                    <div class="mx-auto card glass transition p-2">
+                <div class="my-10 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4">
+                    <div class="mx-auto card glass transition p-2" data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-delay="100"
+                        data-aos-easing="ease-in-out">
                         <div class="card-body w-[100%] p-0 py-4">
                             <figure class="flex mx-auto p-4 transition-all duration-300 cursor-pointer">
                                 <img class="h-auto rounded size-auto" src="/assets/swimmers/Website 13.jpg" alt="">
                             </figure>
 
                             <div class="flex mx-auto flex-col items-center text-center">
-                                <h3 class="card-title text-black font-bold">CHILDREN</h3>
+                                <h3 class="card-title text-black font-bold">BABIES & TODDLERS</h3>
                                 <p class="text-white px-6">
                                     Gentle, safety‑first classes to build confidence and
                                     coordination.
@@ -256,14 +266,15 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="mx-auto card glass transition p-2">
+                    <div class="mx-auto card glass transition p-2"  data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-duration="1050" data-aos-delay="150"
+                        data-aos-easing="ease-in-out">
                         <div class="card-body text-center w-[100%] p-0 py-4">
                             <figure class="max-w-md flex mx-auto p-4 transition-all duration-300 cursor-pointer ">
                                 <img class="h-auto rounded size-auto" src="/assets/img/Ebube and Nanya 2.jpg" alt="">
                             </figure>
 
                             <div class="flex mx-auto flex-col items-center text-center">                                
-                                <h3 class="card-title uppercase font-bold text-black/80">TEENAGERS</h3>
+                                <h3 class="card-title uppercase font-bold text-black/80">CHILDREN & TEENAGERS</h3>
                                 <p class="text text-white px-6">
                                     Technique, endurance, and mobility focused sessions for all
                                     levels.
@@ -273,7 +284,8 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="mx-auto card glass transition p-2">
+                    <div class="mx-auto card glass transition p-2"  data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-duration="1100" data-aos-delay="200"
+                    data-aos-easing="ease-in-out">
                         <div class="card-body text-center w-[100%] p-0 py-4">
                             <figure class="max-w-md flex mx-auto p-2 transition-all duration-300 cursor-pointer ">
                                 <img class="h-auto rounded size-auto" src="/assets/swimmers/adult-swim.jpg" alt="Adult Swim">
@@ -289,30 +301,32 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card 4 -->
+                    <div class="mx-auto card glass transition p-2"  data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-duration="1100" data-aos-delay="200"
+                        data-aos-easing="ease-in-out">
+                        <div class="card-body text-center w-[100%] p-0 py-4">
+                            <figure class="max-w-md flex mx-auto p-2 transition-all duration-300 cursor-pointer ">
+                                <img class="h-auto rounded size-auto" src="/assets/swimmers/adult-swim.jpg" alt="Adult Swim">
+                            </figure>
+                            <div class="flex mx-auto flex-col items-center text-center">
+                                <h3 class="card-title font-bold uppercase text-black">
+                                    Private Sessions
+                                </h3>
+                                <p class="text text-white px-6">
+                                    Periodized training, drills, and analytics for race‑day
+                                    performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Gradient edge fade -->
             <div class="pointer-events-none md:absolute inset-x-0 bottom-0 h-40 from-brand-400 hidden"></div>
         </section>
 
-        <!-- Affliated Section -->
-        <div class="py-24 sm:py-32 border" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="py-[50px] mx-auto max-w-7xl px-6 lg:px-8 md:py-[50px]">
-                <h2 class="text-center text-lg md:text-2xl font-semibold text-gray-900">Accredited by the Aquatic Federation of Nigeria</h2>
-                <p class="text-center text-black my-6">
-                    As members of the Aquatic Federation of Nigeria, we work to enhance water safety and improve the image of swimming in the country.
-                </p>
-                <div class="max-w-full overflow-x-auto md:max-w-xl py-5 mx-auto my-10 flex flex-row items-center lg:overflow-hidden">
-                    <img width="150" height="140" src="/assets/logos/SWIMKIDZ.png" alt="SWIMKIDZ" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
-                    <img width="150" height="140" src="/assets/logos/NAqF.png" alt="NAqF" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
-                    <img width="150" height="140" src="/assets/logos/FINA.png" alt="FINA" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
-                    <img width="150" height="140" src="/assets/logos/SAI.png" alt="SAI" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
-                </div>
-            </div>
-        </div>
-
-
-        <section class="py-12 bg-white sm:py-16 lg:py-20" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+        <section class="py-12 bg-white sm:py-16 lg:py-20 hidden" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj">Make every
@@ -617,6 +631,23 @@
                 </div>
             </div>
         </section>
+
+        <!-- Affliated Section -->
+        <div class="py-24 sm:py-32 border" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="py-[50px] mx-auto max-w-7xl px-6 lg:px-8 md:py-[50px]">
+                <h2 class="text-center text-lg md:text-2xl font-semibold text-gray-900">Accredited by the Aquatic Federation of Nigeria</h2>
+                <p class="text-center text-black my-6">
+                    As members of the Aquatic Federation of Nigeria, we work to enhance water safety and improve the image of swimming in the country.
+                </p>
+                <div class="max-w-full overflow-x-auto md:max-w-xl py-5 mx-auto my-10 flex flex-row items-center lg:overflow-hidden">
+                    <img width="150" height="140" src="/assets/logos/SWIMKIDZ.png" alt="SWIMKIDZ" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
+                    <img width="150" height="140" src="/assets/logos/NAqF.png" alt="NAqF" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
+                    <img width="150" height="140" src="/assets/logos/FINA.png" alt="FINA" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
+                    <img width="150" height="140" src="/assets/logos/SAI.png" alt="SAI" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
+                </div>
+            </div>
+        </div>
+
 
         <section data-theme="cupcake" class="py-10 bg-gray-100 sm:py-16 lg:py-24" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">

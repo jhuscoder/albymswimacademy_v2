@@ -12,8 +12,6 @@
 }
 
 .hero {
-  background-image: url("/assets/Images/IMG_7907__msi___jpg.jpg");
-  background-image: url("/assets/Images/hero.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
