@@ -1,257 +1,419 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="aqua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Albyn Swim Academy Limited</title>
+    <meta
+      name="description"
+      content="Premium swimming academy with elite coaching and world‑class facilities."
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Albyn Swim Academy Limited</title>
-  <meta name="description" content="Premium swimming academy with elite coaching and world‑class facilities." />
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- DaisyUI full CSS (works with CDN Tailwind) -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/theme.css" />
-  <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- DaisyUI full CSS (works with CDN Tailwind) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+    />
 
-</head>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="bg-brand-900 text-white font-body antialiased">
-  <!-- NAVBAR -->
-  <header id="top" class="fixed top-0 left-0 right-0 text-primarey z-40 transition-all duration-500 bg-light"
-    data-theme="cupcake">
-    <nav id="navbar" class="max-w-7xl mx-auto px-4 lg:px-6 py-4 flex items-center justify-between">
-      <a href="/" class="inline-flex items-center gap-2">
-        <span class="w-24">
-          <img src="/assets/img/logo.png" alt="logo" srcset="/assets/img/logo.png" />
-        </span>
-        <span class="font-display text-xl tracking-tight" hidden>Albyn Swim Academy</span>
-      </a>
+    <link rel="stylesheet" href="/assets/css/theme.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
 
-      <div class="hidden md:flex items-center gap-8">
-        <a href="/" class="hover:text-brand-300 transition">Home</a>
-        <a href="/programs/" class="hover:text-brand-300 transition">Programs</a>
-        <a href="/about-us/" class="hover:text-brand-300 transition">About</a>
-        <a href="/gallery/" class="hover:text-brand-300 transition">Gallery</a>
-        <a href="/contact-us/" class="hover:text-brand-300 transition active">Contact</a>
+  <body class="bg-brand-900 text-white font-body antialiased">
+    <!-- NAVBAR -->
+    <header
+      id="top"
+      class="fixed top-0 left-0 right-0 text-primarey z-40 transition-all duration-500 bg-light"
+      data-theme="cupcake"
+    >
+      <nav
+        id="navbar"
+        class="max-w-7xl mx-auto px-4 lg:px-6 py-4 flex items-center justify-between"
+      >
+        <a href="/" class="inline-flex items-center gap-2">
+          <span class="w-24">
+            <img
+              src="/assets/img/logo.png"
+              alt="logo"
+              srcset="/assets/img/logo.png"
+            />
+          </span>
+          <span class="font-display text-xl tracking-tight" hidden
+            >Albyn Swim Academy</span
+          >
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="hover:text-brand-300 transition">Home</a>
+          <a href="/programs/" class="hover:text-brand-300 transition"
+            >Programs</a
+          >
+          <a href="/about-us/" class="hover:text-brand-300 transition">About</a>
+          <a href="/gallery/" class="hover:text-brand-300 transition"
+            >Gallery</a
+          >
+          <a href="/contact-us/" class="hover:text-brand-300 transition active"
+            >Contact</a
+          >
+        </div>
+
+        <div class="hidden md:flex">
+          <a
+            href="#enroll"
+            class="btn btn-primary normal-case bg-brand-400 border-none text-brand-900 hover:brightness-110"
+          >
+            Enroll Now
+          </a>
+        </div>
+
+        <div class="md:hidden">
+          <details class="dropdown dropdown-end">
+            <summary class="btn btn-ghost btn-circle text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </summary>
+            <ul
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-brand-900"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="/programs/">Programs</a></li>
+              <li><a href="/about-us/">About</a></li>
+              <li><a href="/gallery/">Gallery</a></li>
+              <li><a href="/contact-us/" class="active">Contact</a></li>
+            </ul>
+          </details>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="relative pt-40 pb-24 bg-cover bg-center bg-black"
+      style="background-image: url(&quot;/assets/img/contact-hero.jpg&quot;)"
+      data-theme="cupcake"
+    >
+      <div class="relative max-w-4xl mx-auto px-6 text-center text-white">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+        <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
+          Whether you're ready to enroll or have questions about our programs,
+          our team is here to help you take the next step.
+        </p>
       </div>
+    </section>
 
-      <div class="hidden md:flex">
-        <a href="#enroll"
-          class="btn btn-primary normal-case bg-brand-400 border-none text-brand-900 hover:brightness-110">
-          Enroll Now
+    <!--  -->
+
+    <section class="bg-[#f8fafc] py-16" id="register">
+      <div
+        class="container md:px-[80px] px-6 flex flex-col md:flex-row items-center justify-center gap-10 items-center"
+      >
+        <!-- Contact Details -->
+        <div class="flex-1 md:text-left text-center space-y-6 max-w-md">
+          <h2 class="text-[30px] font-bold text-[#b32138] mb-4">
+            Let’s Connect
+          </h2>
+          <p class="text-[#2D2E2E] mb-6">
+            Whether you have questions about our swimming lessons, packages, or
+            facilities, our friendly team is here to assist you.
+          </p>
+
+          <ul class="space-y-4">
+            <li class="flex items-start gap-4">
+              <i class="fa-solid fa-phone text-[#b32138] text-xl"></i>
+              <a
+                href="tel:+2349132325923"
+                class="text-[#2D2E2E] hover:underline"
+                aria-label="Contact us via our telephone line"
+                title="Contact us via our telephone line"
+              >
+                +234 913 232 5923
+              </a>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-envelope text-[#b32138] text-xl"></i>
+              <a
+                href="mailto:info@albynswimacademy.com"
+                class="text-[#2D2E2E] hover:underline"
+                aria-label="Contact us via email"
+                title="Contact us via email"
+              >
+                info@albynswimacademy.com
+              </a>
+            </li>
+            <li class="flex items-start gap-3 max-w-xs">
+              <i
+                class="fa-solid fa-location-dot text-[#b32138] text-start text-xl"
+              ></i>
+              <a href="" class="text-[#2D2E2E] hover:underline" s>
+                Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5,<br />
+                Accra Street Park 1, Abuja, FCT, Nigeria</a
+              >
+            </li>
+          </ul>
+
+          <div class="flex gap-4 mt-6">
+            <a
+              href="https://wa.me/+2349132325923"
+              class="text-[#84a3c0] hover:text-[#b32138]"
+              aria-label="Chat with us on WhatsApp"
+              title="Chat with us on WhatsApp"
+            >
+              <span class="sr-only">Chat with us on WhatsApp</span>
+              <i
+                class="fa-brands text-[#b32138] fa-whatsapp text-2xl"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a
+              href="https://www.instagram.com/albynswimacademyng/"
+              class="text-[#b32138] hover:text-[#b32138]"
+              aria-label="Chat with us on Instagram"
+              title="Chat with us on Instagram"
+            >
+              <i class="fa-brands fa-instagram text-2xl"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/learn2swimlearn2live"
+              class="text-[#b32138] hover:text-[#b32138]"
+              aria-label="Chat with us on Facebook"
+              title="Chat with us on Facebook"
+            >
+              <i class="fa-brands fa-facebook text-2xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div
+          class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-[#b32138]"
+        >
+          <h2 class="text-2xl font-semibold text-[#b32138] mb-4">
+            Send Us a Message
+          </h2>
+          <form
+            action="https://formsubmit.co/info@albynswimacademy.com"
+            method="POST"
+            class="space-y-4"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name*"
+              required
+              class="w-full border text-black outline-none bg-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"
+            />
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address*"
+                required
+                class="w-full border text-black bg-white outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number*"
+                required
+                class="w-full border text-black bg-white outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"
+              />
+            </div>
+
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Your Message*"
+              required
+              class="w-full border outline-none text-black bg-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"
+            ></textarea>
+
+            <div class="text-left text-sm text-gray-600">
+              <label class="flex items-start gap-2">
+                <input type="checkbox" required class="mt-1 accent-[#b32138]" />
+                <span>
+                  By submitting, you agree to our
+                  <a
+                    href="/privacy-policy-abuja"
+                    target="_blank"
+                    class="text-[#b32138] hover:underline"
+                  >
+                    Privacy Policy </a
+                  >.
+                </span>
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-[#b32138] text-white py-3 rounded-lg font-semibold uppercase tracking-wide hover:bg-[#951b2c] transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="bg-[#84a3c0] py-12 text-white text-center">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold mb-2">Visit Us at Our Abuja Location</h3>
+        <p class="mb-6">
+          Come meet our team and see our swimming facilities in person!
+        </p>
+        <a
+          href="https://maps.app.goo.gl/4RewfNt2y77FsRFz6"
+          target="_blank"
+          class="bg-white text-[#b32138] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#f8f8f8] transition"
+        >
+          View on Google Maps
         </a>
       </div>
+    </section> -->
 
-      <div class="md:hidden">
-        <details class="dropdown dropdown-end">
-          <summary class="btn btn-ghost btn-circle text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </summary>
-          <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-brand-900">
-            <li><a href="/">Home</a></li>
-            <li><a href="/programs/">Programs</a></li>
-            <li><a href="/about-us/">About</a></li>
-            <li><a href="/gallery/">Gallery</a></li>
-            <li><a href="/contact-us/" class="active">Contact</a></li>
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center mb-10">
+        <h3 class="text-3xl font-bold text-[#b32138]">
+          Visit Our Abuja Location
+        </h3>
+        <p class="text-gray-600 mt-3">
+          Come see our facilities and meet our coaching team.
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-6">
+        <div
+          class="w-full h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14191.408169361857!2d7.457982455612419!3d9.067550601761967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b18d62fdc43%3A0xd97b5007d69b2d1d!2sAlbyn%20Swim%20Academy%20Ltd!5e0!3m2!1sen!2sng!4v1771164231152!5m2!1sen!2sng"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 text-white px-6 md:px-[80px]">
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="">
+          <h3 class="text-lg font-semibold mb-3">Albyn Swim Academy</h3>
+          <p class="text-sm leading-relaxed">
+            Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5, Accra street
+            Park 1, Abuja FCT, Abuja, Nigeria
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/" class="hover:underline">Home</a></li>
+            <li><a href="/about/" class="hover:underline">About</a></li>
+            <li><a href="/gallery/" class="hover:underline">Gallery</a></li>
+            <li>
+              <a href="/packages/" class="hover:underline">Packages</a>
+            </li>
+            <li>
+              <a href="/contact/" class="hover:underline">Contact Us</a>
+            </li>
           </ul>
-        </details>
-      </div>
-    </nav>
-  </header>
+        </div>
 
-  
-  <section class="contact-hero relative h-screen py-[240px]" data-theme="cupcake">
-    <div class="container mx-auto px-4 text-center my-auto">
-      <h1 class="text-2xl md:text-[40px] font-bold mb-4">Get in Touch</h1>
-      <p class="text-lg max-w-2xl mx-auto">
-        We’d love to hear from you, whether it’s about lessons, registration,
-        or partnerships. Our team is ready to help you dive in!
-      </p>
-    </div>
-  </section>
-  <!--  -->
-
-  <section class="bg-[#f8fafc] py-16" id="register">
-    <div class="container md:px-[80px] px-6 flex flex-col md:flex-row items-center justify-center gap-10 items-center">
-      <!-- Contact Details -->
-      <div class="flex-1 md:text-left text-center space-y-6 max-w-md">
-        <h2 class="text-[30px] font-bold text-[#b32138] mb-4">
-          Let’s Connect
-        </h2>
-        <p class="text-[#2D2E2E] mb-6">
-          Whether you have questions about our swimming lessons, packages, or
-          facilities, our friendly team is here to assist you.
-        </p>
-
-        <ul class="space-y-4">
-          <li class="flex items-start gap-4">
-            <i class="fa-solid fa-phone text-[#b32138] text-xl"></i>
-            <a href="tel:+2349132325923" class="text-[#2D2E2E]hover:underline"
-              aria-label="Contact us via our telephone line" title="Contact us via our telephone line">
-              +234 913 232 5923
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Socials</h3>
+          <div class="flex gap-4 mt-6">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://wa.me/+2349132325923"
+              class="text-[#ffffff] hover:text-[#b32138]"
+              aria-label="Chat with us on WhatsApp"
+              title="Chat with us on WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
             </a>
-          </li>
-          <li class="flex items-start gap-3">
-            <i class="fa-solid fa-envelope text-[#b32138] text-xl"></i>
-            <a href="mailto:info@albynswimacademy.com" class="text-[#2D2E2E] hover:underline"
-              aria-label="Contact us via email" title="Contact us via email">
-              info@albynswimacademy.com
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/albynswimacademyng/"
+              class="text-[#ffffff] hover:text-[#b32138]"
+              aria-label="Follow us on Instagram"
+              title="Follow us on Instagram"
+            >
+              <i class="fa-brands fa-instagram text-2xl"></i>
             </a>
-          </li>
-          <li class="flex items-start gap-3 max-w-xs">
-            <i class="fa-solid fa-location-dot text-[#b32138] text-start text-xl"></i>
-            Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5,<br />
-            Accra Street Park 1, Abuja, FCT, Nigeria
-          </li>
-        </ul>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.facebook.com/learn2swimlearn2live"
+              class="text-[#ffffff] hover:text-[#b32138]"
+              aria-label="Like us on Facebook"
+              title="Like us on Facebook"
+            >
+              <i class="fa-brands fa-facebook text-2xl"></i>
+            </a>
+          </div>
+        </div>
 
-        <div class="flex gap-4 mt-6">
-          <a href="https://wa.me/+2349132325923" class="text-[#84a3c0] hover:text-[#b32138]"
-            aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp">
-            <span class="sr-only">Chat with us on WhatsApp</span>
-            <i class="fa-brands text-[#b32138] fa-whatsapp text-2xl" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/albynswimacademyng/" class="text-[#b32138] hover:text-[#b32138]"
-            aria-label="Chat with us on Instagram" title="Chat with us on Instagram">
-            <i class="fa-brands fa-instagram text-2xl"></i>
-          </a>
-          <a href="https://www.facebook.com/learn2swimlearn2live" class="text-[#b32138] hover:text-[#b32138]"
-            aria-label="Chat with us on Facebook" title="Chat with us on Facebook">
-            <i class="fa-brands fa-facebook text-2xl"></i>
-          </a>
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Business Hours</h3>
+          <ul class="text-sm space-y-2">
+            <li>Monday - Tuesday Closed</li>
+            <li>Wednesday - Saturday 09:00 AM - 07:00 PM</li>
+            <li>Sunday 10:30 AM - 07:00 PM</li>
+          </ul>
         </div>
       </div>
-
-      <!-- Contact Form -->
-      <div class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-[#b32138]">
-        <h2 class="text-2xl font-semibold text-[#b32138] mb-4">
-          Send Us a Message
-        </h2>
-        <form action="https://formsubmit.co/info@albynswimacademy.com" method="POST" class="space-y-4">
-          <input type="text" name="name" placeholder="Full Name*" required
-            class="w-full border outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]" />
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input type="email" name="email" placeholder="Email Address*" required
-              class="w-full border outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]" />
-            <input type="tel" name="phone" placeholder="Phone Number*" required
-              class="w-full border outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]" />
-          </div>
-
-          <textarea name="message" rows="4" placeholder="Your Message*" required
-            class="w-full border outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"></textarea>
-
-          <div class="text-left text-sm text-gray-600">
-            <label class="flex items-start gap-2">
-              <input type="checkbox" required class="mt-1 accent-[#b32138]" />
-              <span>
-                By submitting, you agree to our
-                <a href="/privacy-policy-abuja" target="_blank" class="text-[#b32138] hover:underline">
-                  Privacy Policy </a>.
-              </span>
-            </label>
-          </div>
-
-          <button type="submit"
-            class="w-full bg-[#b32138] text-white py-3 rounded-lg font-semibold uppercase tracking-wide hover:bg-[#951b2c] transition">
-            Send Message
-          </button>
-        </form>
+      <div
+        class="mt-6 text-center border-t border-[#ffffff] text-[14px] opacity-80 pt-6"
+      >
+        © 2025 Albyn Swim Academy. All rights reserved.
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section class="bg-[#84a3c0] py-12 text-white text-center">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold mb-2">Visit Us at Our Abuja Location</h3>
-      <p class="mb-6">
-        Come meet our team and see our swimming facilities in person!
-      </p>
-      <a href="https://maps.app.goo.gl/4RewfNt2y77FsRFz6" target="_blank"
-        class="bg-white text-[#b32138] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#f8f8f8] transition">
-        View on Google Maps
-      </a>
-    </div>
-  </section>
+    <script type="text/javascript" src="/assets/js/ui.js"></script>
+    <script type="module" src="/assets/js/hero-three.js"></script>
+    <script type="text/javascript" src="/assets/js/tailwind.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- FOOTER -->
-  <footer class="py-10 text-white px-6 md:px-[80px]">
-    <div class="grid md:grid-cols-4 gap-10">
-      <div class="">
-        <h3 class="text-lg font-semibold mb-3">Albyn Swim Academy</h3>
-        <p class="text-sm leading-relaxed">
-          Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5, Accra street
-          Park 1, Abuja FCT, Abuja, Nigeria
-        </p>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="/" class="hover:underline">Home</a></li>
-          <li><a href="/about/" class="hover:underline">About</a></li>
-          <li><a href="/gallery/" class="hover:underline">Gallery</a></li>
-          <li>
-            <a href="/packages/" class="hover:underline">Packages</a>
-          </li>
-          <li>
-            <a href="/contact/" class="hover:underline">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold mb-3">Socials</h3>
-        <div class="flex gap-4 mt-6">
-          <a target="_blank" rel="noopener" href="https://wa.me/+2349132325923"
-            class="text-[#ffffff] hover:text-[#b32138]" aria-label="Chat with us on WhatsApp"
-            title="Chat with us on WhatsApp">
-            <i class="fa-brands fa-whatsapp text-2xl"></i>
-          </a>
-          <a target="_blank" rel="noopener" href="https://www.instagram.com/albynswimacademyng/"
-            class="text-[#ffffff] hover:text-[#b32138]" aria-label="Follow us on Instagram"
-            title="Follow us on Instagram">
-            <i class="fa-brands fa-instagram text-2xl"></i>
-          </a>
-          <a target="_blank" rel="noopener" href="https://www.facebook.com/learn2swimlearn2live"
-            class="text-[#ffffff] hover:text-[#b32138]" aria-label="Like us on Facebook" title="Like us on Facebook">
-            <i class="fa-brands fa-facebook text-2xl"></i>
-          </a>
-        </div>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold mb-3">Business Hours</h3>
-        <ul class="text-sm space-y-2">
-          <li>Monday - Tuesday Closed</li>
-          <li>Wednesday - Saturday 09:00 AM - 07:00 PM</li>
-          <li>Sunday 10:30 AM - 07:00 PM</li>
-        </ul>
-      </div>
-    </div>
-    <div class="mt-6 text-center border-t border-[#ffffff] text-[14px] opacity-80 pt-6">
-      © 2025 Albyn Swim Academy. All rights reserved.
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="/assets/js/ui.js"></script>
-  <script type="module" src="/assets/js/hero-three.js"></script>
-  <script type="text/javascript" src="/assets/js/tailwind.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-  <script></script>
-</body>
-
+    <script></script>
+  </body>
 </html>

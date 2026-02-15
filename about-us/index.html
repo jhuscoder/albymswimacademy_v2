@@ -1,441 +1,927 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="aqua">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Albyn Swim Academy Limited</title>
-    <meta name="description" content="Premium swimming academy with elite coaching and world‑class facilities." />
+    <meta
+      name="description"
+      content="Premium swimming academy with elite coaching and world‑class facilities."
+    />
 
     <!-- Tailwind via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- DaisyUI full CSS (works with CDN Tailwind) -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="https://kit.fontawesome.com/10a4a9bf8b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/10a4a9bf8b.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/css/theme.css" />
-    <link rel="stylesheet" href="/assets/css/main.css">
-</head>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
 
-<body class="bg-brand-900 text-white font-body antialiased">
+  <body class="bg-brand-900 text-white font-body antialiased">
     <!-- NAVBAR -->
-    <header id="top" class="fixed top-0 left-0 right-0 text-primarey z-40 transition-all duration-500 bg-light"
-        data-theme="cupcake">
-        <nav id="navbar" class="max-w-7xl mx-auto px-4 lg:px-6 py-4 flex items-center justify-between">
-            <a href="/" class="inline-flex items-center gap-2">
-                <span class="w-24">
-                    <img src="/assets/img/logo.png" alt="logo" srcset="/assets/img/logo.png" />
-                </span>
-                <span class="font-display text-xl tracking-tight" hidden>Albyn Swim Academy</span>
-            </a>
+    <header
+      id="top"
+      class="fixed top-0 left-0 right-0 text-primarey z-40 transition-all duration-500 bg-light"
+      data-theme="cupcake"
+    >
+      <nav
+        id="navbar"
+        class="max-w-7xl mx-auto px-4 lg:px-6 py-4 flex items-center justify-between"
+      >
+        <a href="/" class="inline-flex items-center gap-2">
+          <span class="w-24">
+            <img
+              src="/assets/img/logo.png"
+              alt="logo"
+              srcset="/assets/img/logo.png"
+            />
+          </span>
+          <span class="font-display text-xl tracking-tight" hidden
+            >Albyn Swim Academy</span
+          >
+        </a>
 
-            <div class="hidden md:flex items-center gap-8">
-                <a href="/" class="hover:text-brand-300 transition">Home</a>
-                <a href="/programs/" class="hover:text-brand-300 transition">Programs</a>
-                <a href="/about-us/" class="hover:text-brand-300 transition active">About</a>
-                <a href="/gallery/" class="hover:text-brand-300 transition">Gallery</a>
-                <a href="/contact-us/" class="hover:text-brand-300 transition">Contact</a>
-            </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="hover:text-brand-300 transition">Home</a>
+          <a href="/programs/" class="hover:text-brand-300 transition"
+            >Programs</a
+          >
+          <a href="/about-us/" class="hover:text-brand-300 transition active"
+            >About</a
+          >
+          <a href="/gallery/" class="hover:text-brand-300 transition"
+            >Gallery</a
+          >
+          <a href="/contact-us/" class="hover:text-brand-300 transition"
+            >Contact</a
+          >
+        </div>
 
-            <div class="hidden md:flex">
-                <a href="#enroll"
-                    class="btn btn-primary normal-case bg-brand-400 border-none text-brand-900 hover:brightness-110">
-                    Enroll Now
-                </a>
-            </div>
+        <div class="hidden md:flex">
+          <a
+            href="#enroll"
+            class="btn btn-primary normal-case bg-brand-400 border-none text-brand-900 hover:brightness-110"
+          >
+            Enroll Now
+          </a>
+        </div>
 
-            <div class="md:hidden">
-                <details class="dropdown dropdown-end">
-                    <summary class="btn btn-ghost btn-circle text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </summary>
-                    <ul
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-brand-900">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/programs/">Programs</a></li>
-                        <li><a href="/about-us/" class="active">About</a></li>
-                        <li><a href="/gallery/">Gallery</a></li>
-                        <li><a href="/contact-us/">Contact</a></li>
-                    </ul>
-                </details>
-            </div>
-        </nav>
+        <div class="md:hidden">
+          <details class="dropdown dropdown-end">
+            <summary class="btn btn-ghost btn-circle text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </summary>
+            <ul
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-brand-900"
+            >
+              <li><a href="/">Home</a></li>
+              <li><a href="/programs/">Programs</a></li>
+              <li><a href="/about-us/" class="active">About</a></li>
+              <li><a href="/gallery/">Gallery</a></li>
+              <li><a href="/contact-us/">Contact</a></li>
+            </ul>
+          </details>
+        </div>
+      </nav>
     </header>
 
-
     <!-- ABOUT US SECTION -->
-    <section class="about-us-hero vh-100 mx-auto px-6 bg-primary flex items-center justify-center pt-24">
-        <div class="max-w-4xl mx-auto text-center py-24 text-light">
-            <h2 class="text-[30px] font-semibold text-[#ffffff] mb-6">
-                About Albyn Swim Academy Ltd
-            </h2>
-            <p class="text-[18px] leading-relaxed text-[#ffffff]">
-                Albyn Swim Academy Ltd is a swimming school that serves babies, children, 
-                and adults throughout Nigeria. Based in Abuja, we offer swimming and water safety lessons 
-                all year round at our heated indoor swimming pools. When you choose our lessons, instructors 
-                pay close attention to your progress, working at your pace and ability and ensuring you are 
-                comfortable while in the water.
-            </p>
+    <section
+      class="about-us-hero relative min-h-screen flex items-center justify-center pt-24 overflow-hidden"
+    >
+      <!-- Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-[#0b2545]/85 via-[#0b2545]/70 to-[#0b2545]/60"
+      ></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 max-w-4xl mx-auto text-center px-6 text-white backdrop-blur-[2px]"
+      >
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
+          About Albyn Swim Academy
+        </h1>
+
+        <p
+          class="text-lg md:text-xl leading-relaxed mb-10 max-w-[750px] mx-auto text-white"
+        >
+          Albyn Swim Academy Ltd is a leading swimming school serving babies,
+          children, and adults across Nigeria. We combine expert coaching,
+          water-safety education, and a supportive learning environment to help
+          every swimmer build confidence and life-saving skills.
+        </p>
+
+        <a
+          href="/contact-us/#register"
+          class="inline-block bg-[#b32138] hover:bg-[#9b1d31] text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition duration-300"
+        >
+          Enroll Today
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 md:px-[80px]">
+      <div
+        class="px-6 grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto"
+      >
+        <!-- Image -->
+        <div class="relative">
+          <img
+            src="/assets/img/about-story.jpg"
+            alt="Swimming lesson at Albyn Swim Academy"
+            class="w-full h-full object-cover rounded-2xl shadow-lg"
+          />
         </div>
+
+        <!-- Content -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#b32138] mb-6">
+            Our Story
+          </h2>
+
+          <p class="text-lg text-[#2D2E2E] leading-relaxed mb-6">
+            Albyn Swim Academy Ltd was founded with a clear mission — to equip
+            individuals of all ages with essential swimming skills while
+            promoting water safety across Nigeria. Recognizing the growing need
+            for structured swimming education, we created a supportive
+            environment where babies, children, and adults can learn confidently
+            at their own pace.
+          </p>
+
+          <p class="text-lg text-[#2D2E2E] leading-relaxed mb-6">
+            Based in Abuja, our academy offers year-round lessons in heated
+            indoor pools, guided by professionally trained instructors. We focus
+            not only on technique but also on building confidence, discipline,
+            and lifelong fitness habits.
+          </p>
+
+          <p class="text-lg text-[#2D2E2E] leading-relaxed">
+            Today, Albyn Swim Academy continues to impact lives by helping
+            learners overcome fear, develop strength, and gain life-saving
+            skills that stay with them forever.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-[#f8fafc] md:px-[80px]">
+      <div class="px-6 max-w-6xl mx-auto text-center">
+        <!-- Heading -->
+        <h2 class="text-3xl md:text-4xl font-bold text-[#b32138] mb-6">
+          Our Purpose
+        </h2>
+
+        <p class="max-w-2xl mx-auto text-lg text-[#2D2E2E] mb-14">
+          Our mission is to reduce drowning incidents and build confident
+          swimmers by providing high-quality instruction, water safety
+          awareness, and a supportive learning environment for people of all
+          ages.
+        </p>
+
+        <!-- Cards -->
+        <div>
+          <div
+            id="testimonial-carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-6 scrollbar-none touch-pan-x px-2 sm:px-4 md:px-0"
+          >
+            <!-- Card 1 -->
+            <div
+               class="flex-shrink-0 snap-center w-full max-w-[320px] md:w-auto md:min-w-[380px] bg-[#f8fafc] p-6 rounded-2xl shadow hover:shadow-md flex flex-col"
+
+            >
+              <div class="text-4xl mb-4 text-[#b32138]">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-[#2D2E2E]">
+                Water Safety First
+              </h3>
+              <p class="text-[#555] text-sm leading-relaxed">
+                We teach essential safety skills that help prevent drowning and
+                prepare swimmers to respond confidently in water environments.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+               class="flex-shrink-0 snap-center w-full max-w-[320px] md:w-auto md:min-w-[380px] bg-[#f8fafc] p-6 rounded-2xl shadow hover:shadow-md flex flex-col"
+
+            >
+              <div class="text-4xl mb-4 text-[#b32138]">
+                <i class="fa-solid fa-person-swimming"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-[#2D2E2E]">
+                Confidence Through Learning
+              </h3>
+              <p class="text-[#555] text-sm leading-relaxed">
+                Our structured programs help swimmers overcome fear, improve
+                ability, and build confidence at every stage of their journey.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="flex-shrink-0 snap-center w-full max-w-[320px] md:w-auto md:min-w-[380px] bg-[#f8fafc] p-6 rounded-2xl shadow hover:shadow-md flex flex-col"
+
+            >
+              <div class="text-4xl mb-4 text-[#b32138]">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-[#2D2E2E]">
+                Saving Lives Through Education
+              </h3>
+              <p class="text-[#555] text-sm leading-relaxed">
+                By teaching swimming and awareness, we aim to reduce drowning
+                rates and create safer communities across Nigeria.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dots -->
+          <div
+            id="testimonial-dots"
+            class="flex lg:hidden justify-center mt-6 gap-2"
+          >
+            <span
+              data-index="0"
+              class="dot w-3 h-3 bg-gray-400 rounded-full"
+            ></span>
+            <span
+              data-index="1"
+              class="dot w-3 h-3 bg-gray-400 rounded-full"
+            ></span>
+            <span
+              data-index="2"
+              class="dot w-3 h-3 bg-gray-400 rounded-full"
+            ></span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--  -->
-    <section class="px-6 py-16 md:px-[80px] space-y-6 bg-[#f8fafc]">
-        <h2 class="text-[30px] font-semibold text-[#b32138] text-center">
-            Meet Our Team
-        </h2>
-        <p class="max-w-3xl text-[18px] mx-auto text-center leading-relaxed text-[#2D2E2E]">
-            We employ professional swimming instructors to help learners with all
-            aspects of swimming and water safety. All our tutors are professionally
-            trained and accredited by Starfish Aquatics Institute (SAI), and we work
-            closely with learners to understand their needs and help them make
-            progress.
+    <section
+      class="px-6 flex lg:flex-row flex-col gap-6 py-16 md:px-[80px] space-y-6 bg-[#f8fafc] items-center"
+    >
+      <div class="flex flex-col gap-4">
+        <h2 class="text-[30px] font-semibold text-[#b32138]">Meet Our Team</h2>
+        <p
+          class="max-w-3xl text-[18px] mx-auto leading-relaxed text-[#2D2E2E] lg:pe-10"
+        >
+          We employ professional swimming instructors to help learners with all
+          aspects of swimming and water safety. All our tutors are
+          professionally trained and accredited by Starfish Aquatics Institute
+          (SAI), and we work closely with learners to understand their needs and
+          help them make progress.
         </p>
+      </div>
 
-        <div class="flex flex-col md:flex-row mx-auto text-center items-center">
-            <img src="/assets/img/teams.jpg" alt="Albyn Swim Academy Team" class="w-100 object-cover rounded-md" width="100%" />
-        </div>
+      <div class="flex flex-col md:flex-row mx-auto text-center items-center">
+        <img
+          src="/assets/img/teams.jpg"
+          alt="Albyn Swim Academy Team"
+          class="w-100 object-cover rounded-md"
+          width="100%"
+        />
+      </div>
     </section>
 
-    <section class="py-16 px-6 text-center">
-        <h2 class="text-[30px] font-semibold text-[#ffff] text-center">
-            Our Purpose
-        </h2>
-        <p class="max-w-3xl text-[18px] mx-auto text-center text-[#019aff] leading-relaxed">
-            The main purpose of starting Albyn Swim Academy Ltd is to cut back the
-            death rate from people drowning. Nigeria is one of the top 50 countries
-            on the planet for deaths caused by drowning. At our school, we teach
-            babies, children, and adults to swim with an emphasis on water safety,
-            thereby reducing the number of inexperienced swimmers and, in turn,
-            lowering the death rate in the country.
-        </p>
-    </section>
+    <!-- <section class="py-16 px-6 text-center">
+      <h2 class="text-[30px] font-semibold text-[#ffff] text-center">
+        Our Purpose
+      </h2>
+      <p
+        class="max-w-3xl text-[18px] mx-auto text-center text-[#019aff] leading-relaxed"
+      >
+        The main purpose of starting Albyn Swim Academy Ltd is to cut back the
+        death rate from people drowning. Nigeria is one of the top 50 countries
+        on the planet for deaths caused by drowning. At our school, we teach
+        babies, children, and adults to swim with an emphasis on water safety,
+        thereby reducing the number of inexperienced swimmers and, in turn,
+        lowering the death rate in the country.
+      </p>
+    </section> -->
 
     <!--  -->
     <section class="campaigns bg-[#f5f7fa] py-16">
-        <div class="container mx-auto text-center px-6">
-            <h2 class="text-[30px] font-semibold text-[#b32138] mb-6">
-                Our Campaigns
-            </h2>
-            <p class="max-w-2xl text-[18px] mx-auto mb-12 text-[#2D2E2E]">
-                As part of our initiative to raise awareness of the benefits of
-                learning to swim, Albyn Swim Academy Ltd is running several campaigns
-                to reach out to communities in Abuja and the surrounding areas in
-                Nigeria. Together, we can prevent drowning incidents and save lives.
-                Get in touch today to find out how you can help us achieve our
-                mission.
+      <div class="container mx-auto text-center px-6">
+        <h2 class="text-[30px] font-semibold text-[#b32138] mb-6">
+          Our Campaigns
+        </h2>
+        <p class="max-w-2xl text-[18px] mx-auto mb-12 text-[#2D2E2E]">
+          As part of our initiative to raise awareness of the benefits of
+          learning to swim, Albyn Swim Academy Ltd is running several campaigns
+          to reach out to communities in Abuja and the surrounding areas in
+          Nigeria. Together, we can prevent drowning incidents and save lives.
+          Get in touch today to find out how you can help us achieve our
+          mission.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <h3 class="text-xl font-bold text-[#84a3c0] mb-3">
+              Water Safety Awareness
+            </h3>
+            <p class="text-[#2D2E2E] text-sm">
+              Teaching children and adults lifesaving water skills through
+              workshops and local events.
             </p>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <h3 class="text-xl font-bold text-[#84a3c0] mb-3">
-                        Water Safety Awareness
-                    </h3>
-                    <p class="text-[#2D2E2E] text-sm">
-                        Teaching children and adults lifesaving water skills through
-                        workshops and local events.
-                    </p>
-                </div>
-                <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <h3 class="text-xl font-bold text-[#84a3c0] mb-3">
-                        Community Outreach
-                    </h3>
-                    <p class="text-[#2D2E2E] text-sm">
-                        Partnering with schools and organizations to bring swimming
-                        education to underserved communities.
-                    </p>
-                </div>
-                <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition">
-                    <h3 class="text-xl font-bold text-[#84a3c0] mb-3">
-                        Inclusive Training
-                    </h3>
-                    <p class="text-[#2D2E2E] text-sm">
-                        Promoting inclusivity in swimming by providing accessible programs
-                        for people of all ages and abilities.
-                    </p>
-                </div>
-            </div>
-
-            <a href="/contact-us/#register"
-                class="mt-10 inline-block bg-[#b32138] text-white px-8 py-3 rounded-full font-medium hover:bg-[#9b1d31] transition">
-                Join Our Campaigns
-            </a>
+          </div>
+          <div
+            class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <h3 class="text-xl font-bold text-[#84a3c0] mb-3">
+              Community Outreach
+            </h3>
+            <p class="text-[#2D2E2E] text-sm">
+              Partnering with schools and organizations to bring swimming
+              education to underserved communities.
+            </p>
+          </div>
+          <div
+            class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <h3 class="text-xl font-bold text-[#84a3c0] mb-3">
+              Inclusive Training
+            </h3>
+            <p class="text-[#2D2E2E] text-sm">
+              Promoting inclusivity in swimming by providing accessible programs
+              for people of all ages and abilities.
+            </p>
+          </div>
         </div>
+
+        <a
+          href="/contact-us/#register"
+          class="mt-10 inline-block bg-[#b32138] text-white px-8 py-3 rounded-full font-medium hover:bg-[#9b1d31] transition"
+        >
+          Join Our Campaigns
+        </a>
+      </div>
     </section>
     <!--  -->
 
-    <section class="bg-white py-20 md:px-[80px]">
-        <div class="px-6 text-center">
-            <h2 class="text-[30px] font-semibold text-[#b32138] text-center">
-                What Our Learners Say
-            </h2>
-            <p class="max-w-2xl text-[18px] mx-auto mb-12 text-[#2D2E2E]">
-                Hear from some of our amazing learners who’ve built confidence,
-                fitness, and life-saving skills through our swimming programs.
-            </p>
+    <section class="bg-white py-20 px-6 md:px-20">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#b32138] mb-4">
+          What Our Learners Say
+        </h2>
+        <p class="text-lg text-gray-700 mb-12">
+          Hear from our amazing learners who’ve gained confidence, fitness, and
+          life-saving skills through our swimming programs.
+        </p>
 
-            <div class="grid grid-row-3 md:grid-cols-3 gap-8">
-                <div class="bg-[#f8fafc] p-6 rounded-2xl shadow-sm hover:shadow-md">
-                    <p class="text-[#2D2E2E] mb-4">
-                        “The coaches are patient and professional. I went from being
-                        scared of water to confidently swimming across the pool”
-                    </p>
-
-                    <div>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                    </div>
-                    <h4 class="text-[#b32138] font-semibold">~John Doe</h4>
+        <!-- Carousel wrapper -->
+        <div class="relative">
+          <div
+            id="testimonial-carousel"
+            class="flex overflow-x-auto snap-x snap-mandatory gap-6 scrollbar-none touch-pan-x px-2 sm:px-4 md:px-0"
+          >
+            <!-- Card 1 -->
+            <div
+              class="flex-shrink-0 snap-center w-[90%] max-w-[320px] md:w-auto md:min-w-[380px] bg-[#f8fafc] p-6 rounded-2xl shadow hover:shadow-md flex flex-col"
+            >
+              <p class="text-gray-800 mb-4 flex-1">
+                “Professional service, clean environment and good value. Swim
+                instructors communicate professionally and cordially, and the
+                kids enjoy their lessons. Warm pool, convenient change rooms,
+                and a viewing deck for friends and family. Abuja is blessed to
+                have Albyn Swim Academy.”
+              </p>
+              <div class="flex items-center mb-4">
+                <div class="flex gap-1 text-[#FDB241]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
-
-                <div class="bg-[#f8fafc] p-6 rounded-2xl shadow-sm hover:shadow-md">
-                    <p class="text-[#2D2E2E] mb-4">
-                        “The coaches are patient and professional. I went from being
-                        scared of water to confidently swimming across the pool”
-                    </p>
-
-                    <div>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                    </div>
-                    <h4 class="text-[#b32138] font-semibold">~John Doe</h4>
-                </div>
-
-                <div class="bg-[#f8fafc] p-6 rounded-2xl shadow-sm hover:shadow-md">
-                    <p class="text-[#2D2E2E] mb-4">
-                        “The coaches are patient and professional. I went from being
-                        scared of water to confidently swimming across the pool”
-                    </p>
-
-                    <div>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                        <i class="fa-solid fa-star text-[#FFD700]"></i>
-                    </div>
-                    <h4 class="text-[#b32138] font-semibold">~John Doe</h4>
-                </div>
+              </div>
+              <div class="flex items-center mt-auto">
+                <img
+                  src="/assets/reviews/Tinyan_Ogiehor.png"
+                  alt="Tinyan Ogiehor"
+                  class="w-10 h-10 rounded-full mr-3"
+                />
+                <p class="font-semibold text-gray-900">Tinyan Ogiehor</p>
+              </div>
             </div>
+
+            <!-- Card 2 -->
+            <div
+              class="flex-shrink-0 snap-center w-[90%] max-w-[320px] md:w-auto md:min-w-[380px] bg-[#f8fafc] p-6 rounded-2xl shadow hover:shadow-md flex flex-col"
+            >
+              <p class="text-gray-800 mb-4 flex-1">
+                “Lovely and coordinated place to learn swimming for adults and
+                kids. Every part of the facility is on point. You can also host
+                a pool party here. There's a stationed ambulance and trained
+                lifeguards. Highly recommended.”
+              </p>
+              <div class="flex items-center mb-4">
+                <div class="flex gap-1 text-[#FDB241]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="flex items-center mt-auto">
+                <img
+                  src="/assets/reviews/Manarisia_Irozuoke.png"
+                  alt="Manarisia Irozuoke"
+                  class="w-10 h-10 rounded-full mr-3"
+                />
+                <p class="font-semibold text-gray-900">Manarisia Irozuoke</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="flex-shrink-0 snap-center w-[90%] max-w-[320px] md:w-auto md:min-w-[380px] bg-[#f8fafc] p-6 rounded-2xl shadow hover:shadow-md flex flex-col"
+            >
+              <p class="text-gray-800 mb-4 flex-1">
+                “My children are always excited to go swimming. Very good
+                experience for me and them. Professionalism isn't taken for
+                granted there. Well done 👋👋👋”
+              </p>
+              <div class="flex items-center mb-4">
+                <div class="flex gap-1 text-[#FDB241]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="flex items-center mt-auto">
+                <img
+                  src="/assets/reviews/Paul_Uchidiuno.png"
+                  alt="Paul Uchidiuno"
+                  class="w-10 h-10 rounded-full mr-3"
+                />
+                <p class="font-semibold text-gray-900">Paul Uchidiuno</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dots for mobile/tablet -->
+          <div
+            id="testimonial-dots"
+            class="flex lg:hidden justify-center mt-6 gap-2"
+          >
+            <span
+              data-index="0"
+              class="dot w-3 h-3 bg-gray-400 rounded-full"
+            ></span>
+            <span
+              data-index="1"
+              class="dot w-3 h-3 bg-gray-400 rounded-full"
+            ></span>
+            <span
+              data-index="2"
+              class="dot w-3 h-3 bg-gray-400 rounded-full"
+            ></span>
+          </div>
         </div>
+
+        <div class="mt-10">
+          <a
+            href="https://www.google.com/search?sca_esv=6632657489d50d73&hl=en-NG&sxsrf=ANbL-n4t07CRBmp6t7g7ERnE5EvzkScPCw:1769975600885&q=albyn+swim+academy&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOdlDIFO3FjqjaEvDyzhHf8pNOn5HjMHhwBkNbAE9qilkciB-1Bw7NB7R45bJQclGhiOS0bvJKs2Dt_cocHqFgjizQFNJI0HrEw-8SWISn2AERRL1GA%3D%3D&sa=X&ved=2ahUKEwintc73iLmSAxWmT0EAHbGGIzQQrrQLegQIHBAA"
+            rel="noopener"
+            target="_blank"
+            class="inline-block bg-[#b32138] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#9b1d31] transition"
+          >
+            Check All Reviews
+          </a>
+        </div>
+      </div>
     </section>
+
+    <!-- Extra Tailwind for smooth scrolling and hide scrollbar -->
+    <style>
+      .scrollbar-none::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-none {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
 
     <!-- Our Board of Directors  -->
     <section class="py-12 bg-white sm:py-16 lg:py-20" hidden>
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Our Investors & Board of
-                    Directors</h2>
-            </div>
-
-            <div
-                class="grid max-w-6xl grid-cols-1 px-20 mx-auto mt-12 text-center sm:px-0 sm:grid-cols-2 md:mt-20 gap-x-8 md:grid-cols-4 gap-y-12 lg:gap-x-16 xl:gap-x-20">
-                <div>
-                    <img class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter"
-                        src="/assets/img/rosaline.jpg" alt="Rosaline" />
-                    <p class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Rosaline Ogala Ogbechie
-                    </p>
-                    <p class="mt-2 text-base font-normal text-gray-600 font-pj">Co founder, Chairman, Executive Director
-                    </p>
-                </div>
-
-                <div>
-                    <img class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter"
-                        src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-2.png" alt="" />
-                    <p class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Justina Victor-Akohi</p>
-                    <p class="mt-2 text-base font-normal text-gray-600 font-pj">Co founder, Chairman, Executive Director
-                    </p>
-                </div>
-
-                <div>
-                    <img class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter"
-                        src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-3.png" alt="" />
-                    <p class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                    <p class="mt-2 text-base font-normal text-gray-600 font-pj">Co founder, Chairman, Executive Director
-                    </p>
-                </div>
-
-                <div>
-                    <img class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter"
-                        src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-4.png" alt="" />
-                    <p class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                    <p class="mt-2 text-base font-normal text-gray-600 font-pj">Co founder, Chairman, Executive Director
-                    </p>
-                </div>
-            </div>
-
-            <div class="mt-12 sm:mt-16">
-                <svg class="w-auto h-4 mx-auto text-gray-300" viewBox="0 0 172 16" fill="none" stroke="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 81 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 116 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 151 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 18 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 53 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 88 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 123 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 158 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 25 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 60 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 95 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 130 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 165 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 32 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 67 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 102 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 137 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 172 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 39 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)" />
-                    <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)" />
-                </svg>
-            </div>
-
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2
+            class="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj"
+          >
+            Our Investors & Board of Directors
+          </h2>
         </div>
-    </section>
 
+        <div
+          class="grid max-w-6xl grid-cols-1 px-20 mx-auto mt-12 text-center sm:px-0 sm:grid-cols-2 md:mt-20 gap-x-8 md:grid-cols-4 gap-y-12 lg:gap-x-16 xl:gap-x-20"
+        >
+          <div>
+            <img
+              class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter"
+              src="/assets/img/rosaline.jpg"
+              alt="Rosaline"
+            />
+            <p
+              class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj"
+            >
+              Rosaline Ogala Ogbechie
+            </p>
+            <p class="mt-2 text-base font-normal text-gray-600 font-pj">
+              Co founder, Chairman, Executive Director
+            </p>
+          </div>
+
+          <div>
+            <img
+              class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter"
+              src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-2.png"
+              alt=""
+            />
+            <p
+              class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj"
+            >
+              Justina Victor-Akohi
+            </p>
+            <p class="mt-2 text-base font-normal text-gray-600 font-pj">
+              Co founder, Chairman, Executive Director
+            </p>
+          </div>
+
+          <div>
+            <img
+              class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter"
+              src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-3.png"
+              alt=""
+            />
+            <p
+              class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj"
+            >
+              Jerome Bell
+            </p>
+            <p class="mt-2 text-base font-normal text-gray-600 font-pj">
+              Co founder, Chairman, Executive Director
+            </p>
+          </div>
+
+          <div>
+            <img
+              class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter"
+              src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-4.png"
+              alt=""
+            />
+            <p
+              class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj"
+            >
+              Jerome Bell
+            </p>
+            <p class="mt-2 text-base font-normal text-gray-600 font-pj">
+              Co founder, Chairman, Executive Director
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 sm:mt-16">
+          <svg
+            class="w-auto h-4 mx-auto text-gray-300"
+            viewBox="0 0 172 16"
+            fill="none"
+            stroke="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 81 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 116 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 151 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 18 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 53 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 88 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 123 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 158 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 25 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 60 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 95 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 130 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 165 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 32 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 67 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 102 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 137 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 172 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 39 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)"
+            />
+            <line
+              y1="-0.5"
+              x2="18.0278"
+              y2="-0.5"
+              transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
 
     <!-- =====================
         AFFILIATIONS SECTION
         ====================== -->
     <section class="bg-[#f8fafc] py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-[30px] font-semibold text-[#b32138] mb-6">
-                Our Affiliations
-            </h2>
-            <p class="text-[#2D2E2E] max-w-2xl mx-auto mb-12">
-                We’re proud to be connected with trusted organizations that share our
-                passion for water safety, professional training, and global swimming
-                standards.
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-[30px] font-semibold text-[#b32138] mb-6">
+          Our Affiliations
+        </h2>
+        <p class="text-[#2D2E2E] max-w-2xl mx-auto mb-12">
+          We’re proud to be connected with trusted organizations that share our
+          passion for water safety, professional training, and global swimming
+          standards.
+        </p>
+
+        <!-- Cards -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+          <!-- Swimkidz SA -->
+          <div
+            class="bg-white rounded-2xl shadow-sm hover:shadow-md border-t-4 border-[#84a3c0] p-6"
+          >
+            <h3 class="text-xl font-semibold text-[#84a3c0] mb-3">
+              Swimkidz SA
+            </h3>
+            <p class="text-[#2D2E2E] text-sm leading-relaxed">
+              Established in 2006, SwimkidzSA trains babies, kids, and adult
+              learners with swimming lessons throughout South Africa.
+              Specialising in early learning, they offer a variety of lessons,
+              from the 'Learn to Swim' program to advanced swimming lessons.
+              With more than 10 years of experience, our sister company caters
+              to all ages.
             </p>
+          </div>
 
-            <!-- Cards -->
-            <div class="grid md:grid-cols-2 gap-8 mb-16">
-                <!-- Swimkidz SA -->
-                <div class="bg-white rounded-2xl shadow-sm hover:shadow-md border-t-4 border-[#84a3c0] p-6">
-                    <h3 class="text-xl font-semibold text-[#84a3c0] mb-3">
-                        Swimkidz SA
-                    </h3>
-                    <p class="text-[#2D2E2E] text-sm leading-relaxed">
-                        Established in 2006, SwimkidzSA trains babies, kids, and adult
-                        learners with swimming lessons throughout South Africa.
-                        Specialising in early learning, they offer a variety of lessons,
-                        from the 'Learn to Swim' program to advanced swimming lessons.
-                        With more than 10 years of experience, our sister company caters
-                        to all ages.
-                    </p>
-                </div>
-
-                <!-- Aquatic Federation of Nigeria -->
-                <div class="bg-white rounded-2xl shadow-sm hover:shadow-md border-t-4 border-[#b32138] p-6">
-                    <h3 class="text-xl font-semibold text-[#b32138] mb-3">
-                        Aquatic Federation of Nigeria
-                    </h3>
-                    <p class="text-[#2D2E2E] text-sm leading-relaxed">
-                        As members of the Aquatic Federation of Nigeria, we work to
-                        enhance water safety and improve the image of swimming in the
-                        country.
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap justify-center items-center gap-10">
-                <img src="/assets/Img/SAI.png" alt="SAI" class="h-16" />
-                <img src="/assets/img/FINA.webp" alt="FINA" class="h-16" />
-                <img src="/assets/img/NAqF.png" alt="NAQF" class="h-16" />
-                <img src="/assets/img/SWIMKIDZ.png" alt="Swimkidz" class="h-16" />
-            </div>
+          <!-- Aquatic Federation of Nigeria -->
+          <div
+            class="bg-white rounded-2xl shadow-sm hover:shadow-md border-t-4 border-[#b32138] p-6"
+          >
+            <h3 class="text-xl font-semibold text-[#b32138] mb-3">
+              Aquatic Federation of Nigeria
+            </h3>
+            <p class="text-[#2D2E2E] text-sm leading-relaxed">
+              As members of the Aquatic Federation of Nigeria, we work to
+              enhance water safety and improve the image of swimming in the
+              country.
+            </p>
+          </div>
         </div>
+
+        <div class="flex flex-wrap justify-center items-center gap-10">
+          <img src="/assets/Img/SAI.png" alt="SAI" class="h-16" />
+          <img src="/assets/img/FINA.webp" alt="FINA" class="h-16" />
+          <img src="/assets/img/NAqF.png" alt="NAQF" class="h-16" />
+          <img src="/assets/img/SWIMKIDZ.png" alt="Swimkidz" class="h-16" />
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="py-10 text-white px-6 md:px-[80px]">
-        <div class="grid md:grid-cols-4 gap-10">
-            <div class="">
-                <h3 class="text-lg font-semibold mb-3">Albyn Swim Academy</h3>
-                <p class="text-sm leading-relaxed">
-                    Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5, Accra street
-                    Park 1, Abuja FCT, Abuja, Nigeria
-                </p>
-            </div>
-
-            <div>
-                <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="/" class="hover:underline">Home</a></li>
-                    <li><a href="/about/" class="hover:underline">About</a></li>
-                    <li><a href="/gallery/" class="hover:underline">Gallery</a></li>
-                    <li>
-                        <a href="/packages/" class="hover:underline">Packages</a>
-                    </li>
-                    <li>
-                        <a href="/contact/" class="hover:underline">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-lg font-semibold mb-3">Socials</h3>
-                <div class="flex gap-4 mt-6">
-                    <a target="_blank" rel="noopener" href="https://wa.me/+2349132325923"
-                        class="text-[#ffffff] hover:text-[#b32138]" aria-label="Chat with us on WhatsApp"
-                        title="Chat with us on WhatsApp">
-                        <i class="fa-brands fa-whatsapp text-2xl"></i>
-                    </a>
-                    <a target="_blank" rel="noopener" href="https://www.instagram.com/albynswimacademyng/"
-                        class="text-[#ffffff] hover:text-[#b32138]" aria-label="Follow us on Instagram"
-                        title="Follow us on Instagram">
-                        <i class="fa-brands fa-instagram text-2xl"></i>
-                    </a>
-                    <a target="_blank" rel="noopener" href="https://www.facebook.com/learn2swimlearn2live"
-                        class="text-[#ffffff] hover:text-[#b32138]" aria-label="Like us on Facebook"
-                        title="Like us on Facebook">
-                        <i class="fa-brands fa-facebook text-2xl"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-lg font-semibold mb-3">Business Hours</h3>
-                <ul class="text-sm space-y-2">
-                    <li>Monday - Tuesday Closed</li>
-                    <li>Wednesday - Saturday 09:00 AM - 07:00 PM</li>
-                    <li>Sunday 10:30 AM - 07:00 PM</li>
-                </ul>
-            </div>
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="">
+          <h3 class="text-lg font-semibold mb-3">Albyn Swim Academy</h3>
+          <p class="text-sm leading-relaxed">
+            Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5, Accra street
+            Park 1, Abuja FCT, Abuja, Nigeria
+          </p>
         </div>
-        <div class="mt-6 text-center border-t border-[#ffffff] text-[14px] opacity-80 pt-6">
-            © 2025 Albyn Swim Academy. All rights reserved.
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/" class="hover:underline">Home</a></li>
+            <li><a href="/about/" class="hover:underline">About</a></li>
+            <li><a href="/gallery/" class="hover:underline">Gallery</a></li>
+            <li>
+              <a href="/packages/" class="hover:underline">Packages</a>
+            </li>
+            <li>
+              <a href="/contact/" class="hover:underline">Contact Us</a>
+            </li>
+          </ul>
         </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Socials</h3>
+          <div class="flex gap-4 mt-6">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://wa.me/+2349132325923"
+              class="text-[#ffffff] hover:text-[#b32138]"
+              aria-label="Chat with us on WhatsApp"
+              title="Chat with us on WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/albynswimacademyng/"
+              class="text-[#ffffff] hover:text-[#b32138]"
+              aria-label="Follow us on Instagram"
+              title="Follow us on Instagram"
+            >
+              <i class="fa-brands fa-instagram text-2xl"></i>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.facebook.com/learn2swimlearn2live"
+              class="text-[#ffffff] hover:text-[#b32138]"
+              aria-label="Like us on Facebook"
+              title="Like us on Facebook"
+            >
+              <i class="fa-brands fa-facebook text-2xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Business Hours</h3>
+          <ul class="text-sm space-y-2">
+            <li>Monday - Tuesday Closed</li>
+            <li>Wednesday - Saturday 09:00 AM - 07:00 PM</li>
+            <li>Sunday 10:30 AM - 07:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="mt-6 text-center border-t border-[#ffffff] text-[14px] opacity-80 pt-6"
+      >
+        © 2025 Albyn Swim Academy. All rights reserved.
+      </div>
     </footer>
 
     <script type="text/javascript" src="/assets/js/ui.js"></script>
     <script type="text/javascript" src="/assets/js/tailwind.js"></script>
-    <script src="https://kit.fontawesome.com/10a4a9bf8b.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/10a4a9bf8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="/assets/js/main.js"></script>
+  </body>
 </html>
