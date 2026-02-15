@@ -110,7 +110,8 @@ header{
 .hero-section .carousel,
 .hero-section .carousel-inner,
 .hero-section .carousel-item {
-    height: 100%;
+    height: auto;
+    object-fit: contain;
 }
 .hero-section .carousel-item img {
     width: 100%;
