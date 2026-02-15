@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="aqua">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Programs - Albyn Swim Academy </title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Premium swimming academy with elite coaching and world‑class facilities." />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
 
   <!-- Tailwind via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-  <!-- DaisyUI full CSS (works with CDN Tailwind) -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
-
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <script src="https://kit.fontawesome.com/10a4a9bf8b.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/theme.css">
-  <!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet" />
+  <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAlex+Brush%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.6.4' media='all' />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
                 <div class="flex items-center justify-between h-16">
                     <!-- LOGO -->
                     <a href="/" class="w-36">
-                        <img src="assets/img/logo.png" alt="logo">
+                        <img src="/assets/img/logo.png" alt="logo">
                     </a>
                     <!-- DESKTOP MENU -->
                     <div class="hidden md:flex items-center gap-10 font-medium text-brand-900">
@@ -129,33 +130,24 @@
     </section>
     <!-- NAVIGATION -->
 
-  <section class="level-charts-hero pt-24 vh-100 relative flex items-center justify-center bg-primary" data-theme="cupcake">
-    <div class="hero-content text-center py-24">
-      <div class="max-w-4xl px-6 md:px-0 text-light">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Swimming Level Charts</h1>
-        <p class="text-lg md:text-xl mb-6">
-          Give your baby, child, or yourself the lifelong gift of confident swimming in our heated indoor pools right here in Abuja. 
-          Our state-of-the-art facility offers personalized lessons for all ages, running Monday to Sunday, all year round, so progress never pauses.
-        </p>
-      </div>
-    </div>
+  <section class="level-charts-hero relative flex items-center justify-center">
   </section>
 
   <!-- LEVEL CHARTS SECTION -->
-  <section class="bg-[#f8fafc]">
+  <section class="">
     <div class="py-16 px-6 md:px-[80px] text-center">
       <div class="text-center mb-10">
         <h2 class="text-4xl font-bold text-[#b32138] mb-2">Level Charts</h2>
-        <p class="text-[#444] text-base max-w-2xl mx-auto">
+        <p class="text-[#444] text-lg max-w-xl mx-auto">
           Our swimming levels are structured to help swimmers progress
-          confidently, step by step — from babies to adults mastering advanced
+          confidently, step by step, from babies to adults mastering advanced
           aquatic skills.
         </p>
       </div>
 
-      <div
-        class="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 scrollbar-hide">
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#b32138] mb-2">
             Level 1.1 – Seahorse
           </h3>
@@ -167,7 +159,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#84a3c0] mb-2">
             Level 1.2 – Starfish
           </h3>
@@ -179,7 +171,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#b32138] mb-2">
             Level 1.3 – Sea Turtle
           </h3>
@@ -191,7 +183,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#84a3c0] mb-2">
             Level 1.4 – Seal
           </h3>
@@ -203,7 +195,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#b32138] mb-2">
             Level 2 – Fish
           </h3>
@@ -215,7 +207,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#84a3c0] mb-2">
             Level 3 – Penguin
           </h3>
@@ -227,7 +219,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#b32138] mb-2">
             Level 4 – Dolphin
           </h3>
@@ -239,7 +231,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#84a3c0] mb-2">
             Level 5 – Whale
           </h3>
@@ -251,7 +243,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#b32138] mb-2">
             Level 6 – Bronze Submarine
           </h3>
@@ -263,7 +255,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#84a3c0] mb-2">
             Level 7 – Silver Submarine
           </h3>
@@ -275,7 +267,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#b32138] mb-2">
             Level 8 – Gold Submarine
           </h3>
@@ -287,7 +279,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#84a3c0] mb-2">
             Level 9 – Diamond Submarine
           </h3>
@@ -299,7 +291,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#b32138] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#b32138] mb-2">
             Level 10 – Emerald Snorkel
           </h3>
@@ -311,7 +303,7 @@
           </div>
         </div>
 
-        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0]">
+        <div class="min-w-[85%] md:min-w-0 snap-start bg-white rounded-2xl shadow-md p-6 border-t-4 border-[#84a3c0] hover:w-[100%] transition ease-linear">
           <h3 class="text-xl font-bold text-[#84a3c0] mb-2">
             Level 11 – Ruby Aquatic
           </h3>
@@ -322,6 +314,7 @@
             Goal: Learn safety, awareness, and rescue skills.
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -329,148 +322,148 @@
 
   <!-- FOOTER -->
   <section class="footer bg-black">
-      <footer class=" text-white pt-16 pb-8">
+    <footer class=" text-white pt-16 pb-8">
 
-          <div class="container mx-auto px-6">
+        <div class="container mx-auto px-6">
 
-              <div class="grid md:grid-cols-4 gap-10"
-                  data-aos="fade-up"
-                  data-aos-duration="900">
+            <div class="grid md:grid-cols-4 gap-10"
+                data-aos="fade-up"
+                data-aos-duration="900">
 
-                  <!-- BRAND -->
-                  <div>
-                      <img src="/assets/img/logo.png"
-                          class="w-40 mb-4"
-                          alt="Albyn Swim Academy">
+                <!-- BRAND -->
+                <div>
+                    <img src="/assets/img/logo.png"
+                        class="w-40 mb-4"
+                        alt="Albyn Swim Academy">
 
-                      <p class="text-sm text-gray-300 leading-relaxed">
-                          We are a private Swim academy with an indoor heated pool that teaches water safety and survival skills and learning to swim from babies 6 months old to adults of all ages.
-                      </p>
-                  </div>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        We are a private Swim academy with an indoor heated pool that teaches water safety and survival skills and learning to swim from babies 6 months old to adults of all ages.
+                    </p>
+                </div>
 
-                  <!-- QUICK LINKS -->
-                  <div class="">
-                      <h4 class="footer-title">Quick Links</h4>
+                <!-- QUICK LINKS -->
+                <div class="">
+                    <h4 class="footer-title">Quick Links</h4>
 
-                      <ul class="space-y-3 text-gray-300">
-                          <li><a href="/" class="footer-link">Home</a></li>
-                          <li><a href="/about-us/" class="footer-link">About Us</a></li>
-                          <li><a href="/programs/" class="footer-link">Programs</a></li>
-                          <li><a href="/level-charts/" class="footer-link">Level Charts</a></li>
-                          <li><a href="/contact-us/" class="footer-link">Contact</a></li>
-                      </ul>
-                  </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/about-us/" class="footer-link">About Us</a></li>
+                        <li><a href="/programs/" class="footer-link">Programs</a></li>
+                        <li><a href="/level-charts/" class="footer-link">Level Charts</a></li>
+                        <li><a href="/contact-us/" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
 
-                  <!-- PROGRAMS -->
-                  <div class="">
-                      <h4 class="footer-title">Our Programs</h4>
+                <!-- PROGRAMS -->
+                <div class="">
+                    <h4 class="footer-title">Our Programs</h4>
 
-                      <ul class="space-y-3 text-gray-300">
-                          <li><a href="#" class="footer-link">Toddler Swimming</a></li>
-                          <li><a href="#" class="footer-link">Kids Swimming</a></li>
-                          <li><a href="#" class="footer-link">Adult Lessons</a></li>
-                          <li><a href="#" class="footer-link">Private Coaching</a></li>
-                          <li><a href="#" class="footer-link">Competitive Training</a></li>
-                      </ul>
-                  </div>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="footer-link">Toddler Swimming</a></li>
+                        <li><a href="#" class="footer-link">Kids Swimming</a></li>
+                        <li><a href="#" class="footer-link">Adult Lessons</a></li>
+                        <li><a href="#" class="footer-link">Private Coaching</a></li>
+                        <li><a href="#" class="footer-link">Competitive Training</a></li>
+                    </ul>
+                </div>
 
-                  <!-- CONTACT -->
-                  <div>
-                      <h4 class="footer-title">Contact Us</h4>
+                <!-- CONTACT -->
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
 
-                      <ul class="space-y-3 text-gray-300 text-sm">
-                          <li>📍 Zone 5, Sports Park, Accra St, Park 1, Wuse, Abuja 904101, Federal Capital Territory</li>
-                          <li>📞 +234 913 232 5923</li>
-                          <li>✉️ info@albynswimacademy.com</li>
-                      </ul>
+                    <ul class="space-y-3 text-gray-300 text-sm">
+                        <li>📍 Zone 5, Sports Park, Accra St, Park 1, Wuse, Abuja 904101, Federal Capital Territory</li>
+                        <li>📞 +234 913 232 5923</li>
+                        <li>✉️ info@albynswimacademy.com</li>
+                    </ul>
 
-                      <!-- SOCIALS -->
-                      <div class="flex gap-4 mt-6">
+                    <!-- SOCIALS -->
+                    <div class="flex gap-4 mt-6">
 
-                          <a href="#" class="social-icon">
-                              <i class="fab fa-facebook-f"></i>
-                          </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
 
-                          <a href="#" class="social-icon">
-                              <i class="fab fa-instagram"></i>
-                          </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
 
-                          <a href="#" class="social-icon">
-                              <i class="fab fa-youtube"></i>
-                          </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
 
-                      </div>
-                  </div>
+                    </div>
+                </div>
 
-              </div>
+            </div>
 
-              <!-- BOTTOM BAR -->
-              <div class="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-400">
-                  © 2026 Albyn Swim Academy. All rights reserved.
-              </div>
-          </div>
-      </footer>
-    </section>
+            <!-- BOTTOM BAR -->
+            <div class="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-400">
+                © 2026 Albyn Swim Academy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script>
-        const navbar = document.getElementById("navbar");
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add("py-2");
-                navbar.classList.remove("py-4");
-            } else {
-                navbar.classList.add("py-4");
-                navbar.classList.remove("py-2");
-            }
-        });
-    </script>
-    <script>
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-            setTimeout(() => {
-                mobileMenu.classList.toggle("show");
-            }, 10);
-        });
-        menuBtn2.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-            setTimeout(() => {
-                mobileMenu.classList.toggle("show");
-            }, 10);
-        });
-    </script>
-    <script>
-        window.addEventListener("scroll", () => {
-            const header = document.querySelector("header");
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+          if (window.scrollY > 50) {
+              navbar.classList.add("py-2");
+              navbar.classList.remove("py-4");
+          } else {
+              navbar.classList.add("py-4");
+              navbar.classList.remove("py-2");
+          }
+      });
+  </script>
+  <script>
+      menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+          setTimeout(() => {
+              mobileMenu.classList.toggle("show");
+          }, 10);
+      });
+      menuBtn2.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+          setTimeout(() => {
+              mobileMenu.classList.toggle("show");
+          }, 10);
+      });
+  </script>
+  <script>
+      window.addEventListener("scroll", () => {
+          const header = document.querySelector("header");
 
-            if (window.scrollY > 60) {
-                header.classList.add("nav-scrolled");
-            } else {
-                header.classList.remove("nav-scrolled");
-            }
-        });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-            easing: "ease-out-cubic",
-        });
-    </script>
+          if (window.scrollY > 60) {
+              header.classList.add("nav-scrolled");
+          } else {
+              header.classList.remove("nav-scrolled");
+          }
+      });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+      AOS.init({
+          once: true,
+          easing: "ease-out-cubic",
+      });
+  </script>
 </body>
 </html>

@@ -11,13 +11,17 @@
   box-sizing: border-box;
 }
 
-.hero {
-  background-size: cover;
+.hero,
+.about-us-hero{
+  height: calc(100vh - 800px);
+  display: flex;
+  align-items: center;
   background-position: top;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: overlay;
 }
+
 
 .about-us-hero {
   background-image: url("/assets/Images/about.jpeg");
@@ -28,6 +32,7 @@
   background-blend-mode: overlay;
 }
 .level-charts-hero{
+  height: 800px;
   background-image: url("/assets/img/Hero/Level\ Charts.png");
   background-size: cover;
   background-position: top;
@@ -52,167 +57,3 @@
   background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: overlay;
 }
-
-.overlay {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.overlay.active {
-  opacity: 1;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-.mobile-nav-links a.active,
-.nav-links a.active{
-  color: #b32138;
-  font-weight: 600;
-  border-bottom: 2px solid #b32138;
-}
-
-.nav-links a:hover{
-  transition: all 0.1s ease;
-  border-bottom: 2px solid #b32138;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Merienda", cursive;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-size: cover;
-  background-attachment: fixed;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  -ms-overflow-style: none; /* IE and Edge */
-}
-
-body::-webkit-scrollbar {
-  display: none;
-  behavior: smooth;
-}
-
-.top-banner {
-  width: 100%;
-  height: 20px;
-  background: linear-gradient(180deg, #0C7BCD 80%, #ffffff17, #0C7BCD);
-}
-
-/* 
----------------------------------------------
-preloader
---------------------------------------------- 
-*/
-
-#preloader {
-  overflow: hidden;
-  background-image: linear-gradient(135deg, #84a3c0 0%, #0a5bf1 100%);
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: fixed;
-  z-index: 9999;
-  color: #fff;
-}
-
-#preloader .jumper {
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  position: absolute;
-  margin: auto;
-  width: 50px;
-  height: 50px;
-}
-
-#preloader .jumper > div {
-  background-color: #fff;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  position: absolute;
-  opacity: 0;
-  width: 50px;
-  height: 50px;
-  -webkit-animation: jumper 1s 0s linear infinite;
-  animation: jumper 1s 0s linear infinite;
-}
-
-#preloader .jumper > div:nth-child(2) {
-  -webkit-animation-delay: 0.33333s;
-  animation-delay: 0.33333s;
-}
-
-#preloader .jumper > div:nth-child(3) {
-  -webkit-animation-delay: 0.66666s;
-  animation-delay: 0.66666s;
-}
-
-@-webkit-keyframes jumper {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  5% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-
-@keyframes jumper {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  5% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .hero {
-    background-position: right;
-  }
-  .about {
-    background-position: center;
-  }
-  .packages {
-    background-position: center;
-  }
-  .contact {
-    background-position: center;
-  }
-}
-/*
