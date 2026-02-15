@@ -103,7 +103,6 @@ header{
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4);
     z-index: 2;
 }
 
@@ -274,6 +273,11 @@ header {
     }
     .hero-section{
         width: 100%;
+    }
+    .hero-section {
+        position: relative;
+        height: calc(100vh - 700px);
+        overflow: hidden;
     }
     .elementor-body{
         max-width: 100%;
