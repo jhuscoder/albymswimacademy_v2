@@ -158,7 +158,6 @@ header{
     font-weight: 300;
     padding: 10px 10px;
 }
-
 p{
     margin-top: 0;
     margin-bottom: .9rem;
@@ -257,7 +256,6 @@ header {
     padding-left: 8px;
     color: #38bdf8;
 }
-
 [data-aos] {
     transition-timing-function: cubic-bezier(.22,.61,.36,1);
 }
@@ -326,7 +324,7 @@ header {
         width: 100%;
     }
     .hero-section{
-        height: 400px;
+        height: calc(100vh - 600px);
         width: 100%;
     }
     .hero-section {
