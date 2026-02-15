@@ -28,92 +28,107 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <header
-      id="top"
-      class="fixed top-0 left-0 right-0 text-primarey z-40 transition-all duration-500 bg-light"
-      data-theme="cupcake"
-    >
-      <nav
-        id="navbar"
-        class="max-w-7xl mx-auto px-4 lg:px-6 py-4 flex items-center justify-between"
-      >
-        <a href="/" class="inline-flex items-center gap-2">
-          <span class="w-24">
-            <img
-              src="/assets/img/logo.png"
-              alt="logo"
-              srcset="/assets/img/logo.png"
-            />
-          </span>
-          <span class="font-display text-xl tracking-tight" hidden
-            >Albyn Swim Academy</span
-          >
-        </a>
-
-        <div class="hidden md:flex items-center gap-8">
-          <a href="/" class="hover:text-brand-300 transition">Home</a>
-          <a href="/programs/" class="hover:text-brand-300 transition active"
-            >Programs</a
-          >
-          <a href="/about-us/" class="hover:text-brand-300 transition">About</a>
-          <a href="/gallery/" class="hover:text-brand-300 transition"
-            >Gallery</a
-          >
-          <a href="/contact-us/" class="hover:text-brand-300 transition"
-            >Contact</a
-          >
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+     
+    <!-- NAVIGATION -->
+    <section>
+        <header class="fixed left-0 w-full z-50 bg-white backdrop-blur-md shadow-sm"
+            data-aos="fade-down"
+            data-aos-duration="800">
+            <div class="top-navigation"></div>
+            <nav id="navbar" class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <!-- LOGO -->
+                    <a href="/" class="w-36">
+                        <img src="/assets/img/logo.png" alt="logo">
+                    </a>
+                    <!-- DESKTOP MENU -->
+                    <div class="hidden md:flex items-center gap-10 font-medium text-brand-900">
 
-        <div class="hidden md:flex">
-          <a
-            href="#enroll"
-            class="btn btn-primary normal-case bg-brand-400 border-none text-brand-900 hover:brightness-110"
-          >
-            Enroll Now
-          </a>
-        </div>
+                        <a href="/" class="hover:text-brand-300 transition">Home</a>
+                        <a href="/programs/" class="hover:text-brand-300 transition">Programs</a>
+                        <a href="/level-charts/" class="hover:text-brand-300 transition">Level Charts</a>
+                        <a href="/rates-abuja/" class="hover:text-brand-300 transition">Rates</a>
+                        <a href="/about-us/" class="hover:text-brand-300 transition">About</a>
+                        <a href="/campaigns/" class="hover:text-brand-300 transition">Campaigns</a>
+                        <a href="/contact-us/" class="hover:text-brand-300 transition">Contact</a>
 
-      <!-- MOBILE MENU -->
-      <div id="mobileMenu"
-          class="hidden md:hidden">
-          <!-- MOBILE BUTTON -->
-          <div class="top-navigation"></div>
-          <div class="flex flex-row justify-between px-4 my-auto mt-2 p-4">
-              <div class="font-bold mobile-nav-header">Albyn Swim Academy</div>
-              <button id="menuBtn2"
-                  class="text-brand-900 focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                      class="h-7 w-7"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
+                    </div>
 
-                      <path stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"/>
-                  </svg>
-              </button>
-          </div>
+                    <!-- CTA (Desktop) -->
+                    <a href="#enroll"
+                        class="hidden md:inline-flex px-5 py-2 rounded-lg font-bold">
+                            Speak to a Coach
+                    </a>
 
-          <div class="flex flex-col px-6 py-6 space-y-4 text-brand-900 font-medium">
+                    <!-- MOBILE BUTTON -->
+                    <button id="menuBtn"
+                        class="md:hidden text-brand-900 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-7 w-7"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
 
-              <a href="/" class="hover:text-brand-300">Home</a>
-              <a href="/programs/" class="hover:text-brand-300">Programs</a>
-              <a href="/level-charts/" class="hover:text-brand-300">Level Charts</a>
-              <a href="/rates-abuja/" class="hover:text-brand-300">Rates</a>
-              <a href="/about-us/" class="hover:text-brand-300">About</a>
-              <a href="/campaigns/" class="hover:text-brand-300">Campaigns</a>
-              <a href="/contact-us/" class="hover:text-brand-300">Contact</a>
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
 
-              <a href="#enroll"
-                  class="mt-4 text-center px-5 py-3 rounded-lg bg-brand-300 text-brand-900 font-semibold">
-                  Speak to a Coach
-              </a>
-          </div>
-      </nav>
-    </header>
+            <!-- MOBILE MENU -->
+            <div id="mobileMenu"
+                class="hidden md:hidden">
+                <!-- MOBILE BUTTON -->
+                <div class="top-navigation"></div>
+                <div class="flex flex-row justify-between px-4 my-auto mt-2 p-4">
+                    <div class="font-bold mobile-nav-header">Albyn Swim Academy</div>
+                    <button id="menuBtn2"
+                        class="text-brand-900 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-7 w-7"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+
+                            <path stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex flex-col px-6 py-6 space-y-4 text-brand-900 font-medium">
+
+                    <a href="/" class="hover:text-brand-300">Home</a>
+                    <a href="/programs/" class="hover:text-brand-300">Programs</a>
+                    <a href="/level-charts/" class="hover:text-brand-300">Level Charts</a>
+                    <a href="/rates-abuja/" class="hover:text-brand-300">Rates</a>
+                    <a href="/about-us/" class="hover:text-brand-300">About</a>
+                    <a href="/campaigns/" class="hover:text-brand-300">Campaigns</a>
+                    <a href="/contact-us/" class="hover:text-brand-300">Contact</a>
+
+                    <a href="#enroll"
+                        class="mt-4 text-center px-5 py-3 rounded-lg bg-brand-300 text-brand-900 font-semibold">
+                        Speak to a Coach
+                    </a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- NAVIGATION -->
 
     <section
       class="swimming-programs-hero pt-24 vh-100 relative flex items-center justify-center bg-primary"
