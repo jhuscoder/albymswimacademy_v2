@@ -19,7 +19,7 @@
   background-blend-mode: overlay;
 }
 
-.about {
+.about-us-hero {
   background-image: url("/assets/Images/about.jpeg");
   background-size: cover;
   background-position: top;
@@ -27,7 +27,14 @@
   background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: overlay;
 }
-
+.level-charts-hero{
+  background-image: url("/assets/img/Hero/Level\ Charts.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: overlay;
+}
 .packages {
   background-image: url("/assets/Images/packages.jpg");
   background-size: cover;

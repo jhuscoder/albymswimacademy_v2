@@ -312,10 +312,6 @@ header {
     transform: translateY(-3px);
 }
 
-
-
-
-
 @media only screen and (width < 768px) {
     header{
         display: flex;
