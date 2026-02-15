@@ -21,15 +21,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
         rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAlex+Brush%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.6.4' media='all' />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
     <!-- NAVBAR -->
+    
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
         <div class="jumper">
@@ -767,7 +769,7 @@
     <!-- =====================
       AFFILIATIONS SECTION
     ====================== -->
-    <section class="bg-[#f8fafc] py-20">
+    <section class="py-20">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-[30px] font-semibold text-[#b32138] mb-6">
           Our Affiliations
@@ -802,9 +804,13 @@
 
           <!-- Aquatic Federation of Nigeria -->
           <div
-            class="bg-white rounded-2xl shadow-sm hover:shadow-md border-t-4 border-[#b32138] p-6"
+            class="bg-white rounded-2xl shadow-sm hover:shadow-md border-t-4 border-[green] p-6"
           >
-            <h3 class="text-xl font-semibold text-[#b32138] mb-3">
+            <div class="flex justify-center items-center">
+              <img src="/assets/logos/NAqF.png" alt="SWIMKIDZ">
+            </div>
+
+            <h3 class="text-xl font-semibold text-[#058441] mb-3">
               Aquatic Federation of Nigeria
             </h3>
             <p class="text-[#2D2E2E] text-sm leading-relaxed">
@@ -814,19 +820,11 @@
             </p>
           </div>
         </div>
-
-        <div class="flex flex-wrap justify-center items-center gap-10">
-          <img src="/assets/Img/SAI.png" alt="SAI" class="h-16" />
-          <img src="/assets/img/FINA.webp" alt="FINA" class="h-16" />
-          <img src="/assets/img/NAqF.png" alt="NAQF" class="h-16" />
-          <img src="/assets/img/SWIMKIDZ.png" alt="Swimkidz" class="h-16" />
-        </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <section class="footer bg-red-400">
-      <!-- FOOTER -->
+    <section class="footer bg-black">
         <footer class=" text-white pt-16 pb-8">
 
             <div class="container mx-auto px-6">
@@ -906,24 +904,71 @@
                 <div class="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-400">
                     © 2026 Albyn Swim Academy. All rights reserved.
                 </div>
-
             </div>
-
         </footer>
     </section>
 
-    <script type="text/javascript" src="/assets/js/ui.js"></script>
-    <script type="text/javascript" src="/assets/js/tailwind.js"></script>
-    <script
-      src="https://kit.fontawesome.com/10a4a9bf8b.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add("py-2");
+                navbar.classList.remove("py-4");
+            } else {
+                navbar.classList.add("py-4");
+                navbar.classList.remove("py-2");
+            }
+        });
+    </script>
+    
+    <script>
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            setTimeout(() => {
+                mobileMenu.classList.toggle("show");
+            }, 10);
+        });
+        menuBtn2.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            setTimeout(() => {
+                mobileMenu.classList.toggle("show");
+            }, 10);
+        });
+    </script>
+    <script>
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+
+            if (window.scrollY > 60) {
+                header.classList.add("nav-scrolled");
+            } else {
+                header.classList.remove("nav-scrolled");
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            easing: "ease-out-cubic",
+        });
+    </script>
+    
   </body>
 </html>
