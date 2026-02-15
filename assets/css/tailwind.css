@@ -1,0 +1,119 @@
+.hero-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh/1.8 - 50px);
+    inset: 0;
+    z-index: 0;
+}
+
+.nav-bg-color{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    inset: 999;
+    background: linear-gradient(90deg,
+        #44ff9a -0.55%,
+        #44b0ff 22.86%,
+        #8b44ff 48.36%,
+        #ff6644 73.33%,
+        #ebff70 99.34%);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-carousel{
+    background: linear-gradient(90deg,
+            #44ff9a -0.55%,
+            #44b0ff 22.86%,
+            #8b44ff 48.36%,
+            #ff6644 73.33%,
+            #ebff70 99.34%);
+    z-index: 1;
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+}
+
+.hero-overlayr{
+    width: 100%;
+    position: absolute;
+    max-height: 100px;
+    
+}
+
+.top-hero-navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    background: #fff;
+    color: #44b0ff;
+    position: relative;
+}
+
+.top-hero-navigation h1{
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: #0F98D2;
+}
+
+
+
+.albyn_start{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.elementor-shape {
+    direction: ltr;
+    left: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.elementor-shape-bottom {
+    bottom: -1px;
+}
+
+.elementor-26 .elementor-element.elementor-element-a5673ad > .elementor-shape-bottom svg {
+    width: calc(300% + 1.3px);
+    height: 150px;
+}
+
+.elementor-shape svg {
+    display: block;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    width: calc(100% + 1.3px);
+}
+
+.elementor-shape .elementor-shape-fill {
+    fill: #fff;
+    transform: rotateY(0deg);
+    transform-origin: center;
+}

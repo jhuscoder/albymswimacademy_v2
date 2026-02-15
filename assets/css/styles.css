@@ -1,0 +1,184 @@
+@import url("//fonts.googleapis.com/css2?family=Adamina:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+*{
+  --primary-color: #84a3c0;
+  --primary-color-2: #3d70a0;
+  --secondary-color: #b32138;
+}
+
+/* 🌐 Premium Core Reset & Smooth Interaction */
+:root{
+    --primary-red: #b32138;
+    --primary-blue: #84a3c0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.top-navigation{
+    height: 50px;
+    background: var(--primary-color);
+}
+
+.navigation{
+    width: 100%;
+    background: #fff;
+}
+
+.navigation .container-fluid{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-bg{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    bottom: 20;
+    overflow: hidden;
+    position: relative;
+    background: #b32138;
+}
+
+.nav-bg-color{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    inset: 999;
+    background: linear-gradient(90deg,
+        #44ff9a -0.55%,
+        #44b0ff 22.86%,
+        #8b44ff 48.36%,
+        #ff6644 73.33%,
+        #ebff70 99.34%);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-section {
+    position: relative;   /* IMPORTANT */
+    width: 100%;
+    height: 545px;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 545px;
+    background: rgba(0,0,0,0.4);
+    z-index: 2;
+}
+
+
+.hero-section .carousel,
+.hero-section .carousel-inner,
+.hero-section .carousel-item {
+    height: 100%;
+}
+.hero-section .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* behaves like background-image: cover */
+}
+
+.elementor-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    pointer-events: none; /* prevents blocking clicks */
+}
+.elementor-shape svg {
+    display: block;
+    width: 100%;
+    height: 40px;
+    fill: #ffffff;
+    outline: #fff;
+}
+
+.hero-content {
+    display: flex;
+    position: relative;
+}
+
+.hero-content .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.elementor-text{
+    font-family: "Alex Brush", Sans-serif;
+    font-size: 64px;
+    color: var(--primary-color-2);
+}
+.elementor-body{
+    max-width: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: .9rem;
+}
+@media only screen and (width < 768px) {
+    .hero-section{
+        width: 100%;
+        height: 100%;
+    }
+    .elementor-body{
+        max-width: 100%;
+        padding: ;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+  .column {
+    flex: 25%; /* Four columns */
+  }
+}

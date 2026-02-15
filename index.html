@@ -1,146 +1,58 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="bg-primary">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Albyn Swim Academy</title>
-        <meta name="description" content="Premium swimming academy with elite coaching and world‑class facilities." />
-        <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Albyn Swim Academy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Premium swimming academy with elite coaching and world‑class facilities." />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
 
-        <!-- Tailwind via CDN -->
-        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/10a4a9bf8b.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAlex+Brush%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.6.4' media='all' />
+    <link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://miamiswimmingacademy.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
 
-        <!-- DaisyUI full CSS (works with CDN Tailwind) -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <script src="https://kit.fontawesome.com/10a4a9bf8b.js" crossorigin="anonymous"></script>
-
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="/assets/css/theme.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <style>
-            .swiper {
-                width: 100%;
-                height: 100%;
-            }
-            .swiper-slide {
-                text-align: center;
-                font-size: 18px;
-                background: #444;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .swiper-slide img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            .shadow-glow {
-                box-shadow: 0 0 15px rgba(77, 215, 255, 0.5);
-            }
-            #preloader {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 9999;
-            }
-            #preloader .jumper {
-                display: flex;
-                gap: 10px;
-            }
-            #preloader .jumper div {
-                width: 15px;
-                height: 15px;
-                background-color: #3498db;
-                border-radius: 50%;
-                animation: jump 1s infinite;
-            }
-            #preloader .jumper div:nth-child(2) {
-                animation-delay: 0.2s;
-            }
-            #preloader .jumper div:nth-child(3) {
-                animation-delay: 0.4s;
-            }
-            #preloader .jumper div:nth-child(4) {
-                animation-delay: 0.6s;
-            }
-            #preloader .jumper div:nth-child(5) {
-                animation-delay: 0.8s;
-            }
-            #about{
-                animation: fadeIn 1s ease-in-out;
-
-            }
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-            @keyframes jump {
-                0%, 100% {
-                    transform: translateY(0);
-                }
-                50% {
-                    transform: translateY(-15px);
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-        <!-- ***** Preloader Start ***** -->
-        <div id="preloader">
-            <div class="jumper">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>  
-        <!-- ***** Preloader End ***** -->
-        
-        <!-- NAVBAR -->
-        <header id="top" 
-            class="fixed top-0 right-0 left-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200" data-theme="light">
-            <nav id="navbar" class="w-100 animate__animated animate__bounceIn">
-                
+    <section>
+        <div class="top-navigation"></div>
+        <div class="navigation">
+            <nav id="navbar" class="navbar">
                 <div class="container mx-auto flex flex-row justify-between items-center py-3">
                     <a href="/" class="w-40">
-                        <span class="w-12 h-12">
-                            <img class="w-100" src="assets/img/logo.png" alt="logo" srcset="assets/img/logo.png">
-                        </span>
-                        <span class="font-display text-xl tracking-tight" hidden>Albyn Swim Academy</span>
+                        <img class="" src="assets/img/logo.png" alt="logo" srcset="assets/img/logo.png">
                     </a>
     
                     <div class="hidden md:flex flex-row items-center justify-center gap-12">
                         <a href="/" class="hover:text-brand-300 transition active">Home</a>
                         <a href="/programs/" class="hover:text-brand-300 transition">Programs</a>
-                        <a href="/campaigns/" class="hover:text-brand-300 transition">Campaigns</a>
                         <a href="/level-charts/" class="hover:text-brand-300 transition">Level Charts</a>
                         <a href="/rates-abuja/" class="hover:text-brand-300 transition">Rates</a>
-                        <a href="/about-us-abuja/" class="hover:text-brand-300 transition">About</a>
-                        <a href="/gallery-abuja/" class="hover:text-brand-300 transition">Gallery</a>
-                        <a href="/contact-us-abuja/" class="hover:text-brand-300 transition">Contact Us</a>
+                        <a href="/about-us/" class="hover:text-brand-300 transition">About</a>
+                        <a href="/campaigns/" class="hover:text-brand-300 transition">Campaigns</a>
+                        <a href="/contact-us/" class="hover:text-brand-300 transition">Contact Us</a>
                     </div>
 
                     <div class="hidden md:flex">
@@ -149,8 +61,8 @@
                             Speak to a Coach
                         </a>
                     </div>
-
                 </div>
+
                 <div class="md:hidden">
                     <details class="dropdown dropdown-end">
                         <summary class="btn btn-ghost btn-circle text-blue-800">
@@ -160,8 +72,7 @@
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
                         </summary>
-                        <ul
-                            class="menu menu-sm dropdown-content mt-5 gap-2 shadow bg-base-100 rounded-box w-56 text-brand-900">
+                        <ul class="menu menu-sm dropdown-content mt-5 gap-2 shadow bg-base-100 rounded-box w-56 text-brand-900">
                             <li><a href="/" class="active p-2">Home</a></li>
                             <li><a href="/programs/" class="p-2">Programs</a></li>
                             <li><a href="/about-us/" class="p-2">About</a></li>
@@ -171,632 +82,63 @@
                     </details>
                 </div>
             </nav>
-        </header>
-        <!-- MAIN CONTENT -->
-        <!-- HERO: Combination of Liquid Wave Shader (A) + Caustics Refraction FX (C) -->
-        <!-- ABOUT -->
-        <section id="hero"
-            class="py-40 px-6"
-            data-aos="zoom-out-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200" data-aos-delay="200"
-            data-aos-easing="ease-in-out">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
-                    <div class="md:px-8">
-                        <h2 class="font-display uppercase text-blue-950 text-3xl md:text-5xl font-bold">
-                            Albyn Swim Academy
-                        </h2>
-                        <p class="mt-2 text-black hover:text-black/85 md:text-lg min-w-full text-justify">
-                            We are a private Swim academy with an indoor heated pool that teaches water safety and survival
-                            skills and learning to swim from babies 6 months old to adults of all ages.
-                            Our mission is to elevate every swimmer with precision coaching,
-                            data‑driven progress, and a supportive team culture.
-                        </p>
-                        <ul class="glass p-3 mt-6 space-y-3 text-black/60">
-                            <li class="flex gap-3">
-                                <span class="mt-1">🏊‍♀️</span>
-                                Certified by international swim bodies
-                            </li>
-                            <li class="flex gap-3">
-                                <span class="mt-1">📊</span>
-                                Progress tracking & personalized plans
-                            </li>
-                            <li class="flex gap-3">
-                                <span class="mt-1">🛟</span>
-                                Safety‑first philosophy
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="container mx-auto mt-10 lg:mt-0">
-                        <figure class="min-w-full flex mx-auto p-9 transition-all duration-300 cursor-pointer">
-                            <div class="swiper mySwiper rounded">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img class="h-auto rounded size-auto w-100" src="/assets/img/TOLA7532.jpg" alt="TOLA7532">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="h-auto rounded size-auto w-100" src="/assets/img/New/Website 10.jpg" alt="slide 2">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img class="h-auto rounded size-auto w-100" src="/assets/img/Ebube and Nanya .jpg" alt="Ebube and Nanya">
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </figure>
-                    </div>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/assets/img/Hero/Level Charts.png" alt="">
                 </div>
-            </div>
-        </section>
-
-        <!-- PROGRAMS -->
-        <section id="programs" 
-            class="relative py-20 border-t border-gray-200 bg-albyn-secondary">
-            <div class="container max-w mx-auto px-6">
-                <div class="flex items-end justify-between gap-6 flex-wrap">
-                    <div class="text-white">
-                        <h2 class="font-display text-2xl sm:text-3xl font-bold">
-                           Swimming Packages
-                        </h2>
-                        <p class=" mt-2">
-                            Structured pathways for all ages and goals.
-                        </p>
-                    </div>
-                    <a href="/programs/" class="btn btn-md btn-light text-blue-900 hover:cursor-pointer hover:text-blue-800 hover:brightness-100">
-                        View More
-                    </a>
-                </div>
-
-                <!-- BABIES & TODDLERS -->
-                <div class="my-10 mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4">
-                    <div class="mx-auto card glass transition p-2" data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-delay="100"
-                        data-aos-easing="ease-in-out">
-                        <div class="card-body w-[100%] p-0 py-4">
-                            <figure class="flex mx-auto p-4 transition-all duration-300 cursor-pointer">
-                                <img class="h-auto rounded size-auto" src="/assets/swimmers/Website 13.jpg" alt="">
-                            </figure>
-
-                            <div class="flex mx-auto flex-col items-center text-center">
-                                <h3 class="card-title text-black font-bold">BABIES & TODDLERS</h3>
-                                <p class="text-white px-6">
-                                    Gentle, safety‑first classes to build confidence and
-                                    coordination.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="mx-auto card glass transition p-2"  data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-duration="1050" data-aos-delay="150"
-                        data-aos-easing="ease-in-out">
-                        <div class="card-body text-center w-[100%] p-0 py-4">
-                            <figure class="max-w-md flex mx-auto p-4 transition-all duration-300 cursor-pointer ">
-                                <img class="h-auto rounded size-auto" src="/assets/img/Ebube and Nanya 2.jpg" alt="">
-                            </figure>
-
-                            <div class="flex mx-auto flex-col items-center text-center">                                
-                                <h3 class="card-title uppercase font-bold text-black/80">CHILDREN & TEENAGERS</h3>
-                                <p class="text text-white px-6">
-                                    Technique, endurance, and mobility focused sessions for all
-                                    levels.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="mx-auto card glass transition p-2"  data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-duration="1100" data-aos-delay="200"
-                    data-aos-easing="ease-in-out">
-                        <div class="card-body text-center w-[100%] p-0 py-4">
-                            <figure class="max-w-md flex mx-auto p-2 transition-all duration-300 cursor-pointer ">
-                                <img class="h-auto rounded size-auto" src="/assets/swimmers/adult-swim.jpg" alt="Adult Swim">
-                            </figure>
-                            <div class="flex mx-auto flex-col items-center text-center">
-                                <h3 class="card-title font-bold uppercase text-black">
-                                    Adult Lessons
-                                </h3>
-                                <p class="text text-white px-6">
-                                    Periodized training, drills, and analytics for race‑day
-                                    performance.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="mx-auto card glass transition p-2"  data-aos="zoom-out-down" data-aos-anchor-placement="top-center" data-aos-duration="1100" data-aos-delay="200"
-                        data-aos-easing="ease-in-out">
-                        <div class="card-body text-center w-[100%] p-0 py-4">
-                            <figure class="max-w-md flex mx-auto p-2 transition-all duration-300 cursor-pointer ">
-                                <img class="h-auto rounded size-auto" src="/assets/swimmers/adult-swim.jpg" alt="Adult Swim">
-                            </figure>
-                            <div class="flex mx-auto flex-col items-center text-center">
-                                <h3 class="card-title font-bold uppercase text-black">
-                                    Private Sessions
-                                </h3>
-                                <p class="text text-white px-6">
-                                    Periodized training, drills, and analytics for race‑day
-                                    performance.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Gradient edge fade -->
-            <div class="pointer-events-none md:absolute inset-x-0 bottom-0 h-40 from-brand-400 hidden"></div>
-        </section>
-
-        <section class="py-12 bg-white sm:py-16 lg:py-20 hidden" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj">Make every
-                        step user-centric</h2>
-                    <p class="mt-4 text-base leading-7 text-gray-600 sm:mt-8 font-pj">Lorem ipsum dolor sit amet,
-                        consectetur adipis elit</p>
-                </div>
-
-                <div
-                    class="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
-                    <div class="md:p-8 lg:p-14">
-                        <svg class="mx-auto" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M45 29V23C45 10.85 35.15 1 23 1C10.85 1 1 10.85 1 23V29" stroke="#161616"
-                                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M13 29H1V41C1 43.209 2.791 45 5 45H13V29Z" fill="#D4D4D8" stroke="#161616"
-                                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M45 29H33V45H41C43.209 45 45 43.209 45 41V29Z" fill="#D4D4D8" stroke="#161616"
-                                stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Support</h3>
-                        <p class="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit.
-                            Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
-                    </div>
-
-                    <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200">
-                        <svg class="mx-auto" width="46" height="46" viewBox="0 0 46 46" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M27 27H19V45H27V27Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M9 37H1V45H9V37Z" fill="#D4D4D8" stroke="#161616" stroke-width="2"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M45 17H37V45H45V17Z" fill="#D4D4D8" stroke="#161616" stroke-width="2"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M5 17L15 7L23 15L37 1" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M28 1H37V10" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Sales</h3>
-                        <p class="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit.
-                            Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
-                    </div>
-
-                    <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200">
-                        <svg class="mx-auto" width="42" height="42" viewBox="0 0 42 42" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M41 1H1V41H41V1Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M18 7H7V20H18V7Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M18 26H7V35H18V26Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M35 7H24V35H35V7Z" fill="#D4D4D8" stroke="#161616" stroke-width="2"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Onboarding</h3>
-                        <p class="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit.
-                            Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
-                    </div>
-
-                    <div class="md:p-8 lg:p-14 md:border-t md:border-gray-200">
-                        <svg class="mx-auto" width="42" height="42" viewBox="0 0 42 42" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.66667 25H6C3.23858 25 1 27.2386 1 30V37C1 39.7614 3.23858 42 6 42H36C38.7614 42 41 39.7614 41 37V30C41 27.2386 38.7614 25 36 25H31.8333C30.2685 25 29 26.2685 29 27.8333C29 29.3981 27.7315 30.6667 26.1667 30.6667H15.3333C13.7685 30.6667 12.5 29.3981 12.5 27.8333C12.5 26.2685 11.2315 25 9.66667 25Z"
-                                fill="#D4D4D8" />
-                            <path d="M9 9H33" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M9 17H33" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M1 25H13V31H29V25H41" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M37 1H5C2.79086 1 1 2.79086 1 5V37C1 39.2091 2.79086 41 5 41H37C39.2091 41 41 39.2091 41 37V5C41 2.79086 39.2091 1 37 1Z"
-                                stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Product</h3>
-                        <p class="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit.
-                            Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
-                    </div>
-
-                    <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t">
-                        <svg class="mx-auto" width="46" height="42" viewBox="0 0 46 42" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M30.562 18.4609C30.0511 17.9392 29.4292 17.5392 28.7426 17.2907C28.0559 17.0422 27.3221 16.9516 26.5956 17.0256C25.8692 17.0996 25.1687 17.3362 24.5462 17.718C23.9237 18.0998 23.3952 18.6169 23 19.2309C22.6049 18.6167 22.0764 18.0995 21.4539 17.7176C20.8315 17.3357 20.1309 17.099 19.4044 17.025C18.6779 16.951 17.944 17.0417 17.2573 17.2903C16.5706 17.5389 15.9488 17.939 15.438 18.4609C14.5163 19.4035 14.0002 20.6695 14.0002 21.9879C14.0002 23.3063 14.5163 24.5722 15.438 25.5149L23 33.1999L30.564 25.5159C31.485 24.5726 32.0004 23.3064 32 21.988C31.9997 20.6696 31.4835 19.4037 30.562 18.4609Z"
-                                fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M41 41H5C3.93913 41 2.92172 40.5786 2.17157 39.8284C1.42143 39.0783 1 38.0609 1 37V1H17L22 9H45V37C45 38.0609 44.5786 39.0783 43.8284 39.8284C43.0783 40.5786 42.0609 41 41 41Z"
-                                stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Quality</h3>
-                        <p class="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit.
-                            Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
-                    </div>
-
-                    <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t">
-                        <svg class="mx-auto" width="44" height="44" viewBox="0 0 44 44" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25 7C34.941 7 43 15.059 43 25C43 34.941 34.941 43 25 43C15.059 43 7 34.941 7 25"
-                                stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M19 1C9.059 1 1 9.059 1 19H19V1Z" fill="#D4D4D8" stroke="#161616" stroke-width="2"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Result</h3>
-                        <p class="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit.
-                            Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reviews -->
-        <section class="py-12 bg-gray-50 sm:py-16 lg:py-20" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div class="flex flex-col items-center">
-                    <div class="text-center">
-                        <p class="text-lg font-medium text-gray-600 font-pj">
-                            People have said how good Albyn Swim Academy
-                        </p>
-                        <h2 class="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
-                            Hear from Our happy clients
-                        </h2>
-                    </div>
-
-                    <div class="mt-8 text-center md:mt-16 md:order-3">
-                        <a title=""
-                            href="https://www.google.com/search?sca_esv=6632657489d50d73&hl=en-NG&sxsrf=ANbL-n4t07CRBmp6t7g7ERnE5EvzkScPCw:1769975600885&q=albyn+swim+academy&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOdlDIFO3FjqjaEvDyzhHf8pNOn5HjMHhwBkNbAE9qilkciB-1Bw7NB7R45bJQclGhiOS0bvJKs2Dt_cocHqFgjizQFNJI0HrEw-8SWISn2AERRL1GA%3D%3D&sa=X&ved=2ahUKEwintc73iLmSAxWmT0EAHbGGIzQQrrQLegQIHBAA" rel="noopener"
-                            class="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600">
-                            Check all 2,157 reviews
-                        </a>
-                    </div>
-
-                    <div class="relative mt-10 md:mt-24 md:order-2">
-                        <div class="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
-                            <div class="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter bg"></div>
-                        </div>
-
-                        <div
-                            class="relative grid max-w-lg grid-cols-1 gap-4 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3 sm:grid-flow-column md:auto-cols-fr">
-                            <div class="flex flex-col overflow-hidden rounded">
-                                <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
-                                    <div class="flex-1">
-                                        <div class="flex items-center">
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                        </div>
-
-                                        <blockquote class="flex-1 mt-8">
-                                            <p class="text-md leading-relaxed text-gray-900 font-pj">
-                                                Professional service, clean environment and good for the money. 
-                                                Swim instructors communicate professionally and cordially and the kids enjoy their lessons. 
-                                                Not to forget the warm pool, access to swim supplies, convenient change rooms and a viewing deck for the supporting friends and family. 
-                                                A well thought out swim academy built and maintaining high standards. Abuja is blessed to have Albyn...
-                                            </p>
-                                        </blockquote>
-                                    </div>
-
-                                    <div class="flex items-center mt-8">
-                                        <div class="flex flex-row gap-2 ml-4 my-auto">
-                                            <div class="avatar">
-                                                <img class="Iv2Hbb" src="/assets/reviews/Tinyan_Ogiehor.png" alt="Profile photo">
-                                            </div>
-                                            <p class="my-auto text-base font-bold text-gray-900 font-pj">Tinyan Ogiehor</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col overflow-hidden rounded">
-                                <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
-                                    <div class="flex-1">
-                                        <div class="flex items-center">
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                        </div>
-
-                                        <blockquote class="flex-1 mt-8">
-                                            <p class="text-md leading-relaxed text-gray-900 font-pj">
-                                                "
-                                                Lovely and coordinated place to learn how to swim for adult and your kids. 
-                                                Every part of the facility is on point, the changing room for both male and female is up to standard. 
-                                                You can also have a pool party for your here. The ambiance is something else. 
-                                                There's a stationed ambulance and trained lifeguards.
-                                                "
-                                            </p>
-                                        </blockquote>
-                                    </div>
-
-                                    <div class="flex items-center mt-8">
-                                        <div class="flex flex-row gap-2 ml-4 my-auto">
-                                            <div class="avatar">
-                                                <img class="Iv2Hbb" src="/assets/reviews/Manarisia_Irozuoke.png" alt="Profile photo">
-                                            </div>
-                                            <p class="my-auto text-base font-bold text-gray-900 font-pj">Manarisia Irozuoke</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col overflow-hidden rounded">
-                                <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
-                                    <div class="flex-1">
-                                        <div class="flex items-center">
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                        </div>
-                                        <blockquote class="flex-1 mt-8">
-                                            <p class="text-md leading-relaxed text-gray-900 font-pj">
-                                                "
-                                                My children are always excited to go swimming. Very good experience for me and them too. Professionalism isn't taken for granted there. Weldone 👋👋👋
-                                                "
-                                            </p>
-                                        </blockquote>
-                                    </div>
-                                    <div class="flex items-center mt-8">
-                                    <div class="flex flex-row gap-2 ml-4 my-auto">
-                                            <div class="avatar">
-                                                <img class="Iv2Hbb" src="/assets/reviews/Paul_Uchidiuno.png" alt="Profile photo">
-                                            </div>
-                                            <p class="my-auto text-base font-bold text-gray-900 font-pj">Paul Uchidiuno</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Affliated Section -->
-        <div class="py-24 sm:py-32 border" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="py-[50px] mx-auto max-w-7xl px-6 lg:px-8 md:py-[50px]">
-                <h2 class="text-center text-lg md:text-2xl font-semibold text-gray-900">Accredited by the Aquatic Federation of Nigeria</h2>
-                <p class="text-center text-black my-6">
-                    As members of the Aquatic Federation of Nigeria, we work to enhance water safety and improve the image of swimming in the country.
-                </p>
-                <div class="max-w-full overflow-x-auto md:max-w-xl py-5 mx-auto my-10 flex flex-row items-center lg:overflow-hidden">
-                    <img width="150" height="140" src="/assets/logos/SWIMKIDZ.png" alt="SWIMKIDZ" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
-                    <img width="150" height="140" src="/assets/logos/NAqF.png" alt="NAqF" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
-                    <img width="150" height="140" src="/assets/logos/FINA.png" alt="FINA" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
-                    <img width="150" height="140" src="/assets/logos/SAI.png" alt="SAI" class="col-span-2 max-h-32 object-contain lg:col-span-1" />
+                <div class="carousel-item">
+                    <img src="/assets/img/Hero/Level Charts.png" alt="">
                 </div>
             </div>
         </div>
+        <!-- SHAPE -->
+        <div class="elementor-shape">
+            <svg viewBox="0 0 1000 20" preserveAspectRatio="none">
+                <path class="elementor-shape-fill" d="M519.8,0.2c-11,0-19.8,8.5-19.8,19c0-10.4-8.8-19-19.8-19L0,0v20h1000V0.2H519.8z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- HERO TEXT -->
+    <div class="hero-content mt-5">
+        <div class="container">
+            <h1 class="font-bold elementor-text">Welcome</h1>
+            <p class="elementor-body">
+                We are a private Swim academy with an indoor heated pool that teaches water safety and survival skills and learning to swim from babies 6 months old to adults of all ages. 
+                Our mission is to elevate every swimmer with precision coaching, data‑driven progress, and a supportive team culture.
+            </p>
+        </div>
+    </div>
 
 
-        <section data-theme="cupcake" class="py-10 bg-gray-100 sm:py-16 lg:py-24" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                        Enjoy Friendly Swimming Lessons
-                    </h2>
-                    <p class="mt-4 text-lg">
-                        When you choose our swim academy, our swimming lessons are tailored
-                        to your pace and ability.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <section>
+        <div class="footer">
 
-        <section class="py-10 bg-white sm:py-16 lg:py-24" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                <div class="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-24">
-                    <div class="rounded" style="height: 350px; overflow:hidden">
-                        <img src="/assets/img/board.jpg" alt="AlbynSwimAcademy" srcset="/assets/img/board.jpg">
-                    </div>
+        </div>
+    </section>
 
-                    <div class="text-center">
-                        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                            Visit Our Branch
-                        </h2>
-                        <p class="max-w-md  mx-auto mt-6 text-lg text-gray-600">
-                            We are operating from Zone 5, Sports Park, Accra St, Park 1, Wuse, Abuja 904101, Federal Capital
-                            Territory.
-                        </p>
-                        <div
-                            class="flex flex-col items-center justify-center px-16 mt-8 space-y-4 sm:space-y-0 sm:space-x-4 sm:flex-row lg:mt-12 sm:px-0">
-                            <a href="#" title=""
-                                class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md sm:w-auto hover:bg-blue-700 focus:bg-blue-700">
-                                Contact Us
-                            </a>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-                            <a href="#" title=""
-                                class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-semibold text-black transition-all duration-200 bg-transparent border border-black rounded-md sm:w-auto hover:bg-black hover:text-white focus:bg-black focus:text-white">
-                                <svg class="w-5 h-5 mr-2 -ml-1" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                                </svg>
-                                Email Us
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-        <!-- FOOTER -->
-        <footer class="py-10 text-white px-6 md:px-[80px] bg-blue-950">
-            <div class="grid md:grid-cols-4 gap-10">
-                <div class="">
-                    <h3 class="text-lg font-semibold mb-3">Albyn Swim Academy</h3>
-                    <p class="text-sm leading-relaxed">
-                        Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5, Accra street
-                        Park 1, Abuja FCT, Abuja, Nigeria
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/" class="hover:underline">Home</a></li>
-                        <li><a href="/about/" class="hover:underline">About</a></li>
-                        <li><a href="/gallery/" class="hover:underline">Gallery</a></li>
-                        <li>
-                            <a href="/packages/" class="hover:underline">Packages</a>
-                        </li>
-                        <li>
-                            <a href="/contact/" class="hover:underline">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-3">Socials</h3>
-                    <div class="flex gap-4 mt-6">
-                        <a target="_blank" rel="noopener" href="https://wa.me/+2349132325923"
-                            class="text-[#ffffff] hover:text-[#b32138]" aria-label="Chat with us on WhatsApp"
-                            title="Chat with us on WhatsApp">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        </a>
-                        <a target="_blank" rel="noopener" href="https://www.instagram.com/albynswimacademyng/"
-                            class="text-[#ffffff] hover:text-[#b32138]" aria-label="Follow us on Instagram"
-                            title="Follow us on Instagram">
-                            <i class="fa-brands fa-instagram text-2xl"></i>
-                        </a>
-                        <a target="_blank" rel="noopener" href="https://www.facebook.com/learn2swimlearn2live"
-                            class="text-[#ffffff] hover:text-[#b32138]" aria-label="Like us on Facebook"
-                            title="Like us on Facebook">
-                            <i class="fa-brands fa-facebook text-2xl"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-3">Business Hours</h3>
-                    <ul class="text-sm space-y-2">
-                        <li>Monday - Tuesday Closed</li>
-                        <li>Wednesday - Saturday 09:00 AM - 07:00 PM</li>
-                        <li>Sunday 10:30 AM - 07:00 PM</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-6 text-center border-t border-[#ffffff] text-[14px] opacity-80 pt-6">
-                © 2025 Albyn Swim Academy. All rights reserved.
-            </div>
-        </footer>
-
-
-        <script type="text/javascript" src="assets/js/ui.js"></script>
-        <!-- <script type="text/javascript" src="assets/js/audio.js"></script> -->
-        <script type="module" src="assets/js/hero-three.js"></script>
-        <script type="text/javascript" src="assets/js/tailwind.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="/assets/js/main.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            });
-        </script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
