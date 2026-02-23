@@ -59,3 +59,12 @@
   background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: overlay;
 }
+
+#testimonial-carousel{
+  padding: 20px 0px;
+  width: 100vw;
+}
+
+#testimonial-carousel::-webkit-scrollbar{
+  display: none;
+}
