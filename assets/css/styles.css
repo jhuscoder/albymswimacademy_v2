@@ -33,8 +33,6 @@ section{
     margin-bottom: 10px;
     background: var(--primary-color);
 }
-header{
-}
 
 .navigation{
     width: 100%;
@@ -182,13 +180,19 @@ header {
 }
 
 /* NAV LINKS */
-.navbar a {
+#navbar a {
     position: relative;
     transition: color 0.3s ease;
 }
 
+#navbar a.active{
+    font-weight: bold;
+    color: var(--primary-color-2);
+}
+
+
 /* animated underline */
-.navbar a::after {
+#navbar a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -198,16 +202,16 @@ header {
     transition: width 0.3s ease;
 }
 
-.navbar a:hover::after {
+#navbar a:hover::after {
     width: 100%;
 }
 
-.navbar a.active {
+#navbar a.active {
     color: #38bdf8;
     font-weight: 600;
 }
 
-.navbar a.active::after {
+#navbar a.active::after {
     width: 100%;
 }
 
@@ -225,7 +229,7 @@ header {
     box-shadow: 0 8px 22px #06445f59;
 }
 
-.navbar .btn:active {
+#navbar .btn:active {
     transform: translateY(0);
 }
 
