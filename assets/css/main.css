@@ -11,9 +11,7 @@
   box-sizing: border-box;
 }
 
-.hero,
 .about-us-hero{
-  height: calc(100vh - 800px);
   display: flex;
   align-items: center;
   background-position: top;
@@ -31,6 +29,7 @@
   background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: overlay;
 }
+
 .level-charts-hero{
   height: 800px;
   background-image: url("/assets/img/Hero/Level\ Charts.png");
@@ -40,13 +39,16 @@
   background-color: rgba(0, 0, 0, 0.35);
   background-blend-mode: overlay;
 }
-.packages {
-  background-image: url("/assets/Images/packages.jpg");
+
+.packages-hero {
+  width: 100%;
+  height: 600px;
+  background-image: url("/assets/swimmers/about.jpeg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.35);
-  background-blend-mode: overlay;
+  background-color: #ffffff53;
+  background-blend-mode: darken;
 }
 
 .contact {
