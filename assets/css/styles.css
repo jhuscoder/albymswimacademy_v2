@@ -145,8 +145,9 @@ section{
 }
 
 .elementor-text{
-    font-family: "Alex Brush", Sans-serif;
-    font-size: 64px;
+    /* font-family: "Alex Brush", Sans-serif; */
+    font-size: 42px;
+    font-style: italic;
     color: var(--primary-color-2);
 }
 .elementor-body{
