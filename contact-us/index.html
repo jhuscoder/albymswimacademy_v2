@@ -11,116 +11,117 @@
 
     <!-- Tailwind via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- DaisyUI full CSS (works with CDN Tailwind) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-      rel="stylesheet"
-    />
-
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/10a4a9bf8b.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/css/theme.css" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAlex+Brush%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.6.4' media='all' />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
 
-  <body class="bg-brand-900 text-white font-body antialiased">
-    <!-- NAVBAR -->
-    <header
-      id="top"
-      class="fixed top-0 left-0 right-0 text-primarey z-40 transition-all duration-500 bg-light"
-      data-theme="cupcake"
-    >
-      <nav
-        id="navbar"
-        class="max-w-7xl mx-auto px-4 lg:px-6 py-4 flex items-center justify-between"
-      >
-        <a href="/" class="inline-flex items-center gap-2">
-          <span class="w-24">
-            <img
-              src="/assets/img/logo.png"
-              alt="logo"
-              srcset="/assets/img/logo.png"
-            />
-          </span>
-          <span class="font-display text-xl tracking-tight" hidden
-            >Albyn Swim Academy</span
-          >
-        </a>
+  <body class="bg-brand-900 font-body antialiased">
 
-        <div class="hidden md:flex items-center gap-8">
-          <a href="/" class="hover:text-brand-300 transition">Home</a>
-          <a href="/programs/" class="hover:text-brand-300 transition"
-            >Programs</a
-          >
-          <a href="/about-us/" class="hover:text-brand-300 transition">About</a>
-          <a href="/gallery/" class="hover:text-brand-300 transition"
-            >Gallery</a
-          >
-          <a href="/contact-us/" class="hover:text-brand-300 transition active"
-            >Contact</a
-          >
-        </div>
+    <!-- NAVIGATION -->
+    <header class="sticky-top py-4">
+        <div class="top-navigation"></div>
+        <nav id="navbar" class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <!-- LOGO -->
+                <a href="/" class="w-36">
+                    <img src="/assets/img/logo.png" alt="logo">
+                </a>
+                <!-- DESKTOP MENU -->
+                <div class="hidden md:flex items-center gap-10 font-medium text-brand-900">
 
-        <div class="hidden md:flex">
-          <a
-            href="#enroll"
-            class="btn btn-primary normal-case bg-brand-400 border-none text-brand-900 hover:brightness-110"
-          >
-            Enroll Now
-          </a>
-        </div>
+                    <a href="/" class="hover:text-brand-300 transition">Home</a>
+                    <a href="/programs/" class="hover:text-brand-300 transition">Programs</a>
+                    <a href="/level-charts/" class="hover:text-brand-300 transition">Level Charts</a>
+                    <a href="/rates-abuja/" class="hover:text-brand-300 transition active">Rates</a>
+                    <a href="/about-us/" class="hover:text-brand-300 transition">About</a>
+                    <a href="/contact-us/" class="hover:text-brand-300 transition">Contact</a>
 
-        <div class="md:hidden">
-          <details class="dropdown dropdown-end">
-            <summary class="btn btn-ghost btn-circle text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </summary>
-            <ul
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-brand-900"
-            >
-              <li><a href="/">Home</a></li>
-              <li><a href="/programs/">Programs</a></li>
-              <li><a href="/about-us/">About</a></li>
-              <li><a href="/gallery/">Gallery</a></li>
-              <li><a href="/contact-us/" class="active">Contact</a></li>
-            </ul>
-          </details>
+                </div>
+                <!-- CTA (Desktop) -->
+                <a href="#enroll"
+                    class="hidden md:inline-flex btn normal-case bg-brand-300 border-none text-brand-900 hover:brightness-110">
+                        Speak to a Coach
+                </a>
+
+                <!-- MOBILE BUTTON -->
+                <button id="menuBtn"
+                    class="md:hidden text-brand-900 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-7 w-7"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu"
+            class="hidden md:hidden">
+            <!-- MOBILE BUTTON -->
+            <div class="top-navigation"></div>
+            <div class="flex flex-row justify-between px-4 my-auto mt-2 p-4">
+                <div class="font-bold mobile-nav-header">Albyn Swim Academy</div>
+                <button id="menuBtn2"
+                    class="text-brand-900 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-7 w-7"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+
+                        <path stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex flex-col px-6 py-6 space-y-4 text-brand-900 font-medium">
+
+                <a href="/" class="hover:text-brand-300">Home</a>
+                <a href="/programs/" class="hover:text-brand-300">Programs</a>
+                <a href="/level-charts/" class="hover:text-brand-300">Level Charts</a>
+                <a href="/rates-abuja/" class="hover:text-brand-300">Rates</a>
+                <a href="/about-us/" class="hover:text-brand-300">About</a>
+                <a href="/contact-us/" class="hover:text-brand-300">Contact</a>
+
+                <a href="#enroll"
+                    class="mt-4 text-center px-5 py-3 rounded-lg bg-brand-300 text-brand-900 font-semibold">
+                    Speak to a Coach
+                </a>
+            </div>
         </div>
-      </nav>
     </header>
+    <!-- NAVIGATION -->
 
-    <section
-      class="relative pt-40 pb-24 bg-cover bg-center bg-black"
-      style="background-image: url(&quot;/assets/img/contact-hero.jpg&quot;)"
-      data-theme="cupcake"
-    >
+    <!-- HERO -->
+    <section class="relative pt-40 pb-24" data-theme="light">
+      <!-- Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-r from-[#0b2545]/90 via-[#0b2545]/80 to-[#0b2545]/70"></div>
+      <!-- Decorative Blur Accent -->
+      <div class="absolute top-20 left-10 w-72 h-72 bg-[#b32138]/20 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl"></div>
+
       <div class="relative max-w-4xl mx-auto px-6 text-center text-white">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
         <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
@@ -129,13 +130,10 @@
         </p>
       </div>
     </section>
-
-    <!--  -->
+    <!-- HERO -->
 
     <section class="bg-[#f8fafc] py-16" id="register">
-      <div
-        class="container md:px-[80px] px-6 flex flex-col md:flex-row items-center justify-center gap-10 items-center"
-      >
+      <div class="container mx-auto md:px-[80px] px-6 flex flex-col md:flex-row items-center justify-between gap-10">
         <!-- Contact Details -->
         <div class="flex-1 md:text-left text-center space-y-6 max-w-md">
           <h2 class="text-[30px] font-bold text-[#b32138] mb-4">
@@ -147,90 +145,42 @@
           </p>
 
           <ul class="space-y-4">
-            <li class="flex items-start gap-4">
+            <li class="flex text-start items-start gap-4">
               <i class="fa-solid fa-phone text-[#b32138] text-xl"></i>
-              <a
-                href="tel:+2349132325923"
+              <a href="tel:+2349132325923"
                 class="text-[#2D2E2E] hover:underline"
                 aria-label="Contact us via our telephone line"
-                title="Contact us via our telephone line"
-              >
+                title="Contact us via our telephone line">
                 +234 913 232 5923
               </a>
             </li>
             <li class="flex items-start gap-3">
               <i class="fa-solid fa-envelope text-[#b32138] text-xl"></i>
-              <a
-                href="mailto:info@albynswimacademy.com"
+              <a href="mailto:info@albynswimacademy.com"
                 class="text-[#2D2E2E] hover:underline"
                 aria-label="Contact us via email"
-                title="Contact us via email"
-              >
+                title="Contact us via email">
                 info@albynswimacademy.com
               </a>
             </li>
-            <li class="flex items-start gap-3 max-w-xs">
-              <i
-                class="fa-solid fa-location-dot text-[#b32138] text-start text-xl"
-              ></i>
-              <a href="" class="text-[#2D2E2E] hover:underline" s>
-                Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5,<br />
-                Accra Street Park 1, Abuja, FCT, Nigeria</a
-              >
-            </li>
           </ul>
-
-          <div class="flex gap-4 mt-6">
-            <a
-              href="https://wa.me/+2349132325923"
-              class="text-[#84a3c0] hover:text-[#b32138]"
-              aria-label="Chat with us on WhatsApp"
-              title="Chat with us on WhatsApp"
-            >
-              <span class="sr-only">Chat with us on WhatsApp</span>
-              <i
-                class="fa-brands text-[#b32138] fa-whatsapp text-2xl"
-                aria-hidden="true"
-              ></i>
-            </a>
-            <a
-              href="https://www.instagram.com/albynswimacademyng/"
-              class="text-[#b32138] hover:text-[#b32138]"
-              aria-label="Chat with us on Instagram"
-              title="Chat with us on Instagram"
-            >
-              <i class="fa-brands fa-instagram text-2xl"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/learn2swimlearn2live"
-              class="text-[#b32138] hover:text-[#b32138]"
-              aria-label="Chat with us on Facebook"
-              title="Chat with us on Facebook"
-            >
-              <i class="fa-brands fa-facebook text-2xl"></i>
-            </a>
-          </div>
         </div>
 
         <!-- Contact Form -->
-        <div
-          class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-[#b32138]"
-        >
+        <div class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-[#b32138]">
           <h2 class="text-2xl font-semibold text-[#b32138] mb-4">
             Send Us a Message
           </h2>
           <form
             action="https://formsubmit.co/info@albynswimacademy.com"
             method="POST"
-            class="space-y-4"
-          >
+            class="space-y-4">
             <input
               type="text"
               name="name"
               placeholder="Full Name*"
               required
-              class="w-full border text-black outline-none bg-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"
-            />
+              class="w-full border text-black outline-none bg-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"/>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
@@ -238,15 +188,13 @@
                 name="email"
                 placeholder="Email Address*"
                 required
-                class="w-full border text-black bg-white outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"
-              />
+                class="w-full border text-black bg-white outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"/>
               <input
                 type="tel"
                 name="phone"
                 placeholder="Phone Number*"
                 required
-                class="w-full border text-black bg-white outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"
-              />
+                class="w-full border text-black bg-white outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"/>
             </div>
 
             <textarea
@@ -254,51 +202,28 @@
               rows="4"
               placeholder="Your Message*"
               required
-              class="w-full border outline-none text-black bg-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"
-            ></textarea>
+              class="w-full border outline-none text-black bg-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"></textarea>
 
             <div class="text-left text-sm text-gray-600">
               <label class="flex items-start gap-2">
                 <input type="checkbox" required class="mt-1 accent-[#b32138]" />
                 <span>
                   By submitting, you agree to our
-                  <a
-                    href="/privacy-policy-abuja"
+                  <a href="/privacy-policy-abuja"
                     target="_blank"
-                    class="text-[#b32138] hover:underline"
-                  >
-                    Privacy Policy </a
-                  >.
+                    class="text-[#b32138] hover:underline">
+                    Privacy Policy </a>
                 </span>
               </label>
             </div>
 
-            <button
-              type="submit"
-              class="w-full bg-[#b32138] text-white py-3 rounded-lg font-semibold uppercase tracking-wide hover:bg-[#951b2c] transition"
-            >
+            <button type="submit" class="w-full bg-[#b32138] text-white py-3 rounded-lg font-semibold uppercase tracking-wide hover:bg-[#951b2c] transition">
               Send Message
             </button>
           </form>
         </div>
       </div>
     </section>
-
-    <!-- <section class="bg-[#84a3c0] py-12 text-white text-center">
-      <div class="container mx-auto px-4">
-        <h3 class="text-3xl font-bold mb-2">Visit Us at Our Abuja Location</h3>
-        <p class="mb-6">
-          Come meet our team and see our swimming facilities in person!
-        </p>
-        <a
-          href="https://maps.app.goo.gl/4RewfNt2y77FsRFz6"
-          target="_blank"
-          class="bg-white text-[#b32138] px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#f8f8f8] transition"
-        >
-          View on Google Maps
-        </a>
-      </div>
-    </section> -->
 
     <section class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-6 text-center mb-10">
@@ -311,9 +236,7 @@
       </div>
 
       <div class="max-w-6xl mx-auto px-6">
-        <div
-          class="w-full h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg"
-        >
+        <div class="w-full h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14191.408169361857!2d7.457982455612419!3d9.067550601761967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b18d62fdc43%3A0xd97b5007d69b2d1d!2sAlbyn%20Swim%20Academy%20Ltd!5e0!3m2!1sen!2sng!4v1771164231152!5m2!1sen!2sng"
             width="100%"
@@ -321,99 +244,146 @@
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-10 text-white px-6 md:px-[80px]">
-      <div class="grid md:grid-cols-4 gap-10">
-        <div class="">
-          <h3 class="text-lg font-semibold mb-3">Albyn Swim Academy</h3>
-          <p class="text-sm leading-relaxed">
-            Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5, Accra street
-            Park 1, Abuja FCT, Abuja, Nigeria
-          </p>
-        </div>
+    <section class="footer bg-dark mt-0">
+        <footer class=" text-white pt-16 pb-8">
 
-        <div>
-          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/" class="hover:underline">Home</a></li>
-            <li><a href="/about/" class="hover:underline">About</a></li>
-            <li><a href="/gallery/" class="hover:underline">Gallery</a></li>
-            <li>
-              <a href="/packages/" class="hover:underline">Packages</a>
-            </li>
-            <li>
-              <a href="/contact/" class="hover:underline">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+            <div class="container mx-auto px-6">
 
-        <div>
-          <h3 class="text-lg font-semibold mb-3">Socials</h3>
-          <div class="flex gap-4 mt-6">
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/+2349132325923"
-              class="text-[#ffffff] hover:text-[#b32138]"
-              aria-label="Chat with us on WhatsApp"
-              title="Chat with us on WhatsApp"
-            >
-              <i class="fa-brands fa-whatsapp text-2xl"></i>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.instagram.com/albynswimacademyng/"
-              class="text-[#ffffff] hover:text-[#b32138]"
-              aria-label="Follow us on Instagram"
-              title="Follow us on Instagram"
-            >
-              <i class="fa-brands fa-instagram text-2xl"></i>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.facebook.com/learn2swimlearn2live"
-              class="text-[#ffffff] hover:text-[#b32138]"
-              aria-label="Like us on Facebook"
-              title="Like us on Facebook"
-            >
-              <i class="fa-brands fa-facebook text-2xl"></i>
-            </a>
-          </div>
-        </div>
+                <div class="grid md:grid-cols-4 gap-10"
+                    data-aos="fade-up"
+                    data-aos-duration="900">
 
-        <div>
-          <h3 class="text-lg font-semibold mb-3">Business Hours</h3>
-          <ul class="text-sm space-y-2">
-            <li>Monday - Tuesday Closed</li>
-            <li>Wednesday - Saturday 09:00 AM - 07:00 PM</li>
-            <li>Sunday 10:30 AM - 07:00 PM</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="mt-6 text-center border-t border-[#ffffff] text-[14px] opacity-80 pt-6"
-      >
-        © 2025 Albyn Swim Academy. All rights reserved.
-      </div>
-    </footer>
+                    <!-- BRAND -->
+                    <div>
+                        <img src="/assets/img/logo.png"
+                            class="w-40 mb-4"
+                            alt="Albyn Swim Academy">
 
-    <script type="text/javascript" src="/assets/js/ui.js"></script>
-    <script type="module" src="/assets/js/hero-three.js"></script>
-    <script type="text/javascript" src="/assets/js/tailwind.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            We are a private Swim academy with an indoor heated pool that teaches water safety and survival skills and learning to swim from babies 6 months old to adults of all ages.
+                        </p>
+                    </div>
 
-    <script></script>
+                    <!-- QUICK LINKS -->
+                    <div class="">
+                        <h4 class="footer-title">Quick Links</h4>
+
+                        <ul class="space-y-3 text-gray-300">
+                            <li><a href="/" class="footer-link">Home</a></li>
+                            <li><a href="/about-us/" class="footer-link">About Us</a></li>
+                            <li><a href="/programs/" class="footer-link">Programs</a></li>
+                            <li><a href="/level-charts/" class="footer-link">Level Charts</a></li>
+                            <li><a href="/contact-us/" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- PROGRAMS -->
+                    <div class="">
+                        <h4 class="footer-title">Our Programs</h4>
+
+                        <ul class="space-y-3 text-gray-300">
+                            <li><a href="#" class="footer-link">Toddler Swimming</a></li>
+                            <li><a href="#" class="footer-link">Kids Swimming</a></li>
+                            <li><a href="#" class="footer-link">Adult Lessons</a></li>
+                            <li><a href="#" class="footer-link">Private Coaching</a></li>
+                            <li><a href="#" class="footer-link">Competitive Training</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- CONTACT -->
+                    <div>
+                        <h4 class="footer-title">Contact Us</h4>
+
+                        <ul class="space-y-3 text-gray-300 text-sm">
+                            <li>📍 Zone 5, Sports Park, Accra St, Park 1, Wuse, Abuja 904101, Federal Capital Territory</li>
+                            <li>📞 +234 913 232 5923</li>
+                            <li>✉️ info@albynswimacademy.com</li>
+                        </ul>
+
+                        <!-- SOCIALS -->
+                        <div class="flex gap-4 mt-6">
+
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BOTTOM BAR -->
+                <div class="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-400">
+                    © 2026 Albyn Swim Academy. All rights reserved.
+                </div>
+
+            </div>
+        </footer>
+    </section>
+    <!-- FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            setTimeout(() => {
+                mobileMenu.classList.toggle("show");
+            }, 10);
+        });
+        menuBtn2.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            setTimeout(() => {
+                mobileMenu.classList.toggle("show");
+            }, 10);
+        });
+    </script>
+    <script>
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+
+            if (window.scrollY > 60) {
+                header.classList.add("nav-scrolled");
+            } else {
+                header.classList.remove("nav-scrolled");
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            easing: "ease-out-cubic",
+        });
+    </script>
   </body>
 </html>
