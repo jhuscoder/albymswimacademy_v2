@@ -122,7 +122,7 @@
 
 
     <section class="packages-hero relative flex items-center justify-center">
-      <div class="hero-content text-center py-24">
+      <div class="hero-content text-center py-24 hidden">
         <div class="max-w-4xl px-6 md:px-0 text-light">
           <h1 class="text-4xl md:text-5xl font-bold mb-4">Swimming Programs</h1>
           <p class="text-lg md:text-xl mb-6">
@@ -133,78 +133,148 @@
       </div>
     </section>
 
+    
     <!-- PROGRAMS SECTION -->
-    <section id="programs" class="relative py-20 bg-light text-gray-900">
-      <div class="container mx-auto px-6 max-w-7xl">
-        <!-- Program Cards -->
-        <div class="grid grid-cols-1 lg:grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-16 md:gap-x-6 lg:gap-y-0">
-          <!-- Babies & Toddlers -->
-          <div class="flex flex-col lg:flex-row items-start gap-6">
-            <img
-              src="/assets/swimmers/Website 13.jpg"
-              alt="Babies and Toddlers Swimming Class"
-              class="w-full lg:w-1/2 rounded shadow-lg"
-            />
-            <div class="lg:w-1/2 flex flex-col justify-center">
-              <h3 class="text-2xl font-semibold mb-2">Babies & Toddlers</h3>
-              <p class="text-gray-700">
-                Gentle, safety-first classes to help infants and toddlers build
-                confidence, coordination, and a love for the water.
-              </p>
-            </div>
-          </div>
+    <section id="programs" class="relative py-24 bg-light overflow-hidden">
 
-          <!-- Children & Teenagers -->
-          <div class="flex flex-col lg:flex-row-reverse items-start gap-6">
-            <img
-              src="/assets/img/Ebube and Nanya 2.jpg"
-              alt="Children and Teenagers Swimming Class"
-              class="w-full lg:w-1/2 rounded shadow-lg"
-            />
-            <div class="lg:w-1/2 flex flex-col justify-center">
-              <h3 class="text-2xl font-semibold mb-2">Children & Teenagers</h3>
-              <p class="text-gray-700">
-                Technique, endurance, and mobility-focused lessons for all skill
-                levels, helping young swimmers progress confidently.
-              </p>
-            </div>
-          </div>
+    <div class="container">
 
-          <!-- Adult Lessons -->
-          <div class="flex flex-col lg:flex-row items-start gap-6">
-            <img
-              src="/assets/swimmers/adult-swim.jpg"
-              alt="Adult Swimming Class"
-              class="w-full lg:w-1/2 rounded shadow-lg"
-            />
-            <div class="lg:w-1/2 flex flex-col justify-center">
-              <h3 class="text-2xl font-semibold mb-2">Adult Lessons</h3>
-              <p class="text-gray-700">
-                Structured adult programs with drills, technique work, and
-                fitness training to enhance performance and confidence in the
-                water.
-              </p>
-            </div>
-          </div>
+        <div class="max-w-7xl mx-auto px-4">
 
-          <!-- Private Sessions -->
-          <div class="flex flex-col lg:flex-row-reverse items-start gap-6">
-            <img
-              src="/assets/swimmers/adult-swim.jpg"
-              alt="Private Swimming Session"
-              class="w-full lg:w-1/2 rounded shadow-lg"
-            />
-            <div class="lg:w-1/2 flex flex-col justify-center">
-              <h3 class="text-2xl font-semibold mb-2">Private Sessions</h3>
-              <p class="text-gray-700">
-                One-on-one coaching tailored to your goals, perfect for focused
-                skill improvement, swim technique, or competitive training.
-              </p>
+            <!-- Section Header -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Our Swimming Programs
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    Professionally designed programs tailored for every age and skill level,
+                    from water confidence to advanced performance training.
+                </p>
             </div>
-          </div>
+
+            <!-- PROGRAM CARD 1 -->
+            <div class="row align-items-center mb-5 g-5" 
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+
+                <div class="col-lg-6">
+
+                    <div class="relative group overflow-hidden rounded-3xl shadow-lg">
+                        <img src="/assets/swimmers/Website 13.jpg"
+                            alt="Babies and Toddlers Swimming Class"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+
+                        <!-- soft gradient overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="text-3xl font-semibold mb-3 text-gray-900">
+                        Babies & Toddlers
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Gentle, safety-first classes designed to help infants and toddlers
+                        develop water confidence, coordination, and early swimming comfort
+                        through guided play-based learning.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- PROGRAM CARD 2 -->
+            <div class="row align-items-center flex-lg-row-reverse mb-5 g-5"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+
+
+                <div class="col-lg-6">
+                <div class="relative group overflow-hidden rounded-3xl shadow-lg">
+                    <img src="/assets/img/Ebube and Nanya 2.jpg"
+                    alt="Children and Teenagers Swimming Class"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                </div>
+                </div>
+
+                <div class="col-lg-6">
+                <h3 class="text-3xl font-semibold mb-3 text-gray-900">
+                    Children & Teenagers
+                </h3>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Structured lessons focused on technique refinement, endurance
+                    building, and mobility improvement — enabling young swimmers to
+                    progress confidently across all skill levels.
+                </p>
+                </div>
+
+            </div>
+
+            <!-- PROGRAM CARD 3 -->
+            <div class="row align-items-center mb-5 g-5" 
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+
+                <div class="col-lg-6">
+                    <div class="relative group overflow-hidden rounded-3xl shadow-lg">
+                        <img src="/assets/swimmers/adult-swim.jpg"
+                        alt="Adult Swimming Class"
+                        class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="text-3xl font-semibold mb-3 text-gray-900">
+                        Adult Lessons
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Performance-focused adult programs combining drills, stroke
+                        correction, and fitness conditioning to improve endurance,
+                        confidence, and overall swimming efficiency.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- PROGRAM CARD 4 -->
+            <div class="row align-items-center flex-lg-row-reverse g-5"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+
+                <div class="col-lg-6">
+                    <div class="relative group overflow-hidden rounded-3xl shadow-lg">
+                        <img src="/assets/swimmers/adult-swim.jpg"
+                        alt="Private Swimming Session"
+                        class="w-full h-full object-cover transition duration-700 group-hover:scale-105" />
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="text-3xl font-semibold mb-3 text-gray-900">
+                        Private Sessions
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Personalized one-on-one coaching tailored to individual goals —
+                        ideal for accelerated learning, technical refinement, or competitive
+                        swim preparation.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
     </section>
+
+
+
 
     <!-- FOOTER -->
     <section class="footer bg-black">
