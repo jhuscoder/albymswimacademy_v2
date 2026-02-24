@@ -39,8 +39,8 @@
     <!-- ***** Preloader End ***** -->
      
     <!-- NAVIGATION -->
-    <div class="nav-bg-color"></div>
     <header class="sticky-top py-4">
+        <div class="top-navigation"></div>
         <nav id="navbar" class="container mx-auto px-4">
             <div class="flex items-center justify-between">
                 <!-- LOGO -->
@@ -124,25 +124,32 @@
 
 
     <!-- HERO CAROUSEL -->
-    <section class="hero-section">
-        <div id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/assets/swimmers/Hero_1.png" alt="">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/Hero//hero2.png" alt="">
-                </div>
-            </div>
+    <section class="hero-section about-us-hero level-charts-hero py-[150px] position-relative overflow-hidden">
+      <div id="carouselExampleSlidesOnly" class="carousel slide position-absolute" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/swimmers/Albyn-homepage.png" alt="">
+          </div>
+              
+          <div class="carousel-item">
+              <img src="/assets/swimmers/Ebubecloseup.jpg" alt="">
+          </div>
+
+          <div class="carousel-item">
+              <img src="/assets/swimmers/Albyn_hero-2.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/swimmers/Albyn-child.png" alt="" class="img-fluid">
+          </div>
         </div>
-        <!-- SHAPE -->
-        <div class="elementor-shape">
-            <svg viewBox="0 0 1000 20" preserveAspectRatio="none">
-                <path class="elementor-shape-fill" d="M519.8,0.2c-11,0-19.8,8.5-19.8,19c0-10.4-8.8-19-19.8-19L0,0v20h1000V0.2H519.8z"></path>
-            </svg>
-        </div>
+      </div>
+
+      <!-- SHAPE -->
+      <div class="elementor-shape">
+        <svg viewBox="0 0 1000 20" preserveAspectRatio="none">
+          <path class="elementor-shape-fill" d="M519.8,0.2c-11,0-19.8,8.5-19.8,19c0-10.4-8.8-19-19.8-19L0,0v20h1000V0.2H519.8z"></path>
+        </svg>
+      </div>
     </section>
 
     <!-- HERO TEXT -->
@@ -211,6 +218,38 @@
             </div>
           </div>
 
+          <!-- FINA -->
+          <div class="col-lg-5" data-aos="zoom-in">
+            <div class="bg-white rounded-3xl shadow-md p-8 text-center
+                transition duration-300 hover:-translate-y-2 hover:shadow-xl border-t-4 border-[#84a3c0]">
+
+              <img src="/assets/logos/World_Aquatics_logo.svg" class="mx-auto mb-4 h-20 object-contain" alt="World_Aquatics">
+
+              <h3 class="text-xl font-semibold text-[#84a3c0] mb-3">
+                World Aquatics
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Recognized by World Aquatics formally known as FINA, the sole and exclusive international governing body for aquatic sports.
+              </p>
+            </div>
+          </div>
+
+          <!-- SAI -->
+          <div class="col-lg-5" data-aos="zoom-in">
+            <div class="bg-white rounded-3xl shadow-md p-8 text-center
+                transition duration-300 hover:-translate-y-2 hover:shadow-xl border-t-4 border-[#84a3c0]">
+
+              <img src="/assets/logos/SAI.png" class="mx-auto mb-4 h-20 object-contain" alt="SAI">
+
+              <h3 class="text-xl font-semibold text-[#84a3c0] mb-3">
+                Starfish Aquatics Institute (SAI)
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Independent Authorized Provider of Starfish Swimming®, a nationally recognized swim instruction curriculum developed by the Starfish Aquatics Institute (SAI).
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -242,10 +281,10 @@
         </div>
 
         <!-- Carousel Wrapper -->
-        <div class="position-relative">
+        <div class="container mx-auto py-2">
 
           <!-- Scroll Container -->
-          <div id="testimonial-carousel" class="d-flex gap-4 overflow-auto snap-x snap-mandatory scrollbar-none px-2 px-md-0 pb-2">
+          <div id="testimonial-carousel" class="d-flex mx-auto items-center gap-4 px-2 px-md-0 pb-2">
 
             <!-- TESTIMONIAL CARD -->
             <div class="flex-shrink-0 snap-center w-[90%] max-w-[340px] md:min-w-[380px] bg-[#f8fafc]
@@ -288,13 +327,13 @@
 
             <!-- CARD 2 -->
             <div class="flex-shrink-0 snap-center
-                        w-[90%] max-w-[340px]
-                        md:min-w-[380px]
-                        bg-[#f8fafc]
-                        rounded-2xl p-6
-                        shadow-sm hover:shadow-xl
-                        transition duration-300
-                        d-flex flex-column"
+                w-[90%] max-w-[340px]
+                md:min-w-[380px]
+                bg-[#f8fafc]
+                rounded-2xl p-6
+                shadow-sm hover:shadow-xl
+                transition duration-300
+                d-flex flex-column"
                 data-aos="fade-up"
                 data-aos-delay="250">
 
@@ -327,13 +366,13 @@
 
             <!-- CARD 3 -->
             <div class="flex-shrink-0 snap-center
-                        w-[90%] max-w-[340px]
-                        md:min-w-[380px]
-                        bg-[#f8fafc]
-                        rounded-2xl p-6
-                        shadow-sm hover:shadow-xl
-                        transition duration-300
-                        d-flex flex-column"
+                w-[90%] max-w-[340px]
+                md:min-w-[380px]
+                bg-[#f8fafc]
+                rounded-2xl p-6
+                shadow-sm hover:shadow-xl
+                transition duration-300
+                d-flex flex-column"
                 data-aos="fade-up"
                 data-aos-delay="400">
 
