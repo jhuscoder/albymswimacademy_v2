@@ -15,14 +15,14 @@
 
 .font-merienda-100{
     font-size: 1rem;
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 62px;
+    font-weight: 900;
     line-height: 1.2em;
     text-align: center;
     letter-spacing: 0.1em;
     z-index: 10 !important;
     font-family: 'Merienda', cursive;
-    text-shadow: 1px 1px 0px #000000;
+    /* text-shadow: 1px 1px 0px #000000; */
 }
 
 body{
@@ -166,12 +166,27 @@ section{
 }
 
 .elementor-body{
-    max-width: 50%;
+    /* max-width: 0%; */
+    line-height: 40px;
     text-align: center;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+.elementor-body-2{
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 400;
     padding: 10px 10px;
 }
+.elementor-body-3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
 p{
     margin-top: 0;
     margin-bottom: .9rem;

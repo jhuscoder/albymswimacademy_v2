@@ -61,7 +61,7 @@
 }
 
 #testimonial-carousel{
-  width: 100vw;
+  position: relative;
 }
 
 #testimonial-carousel::-webkit-scrollbar{
