@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Adamina:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&amp;display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
   --primary-color: #84a3c0;
@@ -24,6 +25,142 @@
     font-family: 'Merienda', cursive;
     /* text-shadow: 1px 1px 0px #000000; */
 }
+
+/* ===============================
+   ELITE HERO SYSTEM
+================================ */
+
+.hero-section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background depth */
+.carousel-item img {
+  will-change: transform;
+  transform: scale(1.1);
+}
+
+/* Content styling */
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  opacity: 0;
+}
+
+.hero-sub {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.hero-cta {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Premium button */
+.btn-premium {
+  background:#b32138;
+  padding:14px 32px;
+  border-radius:999px;
+  font-weight:600;
+  transition:.4s;
+}
+
+.btn-premium:hover {
+  transform: translateY(-3px);
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+/* Glow depth */
+.hero-glow {
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:#b32138;
+  filter:blur(160px);
+  opacity:.18;
+  pointer-events:none;
+}
+
+/* ===============================
+   CINEMATIC HERO ANIMATIONS
+================================ */
+
+/* Smooth GPU rendering */
+.hero-section * {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Background cinematic zoom */
+.carousel-item.active img {
+  animation: heroZoom 7s ease-out forwards;
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1.18);
+  }
+}
+
+/* Text entrance */
+.hero-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .9s cubic-bezier(.22,.61,.36,1);
+}
+
+.hero-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Word animation */
+.hero-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.hero-word.reveal {
+  animation: wordReveal .6s forwards;
+}
+
+@keyframes wordReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle parallax */
+.hero-parallax {
+  transition: transform 6s ease-out;
+}
+
+.carousel-item.active .hero-parallax {
+  transform: translateY(-20px);
+}
+
+
+.kavoon-regular {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 5px;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.carousel-item {
+  transition: transform 1.2s ease-in-out !important;
+}
+
 
 body{
     padding: 0;

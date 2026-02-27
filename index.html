@@ -20,11 +20,13 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
         rel="stylesheet" />
     <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAlex+Brush%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.6.4' media='all' />
+
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
 
   <body>
@@ -123,79 +125,264 @@
     </header>
     <!-- ================= END NAVIGATION ================= -->
 
-    <!-- HERO CAROUSEL -->
-    <section class="hero-section about-us-hero level-charts-hero position-relative overflow-hidden">
-      <div id="carouselExampleSlidesOnly" class="carousel slide position-absolute" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/assets/swimmers/Albyn-homepage.png" alt="" class="img-fluid">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section relative overflow-hidden">
+      <!-- Carousel -->
+      <div id="heroCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="6000">
+
+        <div class="carousel-inner min-h-screen">
+
+          <!-- ================= SLIDE TEMPLATE ================= -->
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active relative min-h-screen">
+
+            <!-- Background Image -->
+            <img src="/assets/swimmers/Albyn-homepage.png"
+                class="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[6000ms]"
+                alt="Swimming lessons at Albyn Swim Academy">
+
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br
+                from-[#081c34]/95
+                via-[#0b2545]/75
+                to-[#0b2545]/40"></div>
+
+            <!-- Light Glow Accent -->
+            <div class="absolute top-1/3 left-1/4 w-[600px] h-[600px]
+                        bg-[#b32138]/20 blur-3xl rounded-full"></div>
+
+            <!-- Content -->
+            <div class="container relative z-10 min-h-screen flex items-center hero-parallax">
+
+              <div class="max-w-4xl text-white">
+
+                <h1 data-aos="fade-up"
+                    data-aos-duration="900"
+                    class="text-4xl md:text-7xl font-bold leading-tight mb-6">
+                    Welcome to<br>
+                  <span class="text-[#ffccd5]">Albyn Swim Academy</span>
+                </h1>
+
+                <p data-aos="fade-up"
+                  data-aos-delay="200"
+                  class="max-w-2xl text-lg md:text-2xl text-white/85 mb-8 hero-animate">
+                  Professional swimming designed to build confidence,
+                  safety awareness, and lifelong aquatic skills for everyone.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div data-aos="fade-up" data-aos-delay="400"
+                    class="flex gap-4 flex-wrap">
+
+                  <a href="#programs"
+                    class="btn btn-danger px-6 py-3 rounded-pill shadow-lg">
+                    Explore Programs
+                  </a>
+
+                  <a href="#contact" class="border border-white/60 px-6 py-3 rounded-pill
+                    hover:bg-white hover:text-[#0b2545]
+                    transition-all duration-300">
+                    Join Now
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-              <img src="/assets/swimmers/Albyn-home-2.png" alt="" class="img-fluid">
+
+
+          <!-- ================= SLIDE 2 ================= -->
+          <div class="carousel-item relative min-h-screen">
+
+            <img src="/assets/swimmers/Albyn-home-2.png"
+                class="absolute inset-0 w-full h-full object-cover scale-105"
+                alt="Kids swimming lessons">
+
+            <div class="absolute inset-0 bg-gradient-to-br
+                from-[#081c34]/95 via-[#0b2545]/75 to-transparent"></div>
+
+            <div class="container relative z-10 min-h-screen flex items-center">
+
+              <div class="max-w-4xl text-white">
+
+                <h2 data-aos="fade-up"
+                    class="text-4xl md:text-7xl font-bold leading-tight mb-6">
+                  Building Champions,<br>
+                  <span class="text-[#ffccd5]">One Stroke at a Time</span>
+                </h2>
+
+                <p data-aos="fade-up" data-aos-delay="200"
+                  class="max-w-2xl text-lg md:text-2xl text-white/85 mb-8 hero-animate">
+                  Structured coaching that develops technique,
+                  endurance, and competitive excellence.
+                </p>
+
+              </div>
+            </div>
           </div>
-          <div class="carousel-item pt-4">
-            <img src="/assets/swimmers/website 16.png" alt="" class="img-fluid">
+
+
+          <!-- ================= SLIDE 3 ================= -->
+          <div class="carousel-item relative min-h-screen">
+
+            <img src="/assets/swimmers/website 16.png"
+                class="absolute inset-0 w-full h-full object-cover"
+                alt="Professional swimming training">
+
+            <div class="absolute inset-0 bg-gradient-to-br
+                from-[#081c34]/95 via-[#0b2545]/70 to-transparent"></div>
+
+            <div class="container relative z-10 min-h-screen flex items-center">
+
+              <div class="max-w-4xl text-white">
+
+                <h2 data-aos="fade-up"
+                  class="text-4xl md:text-7xl font-bold leading-tight mb-6">
+                  Little Swimmers,<br>
+                  <span class="text-[#ffccd5]">Big Confidence</span>
+                </h2>
+
+                <p data-aos="fade-up" data-aos-delay="200"
+                  class="max-w-2xl text-lg md:text-2xl text-white/85 mb-8 hero-animate">
+                  Child-focused learning that builds water safety,
+                  independence, and joyful learning experiences.
+                </p>
+
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="/assets/swimmers/Website_Hero_4.png" alt="" class="img-fluid">
+
+
+          <!-- ================= SLIDE 4 ================= -->
+          <div class="carousel-item relative min-h-screen">
+
+            <img src="/assets/swimmers/Website_Hero_4.png" class="absolute inset-0 w-full h-full object-cover" alt="Adult swimming confidence">
+            <div class="absolute inset-0 bg-gradient-to-br from-[#081c34]/95 via-[#0b2545]/70 to-transparent"></div>
+
+            <div class="container relative z-10 min-h-screen flex items-center">
+              <div class="max-w-4xl text-white">
+                <h2 data-aos="fade-up"
+                    class="text-4xl md:text-7xl font-bold leading-tight mb-6">
+                  Confidence Starts<br>
+                  <span class="text-[#ffccd5]">in the Water</span>
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200"
+                  class="max-w-2xl text-lg md:text-2xl text-white/85 mb-8 hero-animate">
+                  Programs designed to overcome fear and
+                  build strong swimming confidence at any age.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Gradient Overlay -->
-      <!-- <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-[#0b2545]/90 via-[#0b2545]/75 to-[#0b2545]/60"></div> -->
-      <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-[#0b2545]/90 via-[#0b2545]/75 to-[#0b2545]/60"></div>
-
-      <!-- Decorative Blur Glow -->
-      <div class="position-absolute top-50 start-50 translate-middle w-[500px] h-[500px] bg-[#b32138]/20 rounded-full blur-3xl opacity-40"></div>
-
-      <!-- Content -->
-      <div class="container position-relative z-10">
-        <div class="row justify-content-center text-center">
-
-          <div class="col-lg-8 text-white backdrop-blur-sm px-4 py-5 rounded-3"
-              data-aos="fade-up"
-              data-aos-duration="1000">
-
-            <!-- Heading -->
-            <h1 class="fw-bold mb-4 md:text-6xl tracking-tight leading-tight font-merienda-100"
-              data-aos="fade-up"
-              data-aos-delay="100">
-              Welcome To Albyn Swim Academy
-            </h1>
-
-            <!-- Description -->
-            <p
-              class="mx-auto mb-5 text-2xl md:text-xl leading-relaxed text-white/90 max-w-[750px] font-merienda-100"
-              data-aos="fade-up"
-              data-aos-delay="250">
-              <span class="italic text-[#b32138] circle">
-                Learn to Swim, Learn to Live
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-
     </section>
 
+    <script>
+      const hero = document.querySelector(".hero-section");
+
+      hero.addEventListener("mousemove", (e) => {
+
+        const x = (e.clientX / window.innerWidth - 0.5) * 30;
+        const y = (e.clientY / window.innerHeight - 0.5) * 30;
+
+        gsap.to(".carousel-item.active img", {
+          x: x,
+          y: y,
+          duration: 1.5,
+          ease: "power3.out"
+        });
+
+        gsap.to(".hero-content", {
+          x: x * -0.4,
+          y: y * -0.4,
+          duration: 1.2
+        });
+
+      });
+      </script>
+      <script>
+      const carousel = document.querySelector("#heroCarousel");
+
+      function animateSlide(slide){
+
+        const title = slide.querySelector(".hero-title");
+        const sub = slide.querySelector(".hero-sub");
+        const cta = slide.querySelector(".hero-cta");
+        const image = slide.querySelector("img");
+
+        const tl = gsap.timeline();
+
+        /* cinematic background zoom */
+        tl.fromTo(image,
+          {scale:1.25},
+          {scale:1.1, duration:6, ease:"power2.out"},
+          0
+        );
+
+        /* headline reveal */
+        tl.to(title,{
+          opacity:1,
+          y:0,
+          duration:1,
+          ease:"power4.out"
+        },0.4);
+
+        /* paragraph */
+        tl.to(sub,{
+          opacity:1,
+          y:0,
+          duration:.9
+        },0.7);
+
+        /* button */
+        tl.to(cta,{
+          opacity:1,
+          y:0,
+          duration:.8
+        },1);
+
+      }
+
+      /* First slide */
+      animateSlide(
+        document.querySelector(".carousel-item.active")
+      );
+
+      /* On slide change */
+      carousel.addEventListener("slid.bs.carousel", e=>{
+        animateSlide(e.relatedTarget);
+      });
+      </script>
+      <script>
+      window.addEventListener("scroll", () => {
+
+        const scrollY = window.scrollY;
+
+        gsap.to(".hero-section", {
+          scale: scrollY > 50 ? 0.96 : 1,
+          borderRadius: scrollY > 50 ? "30px" : "0px",
+          duration:.4
+        });
+
+      });
+      </script>
+
     <!-- HERO TEXT -->
-    <div class="hero-content">
-        <div class="container hero-welcome pt-5">
-            <h1 class="font-bold elementor-text font-merienda-100 mb-2">ABOUT <span class="text-[#b32138] line-clamp">US</span></h1>
-            <p class="elementor-body italic">
-              Founded in 2018, Albyn Swim Academy has been saving lives by providing swimming lessons for learners of all ages throughout Abuja and Nigeria. 
-              Offering year-round lessons, our family-run company operates the only indoor heated swim academy in the country. 
-              Backed by many years of experience and professionally accredited instructors, our mission is to raise awareness of water safety, 
-              save lives, and elevate every swimmer with precision coaching, data‑driven progress, and a supportive team culture
-            </p>
-            <p class="elementor-body hidden">
-                We are a private Swim academy with an indoor heated pool that teaches water safety 
-                and survival skills and learning to swim from babies 6 months old to adults of all ages. 
-            </p>
-            <p class="elementor-body hidden">
-                Our mission is to elevate every swimmer with precision coaching, data‑driven progress, and a supportive team culture.
-            </p>
-        </div>
+    <div class="About Us">
+      <div class="container py-5">
+        <h1 class="font-bold elementor-text font-merienda-100 mb-2">ABOUT <span class="text-[#b32138] line-clamp">US</span></h1>
+        <p class="elementor-body italic">
+          Founded in 2018, Albyn Swim Academy has been saving lives by providing swimming lessons for learners of all ages throughout Abuja and Nigeria. 
+          Offering year-round lessons, our family-run company operates the only indoor heated swim academy in the country. 
+          Backed by many years of experience and professionally accredited instructors, our mission is to raise awareness of water safety, 
+          save lives, and elevate every swimmer with precision coaching, data‑driven progress, and a supportive team culture
+        </p>
+      </div>
     </div>
 
     <!-- =====================
@@ -591,14 +778,17 @@
     </section>
 
     <!-- FOOTER -->
-    <section class="footer bg-dark">
+    <section class="footer bg-dark mt-0">
       <footer
         class="py-10 text-white px-6 md:px-[80px]"
         data-aos="fade-up"
         data-aos-duration="900">
         <div class="grid md:grid-cols-3 gap-20 mb-5">
             <div class="col">
-                <h3 class="text-[18px] font-bold mb-3">Contact Details</h3>
+              <div class="flex flex-col">
+                <div class="w-50">
+                  <img class="img-fluid w-50" src="/assets/img/logo.png" alt="Albyn">
+                </div>
                 <div class="text-md">
                   <p>
                     Phone: +234 9132325923 <br> Email: info@albynswimacademy.com
@@ -608,18 +798,21 @@
                       Accra street Park 1, Abuja FCT, Abuja, Nigeria
                   </p>
                 </div>
-            </div>
 
-            <div class="flex justify-center flex-col gap-2 my-auto">
+              </div>
+            </div>
+            <div class="col">
+              <div class="flex justify-center flex-col gap-2 my-auto">
                 <h3 class="font-semibold mb-3 text-[18px]">Business Hours</h3>
                 <ul class="text-md space-y-2">
                     <li>Monday - Tuesday Closed</li>
                     <li>Wednesday - Saturday 09:00 AM - 07:00 PM</li>
                     <li>Sunday 10:30 AM - 07:00 PM</li>
                 </ul>
+              </div>
             </div>
-
-            <div class="flex flex-col gap-4 justify-start items-center my-auto">
+            <div class="col">
+              <div class="flex flex-col gap-4 justify-start items-center my-auto">
                 <div class="text-lg font-semibold">Socials Handles</div>
                 <div class="flex flex-row gap-4">
                     <a target="_blank" rel="noopener" href="https://wa.me/+2349132325923"
@@ -638,6 +831,7 @@
                       <i class="fa-brands fa-facebook text-2xl"></i>
                     </a>
                 </div>
+              </div>
             </div>
         </div>
 
