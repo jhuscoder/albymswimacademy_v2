@@ -13,7 +13,6 @@
     --primary-red: #b32138;
     --primary-blue: #84a3c0;
 }
-
 .font-merienda-100{
     font-size: 1rem;
     font-size: 62px;
@@ -29,7 +28,6 @@
 /* ===============================
    ELITE HERO SYSTEM
 ================================ */
-
 .hero-section {
   height: 100vh;
   overflow: hidden;
@@ -512,8 +510,6 @@ header {
     }
 
 }
-
-
 
 @media (min-width: 1024px) {
   .column {

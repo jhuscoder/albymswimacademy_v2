@@ -1,40 +1,44 @@
-// Page loading animation
-$(window).on("load", function () {
-  if ($(".cover").length) {
-    $(".cover").parallax({
-      imageSrc: $(".cover").data("image"),
-      zIndex: "1",
-    });
-  }
+const toggleBtn = document.getElementById("menuToggle");
+const closeBtn = document.getElementById("menuClose");
+const mobileMenu = document.getElementById("mobileMenu");
+const overlay = document.getElementById("menuOverlay");
+const header = document.getElementById("siteHeader");
 
-  $("#preloader").animate(
-    {
-      opacity: "0",
-    },
-    5000,
-    function () {
-      setTimeout(function () {
-        $("#preloader").css("visibility", "hidden").fadeOut();
-      }, 300);
-    },
-  );
+function openMenu(){
+  mobileMenu.classList.remove("translate-x-full");
+  overlay.classList.remove("opacity-0","pointer-events-none");
+  toggleBtn.setAttribute("aria-expanded","true");
+}
+
+function closeMenu(){
+  mobileMenu.classList.add("translate-x-full");
+  overlay.classList.add("opacity-0","pointer-events-none");
+  toggleBtn.setAttribute("aria-expanded","false");
+}
+
+toggleBtn.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", closeMenu);
+overlay.addEventListener("click", closeMenu);
+
+document.addEventListener("keydown",(e)=>{
+  if(e.key === "Escape") closeMenu();
 });
 
-const carousel = document.getElementById("testimonial-carousel");
-const dots = document.querySelectorAll("#testimonial-dots .dot");
+/* Sticky scroll effect */
+window.addEventListener("scroll",()=>{
+  if(window.scrollY > 40){
+    header.classList.add("header-scrolled");
+  } else {
+    header.classList.remove("header-scrolled");
+  }
+});
 
-carousel.addEventListener("scroll", () => {
-  const scrollLeft = carousel.scrollLeft;
-  const width = carousel.offsetWidth;
-  const index = Math.round(scrollLeft / width);
+window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
 
-  dots.forEach((dot, i) => {
-    if (i === index) {
-      dot.classList.add("bg-[#b32138]");
-      dot.classList.remove("bg-gray-400");
+    if (window.scrollY > 60) {
+        header.classList.add("nav-scrolled");
     } else {
-      dot.classList.add("bg-gray-400");
-      dot.classList.remove("bg-[#b32138]");
+        header.classList.remove("nav-scrolled");
     }
-  });
 });

@@ -113,7 +113,7 @@
     <!-- ================= END NAVIGATION ================= -->
 
     <!-- HERO -->
-    <section class="relative pt-40 pb-24" data-theme="light">
+    <section class="flex relative pt-40 pb-24 h-[50vh] items-center" data-theme="light">
       <!-- Gradient Overlay -->
       <div class="absolute inset-0 bg-gradient-to-r from-[#0b2545]/90 via-[#0b2545]/80 to-[#0b2545]/70"></div>
       <!-- Decorative Blur Accent -->
@@ -123,8 +123,8 @@
       <div class="relative max-w-4xl mx-auto px-6 text-center text-white">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
         <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
-          Whether you're ready to enroll or have questions about our programs,
-          our team is here to help you take the next step.
+          Whether you have questions about our swimming lessons, packages, or
+          facilities, our friendly team is here to assist you.
         </p>
       </div>
     </section>
@@ -135,13 +135,8 @@
         <!-- Contact Details -->
         <div class="flex-1 md:text-left text-center space-y-6 max-w-md">
           <h2 class="text-[30px] font-bold text-[#b32138] mb-4">
-            Let’s Connect
+            Albyn Swim Academy Limited
           </h2>
-          <p class="text-[#2D2E2E] mb-6">
-            Whether you have questions about our swimming lessons, packages, or
-            facilities, our friendly team is here to assist you.
-          </p>
-
           <ul class="space-y-4">
             <li class="flex text-start items-start gap-4">
               <i class="fa-solid fa-phone text-[#b32138] text-xl"></i>
@@ -165,7 +160,7 @@
         </div>
 
         <!-- Contact Form -->
-        <div class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-[#b32138]">
+        <div class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-[#b32138] w-full md:max-w-lg">
           <h2 class="text-2xl font-semibold text-[#b32138] mb-4">
             Send Us a Message
           </h2>
@@ -223,6 +218,7 @@
       </div>
     </section>
 
+    <!-- GOOGLE MAP -->
     <section class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-6 text-center mb-10">
         <h3 class="text-3xl font-bold text-[#b32138]">
@@ -329,37 +325,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script>
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-            setTimeout(() => {
-                mobileMenu.classList.toggle("show");
-            }, 10);
-        });
-        menuBtn2.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-            setTimeout(() => {
-                mobileMenu.classList.toggle("show");
-            }, 10);
-        });
-    </script>
-    <script>
-        window.addEventListener("scroll", () => {
-            const header = document.querySelector("header");
-
-            if (window.scrollY > 60) {
-                header.classList.add("nav-scrolled");
-            } else {
-                header.classList.remove("nav-scrolled");
-            }
-        });
-    </script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
     <script>
         AOS.init({
             once: true,
             easing: "ease-out-cubic",
         });
     </script>
-  </body>
 </html>
