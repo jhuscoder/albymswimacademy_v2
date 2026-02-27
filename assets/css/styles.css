@@ -170,6 +170,11 @@ body{
     box-sizing: border-box;
 }
 
+.nav-link.active{
+    color: var(--primary-color-2);
+    font-weight: bold;
+}
+
 section{
     padding: 0;
     margin: 0;
