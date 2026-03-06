@@ -180,6 +180,6 @@ body{
     .hero-section{
         min-height: 50svh;
         min-height: calc(50dvh - 150px);
-        max-height: 50vh;
+        max-height: 100vh;
     }
 }
