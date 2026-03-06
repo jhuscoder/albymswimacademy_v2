@@ -1,0 +1,119 @@
+/* PACKAGES & CONTACT PAGES*/
+*{
+    --primary-color: #84a3c0;
+    --secondary-color: #b32138;
+    --primary-black: #0000008a;
+    border-width: 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.contact-hero-section{
+    height: 400px;
+    background-image: url("/plugins/assets/IMG_6093__msi___jpg.jpg");
+    background-attachment:fixed;
+}
+
+.packages-hero-section{
+    height: 700px;
+    background-position: center;
+    background-image: url("/plugins/assets/IMG_7898__msi___jpeg.jpeg");
+}
+.hero-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-color: #0000008a;
+    background-blend-mode: darken;
+    font-family: 'Merienda', cursive;
+}
+
+.card{
+    border: none;
+    border-radius: 50px;
+}
+
+.card-img{
+    width: 100%;
+    height: 220px;
+    background:transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    transition: transform ease-in .5s;
+}
+
+.card-img img{
+    height: 100%;
+    width: 100%;
+    transition: transform ease-in .5s;
+    cursor: pointer;
+    &:hover{
+        transform: scaleY(.7) scaleX(1) scaleZ(.7);
+    }
+}
+
+.card-footer{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Merienda', cursive;
+    background: var(--secondary-color);
+}
+
+.contact-section{
+    background: #f1f1f1;
+}
+
+
+.smallsubtitle{
+    color: #a41a30;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Merienda', cursive;
+}
+
+input{
+    outline: none;
+    border: none;
+    font-family: 'Merienda', cursive;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #00000029;
+    width: 100%;
+    margin-bottom: 15px;
+    &:focus{
+        outline: none;
+        border: none;
+        box-shadow: 1px 1px 5px #0000007a;
+        border: 1px solid var(--secondary-color);
+    }
+}
+
+.CTA{
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.CTA h3{
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Merienda', cursive;
+}

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Adamina:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&amp;display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  --primary-color: #84a3c0;
+  --primary-color-2: #3d70a0;
+  --secondary-color: #b32138;
+}
+
+/* 🌐 Premium Core Reset & Smooth Interaction */
+:root{
+    --primary-red: #b32138;
+    --primary-blue: #84a3c0;
+}
+.font-merienda-100{
+    font-size: 1rem;
+    font-size: 62px;
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    z-index: 10 !important;
+    font-family: 'Merienda', cursive;
+    /* text-shadow: 1px 1px 0px #000000; */
+}
