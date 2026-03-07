@@ -110,85 +110,135 @@
 
         <!-- Main Content -->
         <div class="main">
-            <div class="hero-section contact-hero-section">
-                <div class="hero-content text-center">
-                    <h1 class="font-bold text-center text-4xl smallsubtitle text-white">Contact Us</h1>
-                    <p class="text-white">
-                        We're here to help! Reach out to us for any inquiries or assistance.
+            <!-- HERO -->
+            <section class="flex relative pt-40 pb-24 h-[50vh] items-center" data-theme="light">
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-[#0b2545]/90 via-[#0b2545]/80 to-[#0b2545]/70"></div>
+                <!-- Decorative Blur Accent -->
+                <div class="absolute top-20 left-10 w-72 h-72 bg-[#b32138]/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-10 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl"></div>
+
+                <div class="relative max-w-4xl mx-auto px-6 text-center text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+                    <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
+                    Whether you have questions about our swimming lessons, packages, or
+                    facilities, our friendly team is here to assist you.
                     </p>
                 </div>
-            </div>
+            </section>
+            <!-- HERO -->
 
-            <div style="background:#84a3c0;">
-                <div class="container mx-auto px-4 py-5 text-center">
-                </div>
-            </div>
+            <section class="bg-[#f8fafc] py-16" id="register">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-10 md:mb-0">
+                            <!-- Contact Details -->
+                            <div class="mb-4">
+                                <h2 class="text-[30px] font-bold text-[#b32138] mb-4">
+                                    Albyn Swim Academy Limited
+                                </h2>
+                                <ul class="space-y-4">
+                                    <li class="flex text-start items-start gap-4">
+                                        <i class="fa-solid fa-phone text-[#b32138] text-xl"></i>
+                                        <a href="tel:+2349132325923"
+                                            class="text-[#2D2E2E] hover:underline"
+                                            aria-label="Contact us via our telephone line"
+                                            title="Contact us via our telephone line">
+                                            +234 913 232 5923
+                                        </a>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-envelope text-[#b32138] text-xl"></i>
+                                        <a href="mailto:info@albynswimacademy.com"
+                                            class="text-[#2D2E2E] hover:underline"
+                                            aria-label="Contact us via email"
+                                            title="Contact us via email">
+                                            info@albynswimacademy.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Contact Form -->
+                            <div class="bg-white rounded-2xl shadow-md p-8 border-t-4 border-[#b32138] w-full md:max-w-lg">
+                                <h2 class="text-2xl font-semibold text-[#b32138] mb-4">
+                                    Send Us a Message
+                                </h2>
+                                <form action="https://formsubmit.co/info@albynswimacademy.com" method="POST" class="space-y-4">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Full Name*"
+                                        required
+                                        class="w-full border text-black outline-none bg-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"/>
 
-            <div>
-                <div class="container mx-auto px-4 py-5">
-                    <div class="row justify-content-center g-4">
-                        <div class="col-12 col-md-8">
-                            <h2 class="font-bold smallsubtitle">Get in Touch</h2>
-                            <p class="py-3">
-                                Whether you have questions about our swimming lessons, packages, or anything else, we're here to help. Reach out to us using the contact form below or through any of the following methods:
-                            </p>
-                            <ul class="list-unstyled mb-3">
-                                <li>
-                                    <strong>Phone:</strong> <a href="tel:+234 9132325923">+234 9132325923</a>
-                                </li>
-                                <li>
-                                    <strong>Email:</strong> <a href="malito:info@albynswimacademy.com">info@albynswimacademy.com</a>
-                                </li>
-                                <li>
-                                    <strong>Address:</strong> Albyn Swim Academy Ltd, Abuja Sports Park, Wuse Zone 5, Accra street Park 1, Abuja FCT, Abuja, Nigeria
-                                </li>
-                            </ul>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email Address*"
+                                            required
+                                            class="w-full border text-black bg-white outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"/>
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            placeholder="Phone Number*"
+                                            required
+                                            class="w-full border text-black bg-white outline-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"/>
+                                    </div>
+
+                                    <textarea
+                                        name="message"
+                                        rows="4"
+                                        placeholder="Your Message*"
+                                        required
+                                        class="w-full border outline-none text-black bg-white rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#84a3c0]"></textarea>
+
+                                    <div class="text-left text-sm text-gray-600">
+                                        <label class="flex items-start gap-2">
+                                            <input type="checkbox" required class="mt-1 accent-[#b32138]" />
+                                            <span>
+                                                By submitting, you agree to our
+                                                <a href="/privacy-policy-abuja"
+                                                    target="_blank"
+                                                    class="text-[#b32138] hover:underline">
+                                                    Privacy Policy </a>
+                                                </span>
+                                        </label>
+                                    </div>
+
+                                    <button type="submit" class="w-full bg-[#b32138] text-white py-3 rounded-lg font-semibold uppercase tracking-wide hover:bg-[#951b2c] transition">
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 my-auto">
+                            <div class="max-w-7xl mx-auto px-6 text-center mb-10">
+                                <h3 class="text-3xl font-bold text-[#b32138]">
+                                Visit Our Abuja Location
+                                </h3>
+                                <p class="text-gray-600 mt-3">
+                                Come see our facilities and meet our coaching team.
+                                </p>
+                            </div>
+                            <div class="max-w-6xl mx-auto px-6">
+                                <div class="w-full h-64 md:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg">
+                                    <!-- GOOGLE MAP -->
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14191.408169361857!2d7.457982455612419!3d9.067550601761967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b18d62fdc43%3A0xd97b5007d69b2d1d!2sAlbyn%20Swim%20Academy%20Ltd!5e0!3m2!1sen!2sng!4v1771164231152!5m2!1sen!2sng"
+                                        width="100%"
+                                        height="450"
+                                        style="border: 0"
+                                        allowfullscreen=""
+                                        loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- CONTACT FORM -->
-            <div class="contact-section">
-                <div class="container mx-auto px-4 py-5">
-                    <div class="row text-center justify-content-center g-4">
-
-                        <div class="col-12 col-md-8">
-                            <h2 class="font-bold smallsubtitle">Contact Us Now</h2>
-
-                            <form class="d-flex flex-column py-3 gap-3">
-
-                                <input class="form-control" type="text" name="name" placeholder="Full Name:*" required />
-                                
-                                <div class="row g-4">
-                                    <div class="col-12 col-md-6">
-                                        <input class="form-control" type="email" name="email" placeholder="Email Address:*" required />
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <input class="form-control" type="tel" name="phone" placeholder="Phone Number:*" required />
-                                    </div>
-                                </div>
-
-                                <textarea class="form-control" name="message" placeholder="Your Message:*" required></textarea>
-
-                                <div class="form-check text-start mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        By filling out this form and accepting below, you are giving explicit consent to us contacting you. By doing this you are acknowledging our privacy policy.
-                                        It is your right at any time to unsubscribe and stop receiving further communications.
-                                        <a href="/privacy-policy-abuja" target="_blank">privacy policy</a>.
-                                    </label>
-                                </div>
-
-                                <div>
-                                    <button type="submit" class="button btn-primary text-uppercase"> Send </button>
-                                </div>
-
-                            </form>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
         <!-- Main Content -->
 
@@ -242,7 +292,7 @@
 
                     <div class="col-12 col-md my-auto">
                         <div class="flex flex-col gap-4 justify-start auto mx-auto">
-                            <div class="text-lg font-semibold my-auto">Socials Handles</div>
+                            <div class="text-lg font-semibold my-auto">Socials</div>
                             <div class="flex flex-row gap-4 social-icons my-auto">
                                 <a target="_blank" rel="noopener" href="https://wa.me/+2349132325923"
                                     class="text-[#ffffff] hover:text-[#b32138] rounded-circle" aria-label="Chat with us on WhatsApp"
