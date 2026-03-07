@@ -40,30 +40,21 @@
 /* PACKAGES HERO WITH SLIDER */
 
 .packages-hero-section{
-    height:700px;
+    height: 720px;
     animation:heroSlide 18s infinite;
 }
 
 /* HERO BACKGROUND SLIDER */
 
 @keyframes heroSlide{
-
-0%{
-background-image:url("/plugins/assets/IMG_7898__msi___jpeg.jpeg");
-}
-
-33%{
-background-image:url("/plugins/assets/IMG_6093__msi___jpg.jpg");
-}
-
-66%{
-background-image:url("/plugins/assets/IMG_7898__msi___jpeg.jpeg");
-}
-
-100%{
-background-image:url("/plugins/assets/IMG_6093__msi___jpg.jpg");
-}
-
+    0%{
+        background-position: top;
+        background-image:url("/assets/Slider/TOLA9257.jpg.jpeg");
+    }
+    100%{
+        background-position: center;
+        background-image:url("/assets/Slider/TOLA9257.jpg.jpeg");
+    }
 }
 
 /* CARD DESIGN */
