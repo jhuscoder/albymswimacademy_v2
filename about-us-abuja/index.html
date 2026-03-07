@@ -26,7 +26,7 @@
     </head>
 
     <body data-req="lazyload, quicklink">
-<div class="navigation flex flex-col sticky-top">
+        <div class="navigation flex flex-col sticky-top">
             <nav class="d-none flex-wrap justify-between items-center p-2 px-4" id="top-nav-banner">
                 <div class="col">
                     <p class="uppercase">Learn to Swim, Learn to Live</p>
@@ -108,133 +108,381 @@
             </header>
             <!-- ================= END NAVIGATION ================= -->
         </div>
-        <!-- HERO -->
+
+        <!-- =========================
+        ABOUT US HERO
+        ========================= -->
+        <section class="hero-screen about-us-hero level-charts-hero py-[150px] position-relative overflow-hidden h-screen">
+            <!-- Background Image -->
+            <div class="position-absolute top-0 start-0 w-100 h-100">
+                <img
+                    src="/assets/facility.webp"
+                    alt="Swimming training session at Albyn Swim Academy"
+                    class="w-full h-full object-cover"
+                    loading="eager"
+                    decoding="async">
+            </div>
+
+            <!-- Gradient Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-[#0b2545]/90 via-[#0b2545]/75 to-[#0b2545]/60"></div>
+
+            <!-- Decorative Blur Glow -->
+            <div class="position-absolute top-50 start-50 translate-middle w-[500px] h-[500px] bg-[#b32138]/20 rounded-full blur-3xl opacity-40"></div>
+
+            <!-- Content -->
+            <div class="container position-relative z-10">
+                <div class="row justify-content-center text-center">
+
+                    <div class="col-lg-8 text-white backdrop-blur-sm px-4 py-5 rounded-3"
+                        data-aos="fade-up"
+                        data-aos-duration="1000">
+
+                        <!-- Heading -->
+                        <h1 class="fw-bold mb-4 text-4xl md:text-6xl tracking-tight leading-tight"
+                            data-aos="fade-up"
+                            data-aos-delay="100">
+                            About Albyn Swim Academy
+                        </h1>
+
+                        <!-- Description -->
+                        <p class="mx-auto mb-5 text-lg md:text-xl leading-relaxed text-white/90 max-w-[750px]"
+                            data-aos="fade-up"
+                            data-aos-delay="250">
+                            Albyn Swim Academy Ltd is a swimming school that serves babies, children, and adults throughout Nigeria. 
+                            Based in Abuja, we offer swimming and water safety lessons all year round at our heated indoor swimming pools.
+                            When you choose our lessons, instructors pay close attention to your progress, working at your pace and ability 
+                            and ensuring you are comfortable while in the water. Get in touch today for more details.
+                        </p>
+
+                        <!-- CTA -->
+                        <a href="/contact-us/#register"
+                            data-aos="zoom-in"
+                            data-aos-delay="400"
+                            class="inline-flex align-items-center justify-content-center
+                            bg-[#b32138] hover:bg-[#9b1d31]
+                            text-white fw-semibold
+                            px-5 py-3 px-md-10 py-md-4
+                            rounded-pill shadow-lg hover:shadow-xl
+                            transition duration-300 ease-in-out">
+
+                            Enroll Today
+                            <span class="ms-2 transition-transform group-hover:translate-x-1">
+                                →
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-20 md:px-[80px]">
+            <div class="px-6 grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+                <!-- Image -->
+                <div class="relative hidden md:flex">
+                    <img
+                        src="/assets/instructor.jpg"
+                        alt="Swimming lesson at Albyn Swim Academy"
+                        class="w-full h-full object-cover rounded-2xl shadow-lg"
+                    />
+                </div>
+
+                <!-- Content -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#b32138] mb-6">
+                        Our Tutors
+                    </h2>
+
+                    <p class="text-lg text-[#2D2E2E] leading-relaxed mb-6">
+                        We employ professional swimming instructors to help learners with all aspects of swimming and water safety. 
+                        All our tutors are professionally trained and accredited by Starfish Aquatics Institute (SAI), 
+                        and we work closely with learners to understand their needs and help them make progress.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+            OUR PURPOSE
+        ========================= -->
+        <section class="py-20 bg-[#f8fafc] position-relative overflow-hidden">
+
+            <!-- Soft Background Accent -->
+            <div class="position-absolute top-50 start-50 translate-middle w-[600px] h-[600px] bg-[#b32138]/5 rounded-full blur-3xl"></div>
+
+            <div class="container position-relative z-10 mx-auto text-center">
+
+                <!-- Heading Area -->
+                <div class="text-center mx-auto max-w-3xl mb-14"
+                    data-aos="fade-up"
+                    data-aos-duration="900">
+
+                    <h2 class="text-3xl md:text-4xl fw-bold text-[#b32138] mb-4">
+                        Our Purpose
+                    </h2>
+
+                    <p class="text-lg text-[#2D2E2E] leading-relaxed">
+                        Our mission is to raise awareness of water safety, save lives, and elevate every swimmer with precision coaching, data‑driven progress, and a supportive team culture
+                    </p>
+                </div>
+
+                <!-- Carousel Wrapper -->
+                <div class="position-relative">
+
+                    <!-- Cards Container -->
+                    <div id="purpose-carousel" class="w-100 row gap-2 justify-center"
+                        data-aos="fade-up"
+                        data-aos-delay="150">
+
+                        <!-- CARD 1 -->
+                        <div class="col-md-6 col-lg-4 bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition duration-300">
+
+                        <div class="text-4xl text-[#b32138] mb-4">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <h3 class="text-xl fw-semibold mb-3 text-[#2D2E2E]">
+                            Water Safety First
+                        </h3>
+
+                        <p class="text-sm text-[#555] leading-relaxed">
+                            We teach essential safety skills that help prevent drowning and
+                            prepare swimmers to respond confidently in real water environments.
+                        </p>
+
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="col-md-6 col-lg-4 bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition duration-300">
+                            <div class="text-4xl text-[#b32138] mb-4">
+                                <i class="fa-solid fa-person-swimming"></i>
+                            </div>
+
+                            <h3 class="text-xl fw-semibold mb-3 text-[#2D2E2E]">
+                                Confidence Through Learning
+                            </h3>
+
+                            <p class="text-sm text-[#555] leading-relaxed">
+                                Structured programs help swimmers overcome fear, improve ability,
+                                and build lasting confidence at every stage of development.
+                            </p>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="col-md-6 col-lg-4 bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition duration-300">
+                            <div class="text-4xl text-[#b32138] mb-4">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+
+                            <h3 class="text-xl fw-semibold mb-3 text-[#2D2E2E]">
+                                Saving Lives Through Education
+                            </h3>
+
+                            <p class="text-sm text-[#555] leading-relaxed">
+                                By teaching swimming awareness and safety education, we aim to
+                                reduce drowning rates and create safer communities across Nigeria.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR TEAM -->
+        <section class="px-6 flex lg:flex-row flex-col gap-6 py-16 md:px-[80px] space-y-6 bg-[#f8fafc] items-center hidden">
+            <div class="flex flex-col gap-4 text-center mx-auto">
+                <h2 class="text-[30px] font-semibold text-[#b32138]">Meet Our Team</h2>
+                <p class="max-w-3xl text-[18px] mx-auto leading-relaxed text-[#2D2E2E] lg:pe-10">
+                    We employ professional swimming instructors to help learners with all
+                    aspects of swimming and water safety. All our tutors are
+                    professionally trained and accredited by Starfish Aquatics Institute
+                    (SAI), and we work closely with learners to understand their needs and
+                    help them make progress.
+                </p>
+            </div>
+        </section>
+
+        <!-- =====================
+        AFFILIATIONS SECTION
+        ====================== -->
+        <section class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-[30px] font-semibold text-[#b32138] mb-6">
+                    Our Affiliations
+                </h2>
+                <p class="text-[#2D2E2E] max-w-2xl mx-auto mb-12">
+                    We’re proud to be connected with trusted organizations that share our
+                    passion for water safety, professional training, and global swimming
+                    standards.
+                </p>
+
+                <!-- AFFILIATION CARDS -->
+                <div class="row g-4 justify-content-center mb-20">
+
+                    <!-- Swimkidz -->
+                    <div class="col-lg-5" data-aos="zoom-in">
+                        <div class="bg-white rounded-3xl shadow-md p-8 text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl border-t-4 border-[#84a3c0]">
+                            <img src="/assets/logos/SWIMKIDZ.png"
+                                class="mx-auto mb-4 h-20 object-contain">
+
+                            <h3 class="text-xl font-semibold text-[#84a3c0] mb-3">
+                                Swimkidz SA
+                            </h3>
+
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                International learn-to-swim partner specialising in early aquatic
+                                development programs for babies, children, and adults across
+                                South Africa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Aquatic Federation -->
+                    <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="bg-white rounded-3xl shadow-md p-8 text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl border-t-4 border-green-600">
+                            <img src="/assets/logos/NAqF.png"
+                                class="mx-auto mb-4 h-20 object-contain">
+
+                            <h3 class="text-xl font-semibold text-green-700 mb-3">
+                                Aquatic Federation of Nigeria
+                            </h3>
+
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Accredited federation membership promoting swimming excellence,
+                                water safety awareness, and aquatic sports development nationwide.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FINA -->
+                    <div class="col-lg-5" data-aos="zoom-in">
+                        <div class="bg-white rounded-3xl shadow-md p-8 text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl border-t-4 border-[#84a3c0]">
+                            <img src="/assets/logos/World_Aquatics_logo.svg" class="mx-auto mb-4 h-20 object-contain" alt="World_Aquatics">
+
+                            <h3 class="text-xl font-semibold text-[#84a3c0] mb-3">
+                                World Aquatics
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Recognized by World Aquatics formally known as FINA, the sole and exclusive international governing body for aquatic sports.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SAI -->
+                    <div class="col-lg-5" data-aos="zoom-in">
+                        <div class="bg-white rounded-3xl shadow-md p-8 text-center transition duration-300 hover:-translate-y-2 hover:shadow-xl border-t-4 border-[#84a3c0]">
+
+                            <img src="/assets/logos/SAI.png" class="mx-auto mb-4 h-20 object-contain" alt="SAI">
+
+                            <h3 class="text-xl font-semibold text-[#84a3c0] mb-3">
+                                Starfish Aquatics Institute (SAI)
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Independent Authorized Provider of Starfish Swimming®, a nationally recognized swim instruction curriculum developed by the Starfish Aquatics Institute (SAI).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+            CAMPAIGNS SECTION
+        ========================= -->
+        <section class="campaigns position-relative py-20 bg-[#f5f7fa] overflow-hidden">
+            <!-- Soft Brand Background Glow -->
+            <div class="position-absolute top-50 start-50 translate-middle w-[650px] h-[650px] bg-[#84a3c0]/10 rounded-full blur-3xl"></div>
+
+            <div class="container position-relative z-10 text-center px-4">
+
+                <!-- Heading -->
+                <div class="mx-auto max-w-3xl mb-14"
+                    data-aos="fade-up"
+                    data-aos-duration="900">
+
+                    <h2 class="text-3xl md:text-4xl fw-bold text-[#b32138] mb-4">
+                        Our Campaigns
+                    </h2>
+
+                    <p class="text-lg text-[#2D2E2E] leading-relaxed">
+                        As part of our initiative to promote swimming education and water
+                        safety awareness, Albyn Swim Academy runs impactful campaigns across
+                        communities in Nigeria. Together, we can prevent drowning incidents,
+                        build confidence, and save lives.
+                    </p>
+                </div>
+
+                <!-- Campaign Cards -->
+                <div class="row g-4 justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-white rounded-2xl p-6 h-100 shadow-sm hover:shadow-xl transition duration-300 text-start group">
+                            <div class="mb-4 text-[#b32138] text-4xl
+                                        transition duration-300 group-hover:scale-110">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+
+                            <h3 class="text-xl fw-bold text-[#84a3c0] mb-3">
+                                Water Safety Awareness
+                            </h3>
+
+                            <p class="text-sm text-[#2D2E2E] leading-relaxed">
+                                Teaching children and adults life-saving water safety skills
+                                through workshops, school programs, and community events.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                        <div class="bg-white rounded-2xl p-6 h-100 shadow-sm hover:shadow-xl transition duration-300 text-start group">
+                            <div class="mb-4 text-[#b32138] text-4xl
+                                        transition duration-300 group-hover:scale-110">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+                            <h3 class="text-xl fw-bold text-[#84a3c0] mb-3">
+                                Community Outreach
+                            </h3>
+                            <p class="text-sm text-[#2D2E2E] leading-relaxed">
+                                Partnering with schools and organizations to bring swimming
+                                education and water confidence to underserved communities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="bg-white rounded-2xl p-6 h-100 shadow-sm hover:shadow-xl transition duration-300 text-start group">
+                            <div class="mb-4 text-[#b32138] text-4xl transition duration-300 group-hover:scale-110">
+                                <i class="fa-solid fa-universal-access"></i>
+                            </div>
+                            <h3 class="text-xl fw-bold text-[#84a3c0] mb-3">
+                                Inclusive Training
+                            </h3>
+                            <p class="text-sm text-[#2D2E2E] leading-relaxed">
+                                Promoting inclusivity through accessible swimming programs
+                                designed for individuals of all ages, backgrounds, and abilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="hero-screen flex-grow mx-auto px-4 py-8">
             <div class="text-center">
-                <h1 class="lightheadline text-4xl font-bold mb-4">About Us</h1>
             </div>
-        </div>
-        <div class="hero-bottom"></div>
-        <!-- HERO -->
-
-        <div class="container">
-            <h1 class="headline">About Albyn Swim Academy Ltd</h1>
-            <div class="row text-center col-md-12 mx-auto">
-                    Albyn Swim Academy Ltd is a swimming school that serves babies, children, and adults throughout Nigeria. Based in Abuja, we offer swimming and water safety lessons all year round at our heated indoor swimming pools. When you choose our lessons, instructors pay close attention to your progress, working at your pace and ability and ensuring you are comfortable while in the water. Get in touch today for more details.
-                </div>
-            </div>
-        </div>
-        
-        
-        <div class="container my-2">
-            <div class="row">
-                <div class="col-12 col-7">
-                    <div class="py-4">
-                        <h4 class="mb-3 btn-primary py-3 px-3">Our Tutors</h4>
-                        <p>
-                            We employ professional swimming instructors to help learners with all aspects of swimming and water safety.
-                            All our tutors are professionally trained and accredited by Starfish Aquatics Institute (SAI), 
-                            and we work closely with learners to understand their needs and help them make progress.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-12 col-5"></div>
-            </div>
-        </div>
-
-
-        <div class="container my-2">
-            <div class="row">
-                <div class="col-12 col-md-5"></div>
-                <div class="col-12 col-md-7">
-                    <div class="py-4">
-                        <h4 class="mb-3 btn-primary py-3 px-3">Our Purpose</h4>
-                        <p>
-                            The main purpose of starting Albyn Swim Academy Ltd is to cut back the death rate from people drowning. 
-                            Nigeria is one of the top 50 countries on the planet for deaths caused by drowning. 
-                            At our school, we teach babies, children, and adults to swim with an emphasis on water safety, 
-                            thereby reducing the number of inexperienced swimmers and, in turn, lowering the death rate in the country.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="container my-2">
-            <div class="affiliation-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="py-3 btn-secondary">
-                            <h1>Our Affiliations</h3>
-                        </div>
-                    </div>
-
-                    <div class="row my-4">
-                        <div class="card border-0">
-                            <div class="card-header button btn-primary rounded-0">
-                                <h4>Swimkidz SA</h4>
-                            </div>
-
-                            <div class="card-body" style="background:#f4f5f7">
-                                <p class="text-center">
-                                    Established in 2006, SwimkidzSA trains babies, kids, and adult learners with swimming lessons throughout South Africa. 
-                                    Specialising in early learning, they offer a variety of lessons, from the 'Learn to Swim' program to advanced swimming lessons. 
-                                    With more than 10 years of experience, our sister company caters to all ages.
-                                </p>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="row">
-                        <div class="card border-0">
-                            <div class="card-header button btn-primary">
-                                <h4>Aquatic Federation of Nigeria</h4>
-                            </div>
-
-                            <div class="card-body" style="background:#f4f5f7">                            
-                                <p class="text-center">
-                                    As members of the Aquatic Federation of Nigeria, 
-                                    we work to enhance water safety and improve the image of swimming in the country.
-                                </p>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="row d-flex flex-row justify-content-center py-4">
-                        <div class="col-6 col-md affiliate-image">
-                            <img src="/plugins/images/SAI__msi___png.webp" alt="SAI"/>
-                        </div>
-
-                        <div class="col-6 col-md my-2 my-md-0 affiliate-image">
-                            <img src="/plugins/images/FINA__msi___png.webp" alt="FINA"/>
-                        </div>
-
-                        <div class="col-6 col-md affiliate-image">
-                            <img src="/plugins/images/NAqF__msi___png.webp" alt="NAQF"/>
-                        </div>
-
-                        <div class="col-6 col-md my-2 my-md-0 affiliate-image">
-                            <img src="/plugins/images/SWIMKIDZ__msi___png.webp" alt="Swimkidz"/>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        </div>        
         <!-- Main Content -->
-
-        <div>
-            <div class="CTA">
-                <div class="container">
-                    <div class="row">
-                        <h3 class="text-3xl font-bold mb-2">Want to Learn to Swim?</h3>
-                        <p class="mb-4">Our qualified instructors provide swimming lessons for learners of all ages and aptitudes.</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="button btn-secondary" href="/contact-us-abuja" title="" role="button" data-track-event="click" data-track-action="internal_link_clicked"> 
-                                <span class="buttonLabel labelRight">Learn more</span>
-                            </a>
-                        </div>
+        <div class="CTA">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-3xl font-bold mb-2">Want to Learn to Swim?</h3>
+                    <p class="mb-4">Our qualified instructors provide swimming lessons for learners of all ages and aptitudes.</p>
+                    <div class="d-flex justify-content-center">
+                        <a class="button btn-secondary" href="/contact-us-abuja" title="" role="button" data-track-event="click" data-track-action="internal_link_clicked"> 
+                            <span class="buttonLabel labelRight">Learn more</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -274,7 +522,7 @@
 
                     <div class="col-12 col-md my-auto">
                         <div class="flex flex-col gap-4 justify-start auto mx-auto">
-                            <div class="text-lg font-semibold my-auto">Socials Handles</div>
+                            <div class="text-lg font-semibold my-auto">Socials</div>
                             <div class="flex flex-row gap-4 social-icons my-auto">
                                 <a target="_blank" rel="noopener" href="https://wa.me/+2349132325923"
                                     class="text-[#ffffff] hover:text-[#b32138] rounded-circle" aria-label="Chat with us on WhatsApp"
