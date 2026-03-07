@@ -172,6 +172,14 @@ body{
 }
 /* MAIN CONTENT */
 
+.level-charts-hero{
+  background-image: url("/plugins/assets/IMG_6188__msi___jpeg.jpeg");
+  background-size: cover;
+  background-position: 0 10px 30px;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: overlay;
+}
 
 @media only screen and (width <= 800px){
     .lightheadline{
