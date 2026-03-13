@@ -1,5 +1,5 @@
 *{
-    --primary-color: #84a3c0;
+    --primary-color: #08E8DE;
     --secondary-color: #b32138;
     border-width: 0;
     border-style: solid;
@@ -124,6 +124,9 @@ a:hover {
     height: auto;
 }
 
+li::marker {
+  color: red; /* or any other color, HEX, or RGB value */
+}
 
 
 /* FOOTER */
